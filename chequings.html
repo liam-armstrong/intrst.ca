@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Chequings</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- Angular Framework -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script src="assets/js/chequingTable.js"></script>
+
+        <!-- Font -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container" ng-app="chequingTable" ng-controller="mainController">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <h2>PRODUCT RANKING</h2><br>
+
+                    <ul class="nav nav-tabs">
+                        <li><a href="savings.html">SAVINGS</a></li>
+                        <li class="active"><a href="#">CHEQUING</a></li>
+                        <li><a href="#">COMING SOON</a></li>
+                    </ul>
+
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <td><img src="assets/images/product.png" class="table-head-icon1"><br><br>PRODUCT</td>
+                                <td><img src="assets/images/user_requirements.png" class="table-head-icon2"><br>USER REQUIREMENTS</td>
+                                <td><img src="assets/images/in_bank_transactions.png" class="table-head-icon3"><br>IN-BANK TRANSACTIONS</td>
+                                <td><img src="assets/images/ATMs_at_nonbank.png" class="table-head-icon4"><br>ATM FEES @ NON-BANK</td>
+                                <td><img src="assets/images/Toronto.png" class="table-head-icon5"><br># OF ATMS IN TORONTO</td>
+                                <td><img src="assets/images/trim.png" class="table-head-icon7"><br>GET</td>
+                            </tr>
+                        </thead>
+
+                        <tbody class="table-body">
+                            <tr ng-repeat="bank in banks">
+                                <td>{{bank.name}}</td>
+                                <td>{{bank.requirement}}</td>
+                                <td>{{bank.bankTrans}}</td>
+                                <td>{{bank.nonBankFees}} <br> {{bank.nonBankTrans}}</td>
+                                <td>{{bank.numATMS}}</td>
+                                <td> <a ng-href="{{bank.link}}" target="_blank" class="btn btn-info" role="button">GO</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+--

@@ -1,0 +1,111 @@
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+.nav-tabs > li {
+    float: none;
+    display: inline-block;
+    zoom: 1;
+}
+
+.nav-tabs {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: #34C15F;
+}
+
+thead > tr > td {
+    text-align: center;
+}
+
+.table-head-icon1 {
+    height: 50px;
+    width: 50px;
+    margin-left: 5px;
+    margin-right: 0px;
+}
+thead > tr:nth-child(1) > td{
+    text-align: left;
+}
+.table-head-icon2{
+    height: 47px;
+    width: 47px;
+    margin-left: 8px;
+    margin-bottom: 11px;
+}
+.table-head-icon3 {
+    height: 50px;
+    width: 50px;
+    margin-left: 23px;
+    margin-bottom: 8px;
+}
+.table-head-icon4 {
+    height: 50px;
+    width: 50px;
+    margin-left: 12px;
+    margin-bottom: 8px;
+}
+.table-head-icon5 {
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+.table-head-icon6 {
+    height: 50px;
+    width: 50px;
+    margin-left: 8px;
+    margin-bottom: 5px;
+}
+.table-head-icon7 {
+    height: 50px;
+    width: 50px;
+    margin-left: 8px;
+    margin-bottom: 5px;
+}
+
+.input-group {
+    background-color: #34C15F;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+
+.table {
+    border: 5px solid #34C15F;
+}
+
+.table-body {
+    border: 5px solid #34C15F;
+}
+
+.table-body > tr:nth-child(odd) > td {
+    background-color: #34C15F; // Colours odd numbered rows on table
+}
+
+.table-body > tr:nth-child(odd) {
+    color: white;
+}
+
+.table-body > tr:nth-child(even) {
+    color: #34C15F;
+}
+
+.table-body > tr:nth-child(odd) > td > .btn-info {
+    background-color: #34C15F;
+    border-radius: 0;
+    border: 2px solid white;
+    line-height: 1em;
+}
+
+.table-body > tr:nth-child(even) > td > .btn-info {
+    background-color: white;
+    color: #34C15F;
+    border-radius: 0;
+    border: 2px solid #34C15F;
+    line-height: 1em;
+}
