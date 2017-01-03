@@ -67,6 +67,14 @@ thead > tr:nth-child(1) > td{
     margin-bottom: 5px;
 }
 
+.table-body-logo {
+    height: auto;
+    width: auto;
+    max-width: 60px;
+    max-height: 30px;
+    padding: 0;
+}
+
 .input-group {
     background-color: #34C15F;
     padding-top: 20px;

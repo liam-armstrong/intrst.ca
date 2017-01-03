@@ -57,7 +57,7 @@
 
                         <tbody class="table-body">
                             <tr ng-repeat="bank in banks">
-                                <td>{{bank.name}}</td>
+                                <td><img ng-src="{{bank.imgsrc}}" class="table-body-logo"><br>{{bank.name}}</td>
                                 <td>{{bank.rate}}</td>
                                 <td>{{bank.requirement}}</td>
                                 <td>{{bank.eTransfer}} <br> {{bank.eTrans}}</td>

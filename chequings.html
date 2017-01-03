@@ -48,12 +48,12 @@
 
                         <tbody class="table-body">
                             <tr ng-repeat="bank in banks">
-                                <td>{{bank.name}}</td>
+                                <td><img ng-src="{{bank.imgsrc}}" class="table-body-logo"><br>{{bank.name}}</td>
                                 <td>{{bank.requirement}}</td>
                                 <td>{{bank.bankTrans}}</td>
                                 <td>{{bank.nonBankFees}} <br> {{bank.nonBankTrans}}</td>
                                 <td>{{bank.numATMS}}</td>
-                                <td> <a ng-href="{{bank.link}}" target="_blank" class="btn btn-info" role="button">GO</a></td>
+                                <td><a ng-href="{{bank.link}}" target="_blank" class="btn btn-info" role="button">GO</a></td>
                             </tr>
                         </tbody>
                     </table>
