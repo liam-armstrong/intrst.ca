@@ -39,12 +39,12 @@ h2 {
     margin-top: 4px;
 }
 
-thead > tr:nth-child(1) > td{
+thead > tr:nth-child(1) > td {
     padding-top: 20px;
     padding-bottom: 30px;
 }
 
-thead > tr > td{
+thead > tr > td {
     text-align: center;
 }
 
