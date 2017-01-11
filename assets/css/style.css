@@ -49,6 +49,7 @@ thead > tr > td{
 }
 
 .table > tbody > tr > td {
+	height: 100px;
     vertical-align: middle;
     text-align: center;
 }
