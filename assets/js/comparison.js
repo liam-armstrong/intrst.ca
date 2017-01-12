@@ -1,6 +1,5 @@
 var app = angular.module("comparison", [])
 
-
 app.controller("savingController", ["$scope", function($scope) {
     $scope.calcInput = 1000;
     $scope.sortType = "";
