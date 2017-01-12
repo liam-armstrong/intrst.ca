@@ -52,3 +52,11 @@
     mixpanel.init("3d84308b1b5e3d3ddebafec49a770c6b");
 </script>
 <!-- end Mixpanel -->
+
+
+INSTRUCTIONS:
+Add the above before your <head> tag in the HTML
+Tag events with HTML 
+	mixpanel.track("example");
+	
+Or use their AutoTrack when our site is live (message Liam)
