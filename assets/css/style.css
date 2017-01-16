@@ -1,5 +1,16 @@
 * {
     font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    padding-top: 35px;
+}
+
+.continer{
+    min-height: 100%;
+    margin-bottom: -142px;
 }
 
 .nav-tabs > li {
@@ -49,7 +60,7 @@ thead > tr > td{
 }
 
 .table > tbody > tr > td {
-	height: 100px;
+    height: 100px;
     vertical-align: middle;
     text-align: center;
 }
