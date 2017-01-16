@@ -6,12 +6,6 @@
     text-align: left;
     font: normal 16px sans-serif;
     padding: 45px 50px;
-
-    position: fixed;
-    bottom:0px;
-    left:0px;
-    right:0px;
-    margin-bottom:0px;
 }
 
 .footer-distributed .footer-left p{
@@ -55,7 +49,10 @@
     line-height: 35px;
 
     margin-left: 3px;
+}
 
+.navbar-nav li a {
+    line-height: 40px;
 }
 
 @media (max-width: 600px) {
