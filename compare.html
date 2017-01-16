@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Comparison</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Angular Framework -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="assets/js/comparison.js"></script>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+
+</head>
+
+<div w3-include-html="header.html"></div>
+
+<body>
+    <div class="container" ng-app="comparison">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <h2>PRODUCT RANKING</h2>
+                <br>
+                <ul class="nav nav-tabs">
+                    <li ng-class="{'active' : !chequingActive}"><a href="#" ng-click="chequingActive=false">SAVINGS</a></li>
+                    <li ng-class="{'active' : chequingActive}"><a href="#" ng-click="chequingActive=true">CHEQUING</a></li>
+                    <li>COMING SOON</li>
+                </ul>
+
+                <div class="savings" ng-controller="savingController" ng-hide="chequingActive">
+                    <form class="form-horizontal" role="form">
+                        <div class="input-group">
+                            <label for="calculator" class="col-md-9 control-label">How much money are you planning to save?</label>
+                            <div class="col-md-3">
+                                <input type="number" class="form-control" id="calculator" placeholder="CALCULATE" ng-model="calcInput" ng-min="0" ng-max="1000000000000">
+                            </div>
+                        </div>
+                    </form>
+
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <td>PRODUCT</td>
+                                <td>INTEREST RATE</td>
+                                <td>AGE</td>
+                                <td>INTERAC E-TRANSFERS</td>
+                                <td>ATM FEES</td>
+                                <td>RETURN ON ${{calcInput || 1000 | number:2}}</td>
+                                <td></td>
+                            </tr>
+                        </thead>
+
+                        <tbody class="table-body">
+                            <tr ng-repeat="bank in banks">
+                                <td><img ng-src="{{bank.imgsrc}}" class="table-body-logo">
+                                    <br>{{bank.name1}}
+                                    <br>{{bank.name2}}</td>
+                                <td>{{bank.rate}}%</td>
+                                <td>{{bank.requirement}}</td>
+                                <td>{{bank.eTransfer}}
+                                    <br> {{bank.eTrans}}</td>
+                                <td>{{bank.nonBankFees}}
+                                    <br> {{bank.nonBankTrans}}</td>
+                                <td>${{calcInput ? calcInput * (bank.rate + 1) : 1000 * (bank.rate + 1) | number:2}}</td>
+                                <td><a ng-href="{{bank.link}}" target="_blank" class="btn btn-info" role="button">GO</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="chequings" ng-controller="chequingController" ng-show="chequingActive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <td>PRODUCT</td>
+                                <td>AGE</td>
+                                <td>IN-BANK TRANSACTIONS</td>
+                                <td>ATM FEES</td>
+                                <td>ATMS IN TORONTO</td>
+                                <td></td>
+                            </tr>
+                        </thead>
+
+                        <tbody class="table-body">
+                            <tr ng-repeat="bank in banks">
+                                <td><img ng-src="{{bank.imgsrc}}" class="table-body-logo">
+                                    <br>{{bank.name1}}
+                                    <br>{{bank.name2}}</td>
+                                <td>{{bank.requirement}}</td>
+                                <td>{{bank.bankTrans}}</td>
+                                <td>{{bank.nonBankFees}}
+                                    <br> {{bank.nonBankTrans}}</td>
+                                <td>{{bank.numATMS}}</td>
+                                <td><a ng-href="{{bank.link}}" target="_blank" class="btn btn-info" role="button">GO</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+    <div w3-include-html="footer.html"></div>
+    <script>
+        w3IncludeHTML();
+    </script>
+</html>
+
