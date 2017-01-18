@@ -33,30 +33,32 @@
 .building{
     width: 75%;
     background-color: lightgray;
-    padding: 70px;
+    padding: 10vw;
     padding-bottom: 0px;
     margin-top: 50px
 }
 
 .windowFrame{
     background-color: lightgray;
-    height: 200px
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .window{
     background-color: #24617A;
-    height: 180px;
-    margin: 10px;
+    height: 30vh;
+    margin-top: 5vh;
     padding: 10px;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-
 .door{
     background-color: #24617A;
-    height: 300px;
+    height: 40vh;
     width: 49.6%;
     margin-top: 15%;
 }

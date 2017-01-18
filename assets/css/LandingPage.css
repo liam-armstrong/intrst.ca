@@ -1,5 +1,7 @@
 body{
     font-family: Raleway;
+    margin-top: 70px;
+    width: 100vw;
 }
 
 overall{
@@ -10,25 +12,12 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: white;
 }
 
 a,u {
     text-decoration: none !important;
     color: black;
 
-}
-.NavigationBar {
-    background-color: white;
-    padding-right: 30px;
-}
-
-.active {
-     color: #62B75F !important;
-}
-
-.Nav:hover{
-    background-color: #d3d3d3;
 }
 
 li a {
@@ -52,8 +41,8 @@ li img {
 
 
 .Still{
-    color: white;
     position: absolute;
+    color: white;
     margin:0 auto;
     text-align: center;
     top: 20%;
@@ -82,7 +71,6 @@ li img {
 
 .FeatTi{
     text-align: center;
-    color: white;
     padding-top: 35px;
     padding-bottom: 20px;
 }
@@ -106,7 +94,6 @@ h4{
     padding: 10px;
     text-align: center;
     border-radius: 5px;
-    color: white;
     margin: auto;
 
     position: absolute;
@@ -120,7 +107,7 @@ h4{
 
 .Want{
     position: relative;
-    width: 100vw;
+    width: 100%;
 }
 
 .cont{
@@ -137,7 +124,6 @@ h4{
 button{
      background-color: #62B75F;
     border: none;
-    color: white;
     padding: 10px 32px;
     text-align: center;
     text-decoration: none;
@@ -157,8 +143,7 @@ button{
 }
 
 .Want div button{
-
     margin: auto;
     font-size: 24px;
-    
+
 }

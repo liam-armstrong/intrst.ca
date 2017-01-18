@@ -1,16 +1,9 @@
 * {
     font-family: 'Raleway', sans-serif;
-    margin: 0;
 }
 
-html, body {
-    height: 100%;
-    padding-top: 35px;
-}
-
-.continer{
-    min-height: 100%;
-    margin-bottom: -142px;
+body {
+    font-size: 15px;
 }
 
 .nav-tabs > li {
@@ -22,7 +15,7 @@ html, body {
 .nav-tabs > li > a {
     padding-top: 20px;
     padding-bottom: 20px;
-    font-size: 17px;
+    font-size: 95%;
     color: #34C15F;
 }
 
@@ -41,7 +34,7 @@ h2 {
 .control-label {
     font-weight: normal;
     color: #34C15F;
-    font-size: 20px;
+    font-size: 105%;
 }
 
 #calculator {
@@ -60,7 +53,6 @@ thead > tr > td{
 }
 
 .table > tbody > tr > td {
-    height: 100px;
     vertical-align: middle;
     text-align: center;
 }
@@ -75,6 +67,10 @@ thead > tr > td{
     max-width: 80px;
     max-height: 40px;
     margin-bottom: 5px;
+}
+
+.cell-logo {
+    max-height: 25px;
 }
 
 .input-group {
@@ -93,4 +89,188 @@ thead > tr > td{
     border-radius: 5px;
     margin-right: 20px;
     line-height: 1em;
+}
+
+@media only screen and (max-width: 1200px) {
+    .form-control {
+        width: 200px !important;
+        height: 30px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+  .form-control {
+      width: 350px !important;
+      height: 30px;
+      font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+    body {
+        font-size: 14px;
+    }
+    h2 {
+        font-size:17px;
+    }
+    .control-label {
+        font-size: 13px !important;
+        padding-right: 0 !important;
+    }
+    .form-control {
+        width: 300px !important;
+        height: 30px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        font-size: 12px;
+    }
+    .table-body > tr > td > .btn-info {
+        width: 72%;
+        height: 80%;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    body {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 9px;
+    }
+    .form-control {
+        width: 250px !important;
+        height: 30px;
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    body {
+        font-size: 8px;
+    }
+    .table-body > tr > td > .btn-info {
+        width: 70%;
+        height: 40%;
+        font-size: 10px;
+    }
+    .form-control {
+        width: 220px !important;
+        height: 28px;
+        font-size: 10px;
+    }
+}
+
+.formbox-editor-763529 {
+    margin: 0 0;
+    padding: 10px 30px;
+    text-align: left;
+    box-sizing: border-box;
+    float: right;
+}
+
+.formbox-editor-763529 fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.formbox-editor-763529 fieldset > input,
+.formbox-editor fieldset > textarea,
+.formbox-editable-field {
+    margin: 0;
+    outline: none;
+}
+
+input.formbox-field-763529 {
+    background: none;
+    border: 2px solid #f1f2f2;
+    border-radius: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    padding: 9px;
+    text-align: center;
+    width: 100%;
+}
+
+input.field-error-763529 {
+    border-color: #f15858;
+}
+
+input.formbox-button-763529 {
+    background-color: #21292d;
+    border-width: 0;
+    border-style: solid;
+    border-color: #21292d;
+    border-radius: 8px;
+    color: #fff;
+    display: inline-block;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px;
+    text-align: center;
+    word-break: break-all;
+    cursor: pointer;
+}
+
+button.formbox-button-763529 {
+    background-color: #21292d;
+    border-width: 0;
+    border-style: solid;
+    border-color: #21292d;
+    border-radius: 8px;
+    color: #fff;
+    display: inline-block;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 5px;
+    margin: 10px 0;
+    text-align: center;
+    word-break: break-all;
+    cursor: pointer;
+}
+
+.formbox-editor-763529 {
+    background-color: transparent !important;
+    width: 300px !important;
+}
+
+.formbox-title-763529 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 17px !important;
+    color: #ffffff !important;
+    text-align: center !important;
+}
+
+.formbox-button-763529 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 13px !important;
+    color: #ffffff !important;
+    background-color: transparent !important;
+    border-radius: 1px !important;
+    border-color: #ffffff !important;
+    border-width: 2.5px !important;
+    width: 100% !important;
+    border-style: solid;
+}
+
+#tdLogo763529 img {
+    margin-botton: 10px;
+    max-width: 230px;
+}
+
+@media only screen and (max-width: 500px) {
+.formbox-editor-763529 {
+    width: 200px !important;
 }

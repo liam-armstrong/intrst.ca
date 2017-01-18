@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Intrst | Evaluate</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/compare.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Angular Framework -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="assets/js/comparison.js"></script>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+
+
+    <!-- Google Analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-90233927-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    <!-- start Mixpanel -->
+    <script type="text/javascript">
+        (function (e, a) {
+            if (!a.__SV) {
+                var b = window;
+                try {
+                    var c, l, i, j = b.location,
+                        g = j.hash;
+                    c = function (a, b) {
+                        return (l = a.match(RegExp(b + "=([^&]*)"))) ? l[1] : null
+                    };
+                    g && c(g, "state") && (i = JSON.parse(decodeURIComponent(c(g, "state"))), "mpeditor" === i.action && (b.sessionStorage.setItem("_mpcehash", g), history.replaceState(i.desiredHash || "", e.title, j.pathname + j.search)))
+                } catch (m) {}
+                var k, h;
+                window.mixpanel = a;
+                a._i = [];
+                a.init = function (b, c, f) {
+                    function e(b, a) {
+                        var c = a.split(".");
+                        2 == c.length && (b = b[c[0]], a = c[1]);
+                        b[a] = function () {
+                            b.push([a].concat(Array.prototype.slice.call(arguments,
+                                                                         0)))
+                        }
+                    }
+                    var d = a;
+                    "undefined" !== typeof f ? d = a[f] = [] : f = "mixpanel";
+                    d.people = d.people || [];
+                    d.toString = function (b) {
+                        var a = "mixpanel";
+                        "mixpanel" !== f && (a += "." + f);
+                        b || (a += " (stub)");
+                        return a
+                    };
+                    d.people.toString = function () {
+                        return d.toString(1) + ".people (stub)"
+                    };
+                    k = "disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+                    for (h = 0; h < k.length; h++) e(d, k[h]);
+                    a._i.push([b, c, f])
+                };
+                a.__SV = 1.2;
+                b = e.createElement("script");
+                b.type = "text/javascript";
+                b.async = !0;
+                b.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ? MIXPANEL_CUSTOM_LIB_URL : "file:" === e.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";
+                c = e.getElementsByTagName("script")[0];
+                c.parentNode.insertBefore(b, c)
+            }
+        })(document, window.mixpanel || []);
+        mixpanel.init("3d84308b1b5e3d3ddebafec49a770c6b");
+    </script>
+    <!-- end Mixpanel -->
+
+</head>
+
+<div w3-include-html="header.html"></div>
+
+<body>
+    <div class="container" ng-app="comparison">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <h2>PRODUCT RANKING</h2>
+                <br>
+                <ul class="nav nav-tabs">
+                    <li ng-class="{'active' : !chequingActive}"><a href="#" ng-click="chequingActive=false">SAVINGS</a></li>
+                    <li ng-class="{'active' : chequingActive}"><a href="#" ng-click="chequingActive=true">CHEQUING</a></li>
+                    <li>COMING SOON</li>
+                </ul>
+
+                <div class="savings" ng-controller="savingController" ng-hide="chequingActive">
+                    <form class="form-horizontal" role="form">
+                        <div class="input-group">
+                            <label for="calculator" class="col-md-9 control-label">How much money are you planning to save?</label>
+                            <div class="col-md-3">
+                                <input type="number" class="form-control" id="calculator" placeholder="CALCULATE" ng-model="calcInput" ng-min="0" ng-max="1000000000000">
+                            </div>
+                        </div>
+                    </form>
+
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <td>PRODUCT</td>
+                                <td>INTEREST RATE</td>
+                                <td>AGE</td>
+                                <td>INTERAC E-TRANSFERS</td>
+                                <td>ATM FEES</td>
+                                <td>RETURN ON ${{calcInput || 1000 | number:2}}</td>
+                                <td></td>
+                            </tr>
+                        </thead>
+
+                        <tbody class="table-body">
+                            <tr ng-repeat="bank in banks">
+                                <td><img ng-src="{{bank.imgsrc}}" class="table-body-logo">
+                                    <br>{{bank.name1}}
+                                    <br>{{bank.name2}}</td>
+                                <td>{{bank.rate}}%</td>
+                                <td>{{bank.requirement}}</td>
+                                <td>{{bank.eTransfer}}
+                                    <br> {{bank.eTrans}}</td>
+                                <td>{{bank.nonBankFees}}
+                                    <br> {{bank.nonBankTrans}}</td>
+                                <td>${{calcInput ? calcInput * (bank.rate + 1) : 1000 * (bank.rate + 1) | number:2}}</td>
+                                <td><a ng-href="{{bank.link}}" target="_blank" class="btn btn-info" role="button">GO</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="chequings" ng-controller="chequingController" ng-show="chequingActive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <td>PRODUCT</td>
+                                <td>AGE</td>
+                                <td>IN-BANK TRANSACTIONS</td>
+                                <td>ATM FEES</td>
+                                <td>ATMS IN TORONTO</td>
+                                <td></td>
+                            </tr>
+                        </thead>
+
+                        <tbody class="table-body">
+                            <tr ng-repeat="bank in banks">
+                                <td><img ng-src="{{bank.imgsrc}}" class="table-body-logo">
+                                    <br>{{bank.name1}}
+                                    <br>{{bank.name2}}</td>
+                                <td>{{bank.requirement}}</td>
+                                <td>{{bank.bankTrans}}</td>
+                                <td>{{bank.nonBankFees}}
+                                    <br> {{bank.nonBankTrans}}</td>
+                                <td>{{bank.numATMS}}</td>
+                                <td><a ng-href="{{bank.link}}" target="_blank" class="btn btn-info" role="button">GO</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+    <div w3-include-html="footer.html"></div>
+    <script>
+        w3IncludeHTML();
+    </script>
+</html>
+
