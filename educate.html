@@ -24,7 +24,35 @@
     <link rel="stylesheet" href="assets/css/educate.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.1/jquery.smooth-scroll.min.js" rel="stylesheet">
+
+
+    <script>
+        $(document).ready(function(){
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function(){
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+
 
     <script src="http://www.w3schools.com/lib/w3data.js"></script>
 
@@ -198,7 +226,7 @@
                 <div class="col-lg-3 text-center windowFrame">
                     <a href="#intrst">
                         <div class="window text-center">
-                            <h3>Intrest Rate</h3></div>
+                            <h3>Interest Rate</h3></div>
                     </a>
                 </div>
                 <div class="col-lg-3 text-center windowFrame">
@@ -320,7 +348,7 @@
                 <h4>Insurance</h4> An agreement providing compensation against an unexpected event. The 4 main types comprise of life insurance, health insurance, auto insurance, and long term disability coverage.
                 <br>
             </div>
-            <div class="col-lg-12 definition" id="intrst">
+            <div class="col-lg-12 definition" id="interst">
                 <h4>Interest Rate</h4> The amount of interest charged or paid out on top of the amount loaned or held in an account. It is usually given in terms of a percentage per year. For example, if Joe earns an interest rate of 3% per year on the $1000 he has in his bank account, he will then earn $30 dollars per year.
                 <br> Compound interest is interest earned or charged on the interest that was previously accumulated. For example, if Joe earned $30 of interest in his bank account last year, the interest he earns this year on that $30 is called compound interest.
                 <br>
@@ -365,8 +393,6 @@
             </div>
         </div>
     </div>
-
-
 </body>
 
 <div w3-include-html="footer.html"></div>
