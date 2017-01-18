@@ -34,6 +34,7 @@
     float: right;
     margin-top: 6px;
     max-width: 180px;
+    margin-left: 2vw;
 }
 
 .footer-distributed .footer-right a{
@@ -47,8 +48,6 @@
     color: #ffffff;
     text-align: center;
     line-height: 35px;
-
-    margin-left: 3px;
 }
 
 .navbar-nav li a {
