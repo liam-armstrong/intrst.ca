@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="viewport" content="width=device, initial-scale=1.0">
     <title>Intrst | Home</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -12,6 +14,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <!--Header-->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico"/>
     <link rel="stylesheet" href="assets/css/footer.css">
     <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -87,7 +90,26 @@
         mixpanel.init("fe63d2a2e139d9b81764772db277aa01");
     </script>
     <!-- end Mixpanel -->
-
+    <script type="text/javascript">
+    <!--
+    if (screen.width <= 1080) {
+    document.location = "mobile.html";
+    }
+    //-->
+    </script>
+<style>
+@media (max-device-width : 1350px)
+{
+  .heading
+  {
+    font-size:40px !important;
+  }
+  .subheading
+  {
+    font-size:20px !important;
+  }
+}
+</style>
 </head>
 
 <div w3-include-html="header.html"></div>
@@ -95,51 +117,76 @@
 <body>
 
     <!--div class="col-md-12 col-sm-12 col-xs-12 overall"-->
-    <div class="Jump">
-        <img src=".\assets\images\landing\Firstpic.png" alt="Person junping into water" class="img-responsive">
+    <div class ="col sm-12" style="width:100% auto; height:100% auto; background-image: url('Firstpic.png'); background-size:100% auto; background-repeat:no-repeat;" class="Jump">
+      <!--  <img src=".\assets\images\landing\Firstpic.png" alt="Person junping into water" class="img-responsive"> -->
+     <h1 class="heading" style="font-family: 'Source Sans Pro', sans-serif; font-size:50px; padding:15%; padding-top:10%; padding-left:10%;padding-bottom:1%"> More Money. More Moments. </h1>
+     <h2 class = "subheading" style="font-family: 'Source Sans Pro', sans-serif; font-size:25px; padding:15%;padding-left:10%;padding-top:0% "> Gen Z Financial Product Discovery & Rankings </h2>
     </div>
     <!--I Want to... section-->
     <div class="row cont">
         <div class="col-lg-4 center-block text-center">
             <h3>Learn the Terminology:</h3>
-            <button type="button" onclick="location.href='educate.html'">GO</button>
+            <button style ="color:white;" type="button" onclick="location.href='educate.html'">GO</button>
         </div>
         <script>
         </script>
         <div class="col-lg-4 center-block text-center">
             <h3>Compare Banks:</h3>
-            <button type="button" onclick="location.href='evaluate.html'">GO</button>
+            <button style ="color:white;" type="button" onclick="location.href='evaluate.html'">GO</button>
         </div>
         <div class="col-lg-4 center-block text-center">
             <h3>Explore Opportunities:</h3>
-            <button type="button" onclick="location.href='http://blog.intrst.ca'">GO</button>
+            <button style ="color:white;"type="button" onclick="location.href='http://blog.intrst.ca'">GO</button>
         </div>
+    </div>
+    <div class ="event" style="background-image: url('eventbanner.png'); background-size: cover; background-repeat:no-repeat;">
+&nbsp;<br>
+&nbsp;<br>
+      <h1 style="color:white; font-weight:bold; text-align: center"> FEATURED EVENT </h1>
+      <h2 style ="color:white; text-align:center"> More Money, More Moments Budgeting Seminar </h2>
+      <h3  style ="color:white; text-align:center"> Learn the basics of budgeting, investing, and personal finance. </h3>
+      &nbsp;<br>
+      &nbsp;<br>
+      <div class="col-sm-12 center-block text-center">
+      <button type="button" style ="color:white; text-align:center" onclick="location.href='http://intrst.ca/seminar.html'">Learn More</button>
+</div>
+&nbsp;<br>
+&nbsp;<br>
     </div>
     <div class="featured">
         <h2 class="FeatTi">Featured Articles</h2>
-        <div class="col-md-4 Featdiv">
+
+        <div style= "margin: 0 auto" class="col-md-4 Featdiv">
             <a href="http://blog.intrst.ca/2017/01/03/two-sides-one-coin/">
-                <img src=".\assets\images\landing\bank-account-410x215.jpg" alt="" class="img-responsive" id="img1">
+                <img style= "margin: 0 auto" src=".\assets\images\landing\bank-account-410x215.jpg" class = "img-responsive" alt="" id="img1">
+                <h3 style="color:white; text-align: center;">Two Sides, One Coin </h3>
+                <h4 style="color:white; text-align: center;">Why do some people choose smaller institutions like Tangerine? Find out here.</h4>
             </a>
         </div>
-        <div class="col-md-4 Featdiv">
+        <div style= "margin: 0 auto" class="col-md-4 Featdiv">
             <a href="http://blog.intrst.ca/2017/01/03/the-right-account-for-you/">
-                <img src=".\assets\images\landing\bank-account2-410x215.jpg" alt="" class="img-responsive" id="img2">
+                <img style= "margin: 0 auto" src=".\assets\images\landing\bank-account2-410x215.jpg" class = "img-responsive" alt="" id="img2">
+                <h3 style="color:white; text-align: center;"> The Right Account For You </h3>
+                <h4 style="color:white; text-align: center;">Savings or Chequing account? Find out which is right for you.</h4>
             </a>
         </div>
-        <div class="col-md-4 Featdiv">
+        <div style= "margin: 0 auto" class="col-md-4 Featdiv">
             <a href="http://blog.intrst.ca/2017/01/03/holiday-savings/">
-                <img src=".\assets\images\landing\holiday1-410x215.jpg" alt="" class="img-responsive" id="img3">
+                <img style= "margin: 0 auto" src=".\assets\images\landing\holiday1-410x215.jpg" class = "img-responsive" alt=""  id="img3">
+                <h3 style="color:white; text-align: center;">Tips for Saving Money on Holiday Gifts</h3>
+                <h4 style="color:white; text-align: center;">The holidays too expensive? Here's how to give while saving.</h4>
             </a>
-        </div>
+      </div>
     </div>
+    <!-- Write your comments here -->
+    <div style="outline:0; height:125px; margin-top:-10px; width:100%; background-color: #317b96"></div>
     <!--More money more moments-->
     <div class="MoreMoney center-block text-center">
-        <h2>More Money. More Moments</h2>
+        <h2>More Money. More Moments.</h2>
         <div class="row moments text-center center-block">
-            <div class="col-md-4 text-center center-block"><img src=".\assets\images\landing\moremoneymoremoments11-410.jpg" class="img-responsive img"></div>
-            <div class="col-md-4"><img src=".\assets\images\landing\moremoneymoremoments15-410.jpg" class="img-responsive img"></div>
-            <div class="col-md-4"><img src=".\assets\images\landing\moremoneymoremoments16-410.jpg" class="img-responsive img"></div>
+            <div style= "margin: 0 auto"  class="col-md-4 text-center center-block"><img style= "margin: 0 auto"  src=".\assets\images\landing\moremoneymoremoments11-410.jpg" class="img-responsive img"></div>
+            <div style= "margin: 0 auto"  class="col-md-4"><img style= "margin: 0 auto" src=".\assets\images\landing\moremoneymoremoments15-410.jpg" class="img-responsive img"></div>
+            <div style= "margin: 0 auto"  class="col-md-4"><img style= "margin: 0 auto" src=".\assets\images\landing\moremoneymoremoments16-410.jpg" class="img-responsive img"></div>
         </div>
     </div>
     <!--still want to learn-->
@@ -147,7 +194,7 @@
     <div class="row center-block text-center learnmore">
         <div class="col-md-12 center-block text-center">
             <h2 class="Still">Still Want to Learn?</h2>
-            <button type="button" onclick="location.href='http://blog.intrst.ca'">Teach Me!</button>
+            <button style ="color:white;" type="button" onclick="location.href='http://blog.intrst.ca'">Teach Me!</button>
         </div>
     </div>
 
