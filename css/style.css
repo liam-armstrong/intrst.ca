@@ -1,0 +1,85 @@
+body {
+    background: url(bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #fff;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-top: 6%;
+    min-height: 75%;
+    min-height: 75vh;
+    width: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-text {
+    margin-top: 12vh;
+    align-self: flex-start;
+    -webkit-align-self: flex-start;
+    /* Safari 7.0+ */
+}
+
+.logo {
+    max-width: 55%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+p {
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+p.sub{
+    font-size: 15px !important;
+}
+
+.fb {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    
+    background-color: transparent;
+    border-width: 0;
+    border-style: solid;
+    border-color: #21292d;
+    border-radius: 8px;
+    color: #fff;
+    display: inline-block;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 7px;
+    margin: px 0;
+    text-align: center;
+    word-break: break-all;
+    border-radius: 1px;
+    border-color: #ffffff;
+    border-width: 0.3px;
+    width: 50%;
+    border-style: solid;
+}
+
+@media only screen and (max-width: 500px) {
+    p {
+        font-size: 15px !important;
+    }
+    .container {
+        width: 50vh;
+        !important;
+    }
+}
