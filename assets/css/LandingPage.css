@@ -1,10 +1,10 @@
-body{
+body {
     font-family: Raleway;
     margin-top: 70px;
     width: 100vw;
 }
 
-#bootstrap-override .container-fluid{
+#bootstrap-override .container-fluid {
     padding: 0;
 }
 
@@ -15,81 +15,83 @@ ul {
     overflow: hidden;
 }
 
-a,u {
+a,
+u {
     text-decoration: none !important;
     color: black;
-
 }
 
 li a {
     display: block;
     text-align: center;
     padding: 14px 20px;
-    float:right;
+    float: right;
 }
+
 li img {
-    float:left;
+    float: left;
 }
-.jump, .Want{
+
+.jump,
+.Want {
     max-width: 100vw;
     height: auto;
     display: block;
 }
 
-.img{
+.img {
     margin-top: 2vh;
 }
 
-.featured{
+.featured {
     background-color: #327B97;
     min-height: 55vh;
 }
 
-.MoreMoney{
+.MoreMoney {
     text-align: center;
     margin-top: 5vh;
     margin-bottom: 0px;
     min-height: 55vh;
 }
 
-.moments{
+.moments {
     margin-top: 9vh;
 }
 
-.Featdiv{
+.Featdiv {
     padding-top: 25px;
     padding-bottom: 25px;
 }
 
-.FeatTi{
+.FeatTi {
     text-align: center;
     color: white;
     padding-top: 35px;
     padding-bottom: 20px;
 }
 
-.event{
+.event {}
 
-}
-
-.cont{
-    width: 100vw;
+.cont {
+    width: 90vw;
     margin-top: 0px;
     padding-top: 25px;
     padding-bottom: 25px;
     text-align: center;
 }
 
-button{
+button {
     background-color: #62B75F;
     border: none;
     padding: 10px 32px;
 }
 
-.learnmore{
-    margin-top: 10vh;
+.learnmore {
+    width: 50vw;
+    margin-top: 3vh;
     margin-bottom: 5vh;
-    }
+}
 
 
 /* Contact Buttton*/
@@ -105,13 +107,21 @@ a {
 a.button {
     display: block;
     text-align: center;
-    max-width: 25vw;
     text-decoration: none;
     border-radius: 4px;
     margin: 20px auto;
     padding: 20px 30px;
     color: RGBA(0, 0, 0, 0.6);
     box-shadow: RGBA(52, 193, 95, 0.4) 0 0px 0px 2px inset;
+}
+
+@media (max-device-width: 1350px) {
+    .heading {
+        font-size: 40px !important;
+    }
+    .subheading {
+        font-size: 20px !important;
+    }
 }
 
 a.button:hover {
