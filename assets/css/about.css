@@ -57,8 +57,21 @@ a.button:hover {
         display: none;
     }
 }
-@media screen and (min-width: 767){
+
+@media screen and (min-width: 767px){
     .spacerSmall{
         display: none;
+    }
+}
+
+@media screen and (max-width: 393px){
+   .gmPhoto{
+       height: 66vw;
+   } 
+}
+
+@media screen and (min-width: 394px){
+    .gmPhoto{
+        height: 250px;
     }
 }
