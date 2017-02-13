@@ -17,7 +17,8 @@ body {
 
 .portraits{
     margin-top: 10px;
-    height: 20%
+    height: 20%;
+    margin-bottom: 10px
 }
 
 .gm{
@@ -50,4 +51,14 @@ a.button {
 a.button:hover {
     color: rgba(255, 255, 255, 0.85);
     box-shadow: RGBA(52, 193, 95, 0.7) 0 0px 0px 40px inset;
+}
+@media screen and (min-width: 1200px){
+    .spacer {
+        display: none;
+    }
+}
+@media screen and (min-width: 767){
+    .spacerSmall{
+        display: none;
+    }
 }
