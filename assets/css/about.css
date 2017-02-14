@@ -25,6 +25,12 @@ body {
     width: 90%;
 }
 
+.AdvisorsHeading{
+    font-size: 1.6em;
+    text-decoration: none;
+    color: black;
+}
+
 /* Contact Buttton*/
 
 a {
@@ -73,5 +79,17 @@ a.button:hover {
 @media screen and (min-width: 394px){
     .gmPhoto{
         height: 250px;
+    }
+}
+
+@media screen and (max-width: 399px){
+   .Adphoto{
+       height: 50vw;
+   } 
+}
+
+@media screen and (min-width: 400px){
+    .Adphoto{
+        height: 170px;
     }
 }
