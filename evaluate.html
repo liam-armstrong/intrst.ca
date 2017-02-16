@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- Icons -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico"/>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/compare.css">
     <!-- jQuery library -->
@@ -29,7 +29,7 @@
 
     <script src="http://www.w3schools.com/lib/w3data.js"></script>
 
-     <!-- Google Analytics -->
+    <!-- Google Analytics -->
     <script>
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
@@ -105,7 +105,7 @@
 
 <body>
     <div class="container" ng-app="comparison">
-        <div class="row">
+        <div class="row" style="margin-bottom: 5vw;">
             <div class="col-md-1"></div>
             <div class="col-md-10">
                 <h2>PRODUCT RANKING</h2>
@@ -118,7 +118,7 @@
                 </ul>
 
                 <div class="savings" ng-controller="savingController">
-                    <div class="savChars" ng-show=savingActive ng-hide="savingChartActive || cellActive || ccardActive">
+                    <div class="savChars" ng-show="savingActive" ng-hide="savingChartActive || cellActive || ccardActive">
                         <h4>What do <span style="color: #34C15F">you</span> do with your <span style="color: #34C15F">money</span>?</h4>
                         <div class="greybox" ng-click="savingChartActive=true;savingActive=false;sortType='rate';sortReverse=!sortReverse">
                             <div class="col-md-5 transbox">
@@ -129,7 +129,7 @@
                                 </p>
                             </div>
                             <div class="col-md-5 imagebox">
-                              <img src="assets/images/Compare/Sunny-11.png" class="img-responsive char-image">
+                                <img src="assets/images/Compare/Sunny-11.png" class="img-responsive char-image">
                             </div>
                         </div>
                         <br>
@@ -142,7 +142,7 @@
                                 </p>
                             </div>
                             <div class="col-md-5 imagebox">
-                              <img src="assets/images/Compare/Spencer-12.png" class="img-responsive char-image spencer">
+                                <img src="assets/images/Compare/Spencer-12.png" class="img-responsive char-image spencer">
                             </div>
                         </div>
                         <br>
@@ -155,7 +155,7 @@
                                 </p>
                             </div>
                             <div class="col-md-5 imagebox">
-                              <img src="assets/images/Compare/Robert-13.png" class="img-responsive char-image">
+                                <img src="assets/images/Compare/Robert-13.png" class="img-responsive char-image">
                             </div>
                         </div>
                     </div>
@@ -175,32 +175,32 @@
                                 <tr>
                                     <td>
                                         <a href="#" ng-click="sortType = 'product'; sortReverse = !sortReverse">
-                                        PRODUCT
+                                            PRODUCT </a>
                                         <span ng-show="sortType == 'product' && !sortReverse" class="fa fa-caret-down"></span>
                                         <span ng-show="sortType == 'product' && sortReverse" class="fa fa-caret-up"></span>
                                     </td>
                                     <td>
                                         <a href="#" ng-click="sortType = 'rate'; sortReverse = !sortReverse">
-                                        INTEREST RATE
+                                            INTEREST RATE </a>
                                         <span ng-show="sortType == 'rate' && !sortReverse" class="fa fa-caret-down"></span>
                                         <span ng-show="sortType == 'rate' && sortReverse" class="fa fa-caret-up"></span>
                                     </td>
                                     <td>INTERAC E-TRANSFERS</td>
                                     <td>
                                         <a href="#" ng-click="sortType = 'atmRank'; sortReverse = !sortReverse">
-                                        ATM FEES
+                                            ATM FEES </a>
                                         <span ng-show="sortType == 'atmRank' && !sortReverse" class="fa fa-caret-down"></span>
                                         <span ng-show="sortType == 'atmRank' && sortReverse" class="fa fa-caret-up"></span>
                                         </td>
                                     <td>
                                         <a href="#" ng-click="sortType = 'rate'; sortReverse = !sortReverse">
-                                        RETURN ON ${{calcInput || 1000 | number:2}}
+                                            RETURN ON ${{calcInput || 1000 | number:2}} </a>
                                         <span ng-show="sortType == 'rate' && !sortReverse" class="fa fa-caret-down"></span>
                                         <span ng-show="sortType == 'rate' && sortReverse" class="fa fa-caret-up"></span>
                                     </td>
                                     <td>
                                         <a href="#" ng-click="sortType = 'branches'; sortReverse = !sortReverse">
-                                        BRANCHES
+                                            BRANCHES </a>
                                         <span ng-show="sortType == 'branches' && !sortReverse" class="fa fa-caret-down"></span>
                                         <span ng-show="sortType == 'branches' && sortReverse" class="fa fa-caret-up"></span>
                                     </td>
@@ -223,7 +223,7 @@
                                     <td>{{bank.prep}} {{bank.branches}}</td>
                                     <td><a ng-href="{{bank.link}}" target="_blank" class="btn btn-info" role="button">GO</a></td>
                                 </tr>
-                            </tbody>
+                                </tbody>
                         </table>
                     </div>
                 </div>
@@ -244,7 +244,7 @@
 
                         <tbody class="table-body">
                             <tr ng-repeat="bank in banks">
-                              <td></td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -256,46 +256,46 @@
                 </div>
 
                 <div class="cell" ng-controller="cellController">
-                  <div class="cellChars" ng-show=cellActive ng-hide="cellChartActive || savingActive || ccardActive">
-                      <h4>What do <span style="color: #34C15F">you</span> do with your <span style="color: #34C15F">money</span>?</h4>
-                      <div class="greybox">
-                          <div class="col-md-5 transbox" ng-click="cellChartActive=true;cellActive=false;sortType='data';sortReverse=!sortReverse">
-                              <h4>David the Data User</h4>
-                              <br>
-                              <p>
-                                  David is constantly connected to his peers through social media. David needs to find a data plan that can satisfy his need to be online.
-                              </p>
-                          </div>
-                          <div class="col-md-5 imagebox">
-                            <img src="assets/images/Compare/David-14.png" class="img-responsive char-image">
-                          </div>
-                      </div>
-                      <br>
-                      <div class="greybox">
-                          <div class="col-md-5 transbox" ng-click="cellChartActive=true;cellActive=false;sortType='callRank';sortReverse=!sortReverse">
-                              <h4>Caitlyn the Caller</h4>
-                              <br>
-                              <p>
-                                  Caitlyn loves calling her friends and family. Caitlyn has to find a way to get updates from her social circle while still having enough minutes to contact her family.
-                              </p>
-                          </div>
-                          <div class="col-md-5 imagebox">
-                            <img src="assets/images/Compare/Caitlyn-15.png" class="img-responsive char-image">
-                          </div>
-                      </div>
-                      <br>
-                      <div class="greybox">
-                          <div class="col-md-5 transbox" ng-click="cellChartActive=true;cellActive=false;sortType='textRank';sortReverse=!sortReverse">
-                              <h4>Talia the Texter</h4>
-                              <br>
-                              <p>
-                                  Talia is very uncomfortable making calls, but can text for hours. Talia is on the lookout for a great texting phone plan.
-                              </p>
-                          </div>
-                          <div class="col-md-5 imagebox">
-                            <img src="assets/images/Compare/Talia-16.png" class="img-responsive char-image">
-                          </div>
-                      </div>
+                    <div class="cellChars" ng-show="cellActive" ng-hide="cellChartActive || savingActive || ccardActive">
+                        <h4>What do <span style="color: #34C15F">you</span> do with your <span style="color: #34C15F">money</span>?</h4>
+                        <div class="greybox">
+                            <div class="col-md-5 transbox" ng-click="cellChartActive=true;cellActive=false;sortType='data';sortReverse=!sortReverse">
+                                <h4>David the Data User</h4>
+                                <br>
+                                <p>
+                                    David is constantly connected to his peers through social media. David needs to find a data plan that can satisfy his need to be online.
+                                </p>
+                            </div>
+                            <div class="col-md-5 imagebox">
+                                <img src="assets/images/Compare/David-14.png" class="img-responsive char-image">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="greybox">
+                            <div class="col-md-5 transbox" ng-click="cellChartActive=true;cellActive=false;sortType='callRank';sortReverse=!sortReverse">
+                                <h4>Caitlyn the Caller</h4>
+                                <br>
+                                <p>
+                                    Caitlyn loves calling her friends and family. Caitlyn has to find a way to get updates from her social circle while still having enough minutes to contact her family.
+                                </p>
+                            </div>
+                            <div class="col-md-5 imagebox">
+                                <img src="assets/images/Compare/Caitlyn-15.png" class="img-responsive char-image">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="greybox">
+                            <div class="col-md-5 transbox" ng-click="cellChartActive=true;cellActive=false;sortType='textRank';sortReverse=!sortReverse">
+                                <h4>Talia the Texter</h4>
+                                <br>
+                                <p>
+                                    Talia is very uncomfortable making calls, but can text for hours. Talia is on the lookout for a great texting phone plan.
+                                </p>
+                            </div>
+                            <div class="col-md-5 imagebox">
+                                <img src="assets/images/Compare/Talia-16.png" class="img-responsive char-image">
+                            </div>
+                        </div>
                     </div>
                     <div class="cellChart" ng-show="cellChartActive" ng-hide="cellActive || savingActive || ccardActive">
                         <table class="table table-striped">
@@ -303,26 +303,26 @@
                                 <tr>
                                     <td>
                                         <a href="#" ng-click="sortType = 'name1'; sortReverse = !sortReverse">
-                                        NAME
+                                            NAME </a>
                                         <span ng-show="sortType == 'name1' && !sortReverse" class="fa fa-caret-down"></span>
                                         <span ng-show="sortType == 'name1' && sortReverse" class="fa fa-caret-up"></span>
                                     </td>
                                     <td>CELL PHONE PLAN</td>
                                     <td>
                                         <a href="#" ng-click="sortType = 'callRank'; sortReverse = !sortReverse">
-                                        MINUTES
+                                            MINUTES </a>
                                         <span ng-show="sortType == 'callRank' && !sortReverse" class="fa fa-caret-down"></span>
                                         <span ng-show="sortType == 'callRank' && sortReverse" class="fa fa-caret-up"></span>
                                     </td>
                                     <td>
                                         <a href="#" ng-click="sortType = 'textRank'; sortReverse = !sortReverse">
-                                        TEXTS
+                                            TEXTS </a>
                                         <span ng-show="sortType == 'textRank' && !sortReverse" class="fa fa-caret-down"></span>
                                         <span ng-show="sortType == 'textRank' && sortReverse" class="fa fa-caret-up"></span>
                                     </td>
                                     <td>
                                         <a href="#" ng-click="sortType = 'data'; sortReverse = !sortReverse">
-                                        DATA
+                                            DATA </a>
                                         <span ng-show="sortType == 'data' && !sortReverse" class="fa fa-caret-down"></span>
                                         <span ng-show="sortType == 'data' && sortReverse" class="fa fa-caret-up"></span>
                                     </td>
@@ -341,13 +341,15 @@
                                     <td>{{company.minutes}}</td>
                                     <td>{{company.texts}}</td>
                                     <td>{{company.data}} GB</td>
-                                    <td>${{company.price}} per <br> month</td>
+                                    <td>${{company.price}} per
+                                        <br> month</td>
                                     <td>{{company.bonuses}}</td>
                                     <td><a ng-href="{{company.link}}" target="_blank" class="btn btn-info" role="button">GO</a></td>
                                 </tr>
-                            </tbody>
+                                </tbody>
                         </table>
                     </div>
+                </div>
             </div>
         </div>
     </div>
