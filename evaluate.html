@@ -104,7 +104,7 @@
 <div w3-include-html="header.html"></div>
 
 <body>
-    <div class="container" ng-app="comparison" ng-switch="savingsActive">
+    <div class="container" ng-app="comparison">
         <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-10">
@@ -142,14 +142,24 @@
                                     <span ng-show="sortType == 'rate' && !sortReverse" class="fa fa-caret-down"></span>
                                     <span ng-show="sortType == 'rate' && sortReverse" class="fa fa-caret-up"></span>
                                 </td>
-                                <td>AGE</td>
                                 <td>INTERAC E-TRANSFERS</td>
-                                <td>ATM FEES</td>
+                                <td>
+                                    <a href="#" ng-click="sortType = 'atmRank'; sortReverse = !sortReverse">
+                                    ATM FEES
+                                    <span ng-show="sortType == 'atmRank' && !sortReverse" class="fa fa-caret-down"></span>
+                                    <span ng-show="sortType == 'atmRank' && sortReverse" class="fa fa-caret-up"></span>
+                                    </td>
                                 <td>
                                     <a href="#" ng-click="sortType = 'rate'; sortReverse = !sortReverse">
                                     RETURN ON ${{calcInput || 1000 | number:2}}
                                     <span ng-show="sortType == 'rate' && !sortReverse" class="fa fa-caret-down"></span>
                                     <span ng-show="sortType == 'rate' && sortReverse" class="fa fa-caret-up"></span>
+                                </td>
+                                <td>
+                                    <a href="#" ng-click="sortType = 'branches'; sortReverse = !sortReverse">
+                                    BRANCHES
+                                    <span ng-show="sortType == 'branches' && !sortReverse" class="fa fa-caret-down"></span>
+                                    <span ng-show="sortType == 'branches' && sortReverse" class="fa fa-caret-up"></span>
                                 </td>
                                 <td></td>
                             </tr>
@@ -162,12 +172,12 @@
                                     <br>{{bank.name1}}
                                     <br>{{bank.name2}}</td>
                                 <td>{{bank.rate}}%</td>
-                                <td>{{bank.requirement}}</td>
                                 <td>{{bank.eTransfer}}
                                     <br> {{bank.eTrans}}</td>
                                 <td>{{bank.nonBankFees}}
                                     <br> {{bank.nonBankTrans}}</td>
                                 <td>${{calcInput ? calcInput + calcInput * (bank.rate / 100) : 1000 + 1000 * (bank.rate / 100) | number:2}}</td>
+                                <td>{{bank.prep}} {{bank.branches}}</td>
                                 <td><a ng-href="{{bank.link}}" target="_blank" class="btn btn-info" role="button">GO</a></td>
                             </tr>
                         </tbody>
@@ -206,12 +216,30 @@
                         <thead>
                             <tr>
                                 <td>
-                                    COMPANY
+                                    <a href="#" ng-click="sortType = 'name1'; sortReverse = !sortReverse">
+                                    NAME
+                                    <span ng-show="sortType == 'name1' && !sortReverse" class="fa fa-caret-down"></span>
+                                    <span ng-show="sortType == 'name1' && sortReverse" class="fa fa-caret-up"></span>
                                 </td>
                                 <td>CELL PHONE PLAN</td>
-                                <td>MINUTES</td>
-                                <td>TEXT MESSAGES</td>
-                                <td>DATA</td>
+                                <td>
+                                    <a href="#" ng-click="sortType = 'callRank'; sortReverse = !sortReverse">
+                                    MINUTES
+                                    <span ng-show="sortType == 'callRank' && !sortReverse" class="fa fa-caret-down"></span>
+                                    <span ng-show="sortType == 'callRank' && sortReverse" class="fa fa-caret-up"></span>
+                                </td>
+                                <td>
+                                    <a href="#" ng-click="sortType = 'textRank'; sortReverse = !sortReverse">
+                                    TEXTS
+                                    <span ng-show="sortType == 'textRank' && !sortReverse" class="fa fa-caret-down"></span>
+                                    <span ng-show="sortType == 'textRank' && sortReverse" class="fa fa-caret-up"></span>
+                                </td>
+                                <td>
+                                    <a href="#" ng-click="sortType = 'data'; sortReverse = !sortReverse">
+                                    DATA
+                                    <span ng-show="sortType == 'data' && !sortReverse" class="fa fa-caret-down"></span>
+                                    <span ng-show="sortType == 'data' && sortReverse" class="fa fa-caret-up"></span>
+                                </td>
                                 <td>AFFORDABILITY</td>
                                 <td>BONUSES</td>
                                 <td></td>
