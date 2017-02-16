@@ -31,6 +31,44 @@ h2 {
     text-align: center;
 }
 
+h4 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.greybox {
+    background-color: #DCDCDD;
+    overflow: auto;
+}
+
+.greybox:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.transbox {
+    margin: 40px;
+    padding-left: 10%;
+}
+
+.transbox p {
+
+}
+
+.transbox h4 {
+    padding-top: 5%;
+}
+
+.char-image {
+    padding-right: 30%;
+    float: right;
+}
+
+.spencer {
+    margin-top: 20px;
+}
+
 .control-label {
     font-weight: normal;
     color: #34C15F;

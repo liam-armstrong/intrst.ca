@@ -104,7 +104,7 @@
 <div w3-include-html="header.html"></div>
 
 <body>
-    <div class="container" ng-app="comparison" ng-switch="savingsActive">
+    <div class="container" ng-app="comparison">
         <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-10">
@@ -117,61 +117,115 @@
                     <li ng-class="{'active' : ccardActive}"><a href="#" ng-click="savingActive=false;ccardActive=true;cellActive=false">CREDIT CARDS</a></li>
                 </ul>
 
-                <div class="savings" ng-controller="savingController" ng-show="savingActive" ng-hide="ccardActive || cellActive">
-                    <form class="form-horizontal" role="form">
-                        <div class="input-group">
-                            <label for="calculator" class="col-md-9 control-label">How much money are you planning to save?</label>
-                            <div class="col-md-3">
-                                <input type="number" class="form-control" id="calculator" placeholder="CALCULATE" ng-model="calcInput" ng-min="0" ng-max="1000000000000">
+                <div class="savings" ng-controller="savingController">
+                    <div class="savChars" ng-show=savingActive ng-hide="savingChartActive || cellActive || ccardActive">
+                        <h4>What do <span style="color: #34C15F">you</span> do with your <span style="color: #34C15F">money</span>?</h4>
+                        <div class="greybox" ng-click="savingChartActive=true;savingActive=false;sortType='rate';sortReverse=!sortReverse">
+                            <div class="col-md-5 transbox">
+                                <h4>Sunny the Saver</h4>
+                                <br>
+                                <p>
+                                    Sunny is passionate about saving money. At a young age, Sunny began saving for crucial things such as future tuition.
+                                </p>
+                            </div>
+                            <div class="col-md-5 imagebox">
+                              <img src="assets/images/Compare/Sunny-11.png" class="img-responsive char-image">
                             </div>
                         </div>
-                    </form>
+                        <br>
+                        <div class="greybox" ng-click="savingChartActive=true;savingActive=false;sortType='atmRank'">
+                            <div class="col-md-5 transbox">
+                                <h4>Spencer the Spender</h4>
+                                <br>
+                                <p>
+                                    Spencer is prone to shopping, withdrawing money from her bank account is a daily routine.
+                                </p>
+                            </div>
+                            <div class="col-md-5 imagebox">
+                              <img src="assets/images/Compare/Spencer-12.png" class="img-responsive char-image spencer">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="greybox" ng-click="savingChartActive=true;savingActive=false;sortType='branches';sortReverse=!sortReverse">
+                            <div class="col-md-5 transbox">
+                                <h4>Robert the Roamer </h4>
+                                <br>
+                                <p>
+                                    Robert wants a popular financial provider, that gives him access to his bank account wherever he goes.
+                                </p>
+                            </div>
+                            <div class="col-md-5 imagebox">
+                              <img src="assets/images/Compare/Robert-13.png" class="img-responsive char-image">
+                            </div>
+                        </div>
+                    </div>
 
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <td>
-                                    <a href="#" ng-click="sortType = 'product'; sortReverse = !sortReverse">
-                                    PRODUCT
-                                    <span ng-show="sortType == 'product' && !sortReverse" class="fa fa-caret-down"></span>
-                                    <span ng-show="sortType == 'product' && sortReverse" class="fa fa-caret-up"></span>
-                                </td>
-                                <td>
-                                    <a href="#" ng-click="sortType = 'rate'; sortReverse = !sortReverse">
-                                    INTEREST RATE
-                                    <span ng-show="sortType == 'rate' && !sortReverse" class="fa fa-caret-down"></span>
-                                    <span ng-show="sortType == 'rate' && sortReverse" class="fa fa-caret-up"></span>
-                                </td>
-                                <td>AGE</td>
-                                <td>INTERAC E-TRANSFERS</td>
-                                <td>ATM FEES</td>
-                                <td>
-                                    <a href="#" ng-click="sortType = 'rate'; sortReverse = !sortReverse">
-                                    RETURN ON ${{calcInput || 1000 | number:2}}
-                                    <span ng-show="sortType == 'rate' && !sortReverse" class="fa fa-caret-down"></span>
-                                    <span ng-show="sortType == 'rate' && sortReverse" class="fa fa-caret-up"></span>
-                                </td>
-                                <td></td>
-                            </tr>
-                        </thead>
+                    <div class="savingChart" ng-show="savingChartActive" ng-hide="savingActive|| ccardActive || cellActive">
+                        <form class="form-horizontal" role="form">
+                            <div class="input-group">
+                                <label for="calculator" class="col-md-9 control-label">How much money are you planning to save?</label>
+                                <div class="col-md-3">
+                                    <input type="number" class="form-control" id="calculator" placeholder="CALCULATE" ng-model="calcInput" ng-min="0" ng-max="1000000000000">
+                                </div>
+                            </div>
+                        </form>
 
-                        <tbody class="table-body">
-                            <tr ng-repeat="bank in banks | orderBy:sortType:sortReverse">
-                                <td>
-                                    <a ng-href="{{bank.link}}" target="_blank"><img ng-src="{{bank.imgsrc}}" class="table-body-logo"></a>
-                                    <br>{{bank.name1}}
-                                    <br>{{bank.name2}}</td>
-                                <td>{{bank.rate}}%</td>
-                                <td>{{bank.requirement}}</td>
-                                <td>{{bank.eTransfer}}
-                                    <br> {{bank.eTrans}}</td>
-                                <td>{{bank.nonBankFees}}
-                                    <br> {{bank.nonBankTrans}}</td>
-                                <td>${{calcInput ? calcInput + calcInput * (bank.rate / 100) : 1000 + 1000 * (bank.rate / 100) | number:2}}</td>
-                                <td><a ng-href="{{bank.link}}" target="_blank" class="btn btn-info" role="button">GO</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <td>
+                                        <a href="#" ng-click="sortType = 'product'; sortReverse = !sortReverse">
+                                        PRODUCT
+                                        <span ng-show="sortType == 'product' && !sortReverse" class="fa fa-caret-down"></span>
+                                        <span ng-show="sortType == 'product' && sortReverse" class="fa fa-caret-up"></span>
+                                    </td>
+                                    <td>
+                                        <a href="#" ng-click="sortType = 'rate'; sortReverse = !sortReverse">
+                                        INTEREST RATE
+                                        <span ng-show="sortType == 'rate' && !sortReverse" class="fa fa-caret-down"></span>
+                                        <span ng-show="sortType == 'rate' && sortReverse" class="fa fa-caret-up"></span>
+                                    </td>
+                                    <td>INTERAC E-TRANSFERS</td>
+                                    <td>
+                                        <a href="#" ng-click="sortType = 'atmRank'; sortReverse = !sortReverse">
+                                        ATM FEES
+                                        <span ng-show="sortType == 'atmRank' && !sortReverse" class="fa fa-caret-down"></span>
+                                        <span ng-show="sortType == 'atmRank' && sortReverse" class="fa fa-caret-up"></span>
+                                        </td>
+                                    <td>
+                                        <a href="#" ng-click="sortType = 'rate'; sortReverse = !sortReverse">
+                                        RETURN ON ${{calcInput || 1000 | number:2}}
+                                        <span ng-show="sortType == 'rate' && !sortReverse" class="fa fa-caret-down"></span>
+                                        <span ng-show="sortType == 'rate' && sortReverse" class="fa fa-caret-up"></span>
+                                    </td>
+                                    <td>
+                                        <a href="#" ng-click="sortType = 'branches'; sortReverse = !sortReverse">
+                                        BRANCHES
+                                        <span ng-show="sortType == 'branches' && !sortReverse" class="fa fa-caret-down"></span>
+                                        <span ng-show="sortType == 'branches' && sortReverse" class="fa fa-caret-up"></span>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                            </thead>
+
+                            <tbody class="table-body">
+                                <tr ng-repeat="bank in banks | orderBy:sortType:sortReverse">
+                                    <td>
+                                        <a ng-href="{{bank.link}}" target="_blank"><img ng-src="{{bank.imgsrc}}" class="table-body-logo"></a>
+                                        <br>{{bank.name1}}
+                                        <br>{{bank.name2}}</td>
+                                    <td>{{bank.rate}}%</td>
+                                    <td>{{bank.eTransfer}}
+                                        <br> {{bank.eTrans}}</td>
+                                    <td>{{bank.nonBankFees}}
+                                        <br> {{bank.nonBankTrans}}</td>
+                                    <td>${{calcInput ? calcInput + calcInput * (bank.rate / 100) : 1000 + 1000 * (bank.rate / 100) | number:2}}</td>
+                                    <td>{{bank.prep}} {{bank.branches}}</td>
+                                    <td><a ng-href="{{bank.link}}" target="_blank" class="btn btn-info" role="button">GO</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
 
                 <div class="chequings" ng-controller="chequingController" ng-show="ccardActive" ng-hide="savingActive || cellActive">
@@ -201,39 +255,99 @@
                     </table>
                 </div>
 
-                <div class="cellphones" ng-controller="cellController" ng-show="cellActive" ng-hide="savingActive || ccardActive">
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <td>
-                                    COMPANY
-                                </td>
-                                <td>CELL PHONE PLAN</td>
-                                <td>MINUTES</td>
-                                <td>TEXT MESSAGES</td>
-                                <td>DATA</td>
-                                <td>AFFORDABILITY</td>
-                                <td>BONUSES</td>
-                                <td></td>
-                            </tr>
-                        </thead>
+                <div class="cell" ng-controller="cellController">
+                  <div class="cellChars" ng-show=cellActive ng-hide="cellChartActive || savingActive || ccardActive">
+                      <h4>What do <span style="color: #34C15F">you</span> do with your <span style="color: #34C15F">money</span>?</h4>
+                      <div class="greybox">
+                          <div class="col-md-5 transbox" ng-click="cellChartActive=true;cellActive=false;sortType='data';sortReverse=!sortReverse">
+                              <h4>David the Data User</h4>
+                              <br>
+                              <p>
+                                  David is constantly connected to his peers through social media. David needs to find a data plan that can satisfy his need to be online.
+                              </p>
+                          </div>
+                          <div class="col-md-5 imagebox">
+                            <img src="assets/images/Compare/David-14.png" class="img-responsive char-image">
+                          </div>
+                      </div>
+                      <br>
+                      <div class="greybox">
+                          <div class="col-md-5 transbox" ng-click="cellChartActive=true;cellActive=false;sortType='callRank';sortReverse=!sortReverse">
+                              <h4>Caitlyn the Caller</h4>
+                              <br>
+                              <p>
+                                  Caitlyn loves calling her friends and family. Caitlyn has to find a way to get updates from her social circle while still having enough minutes to contact her family.
+                              </p>
+                          </div>
+                          <div class="col-md-5 imagebox">
+                            <img src="assets/images/Compare/Caitlyn-15.png" class="img-responsive char-image">
+                          </div>
+                      </div>
+                      <br>
+                      <div class="greybox">
+                          <div class="col-md-5 transbox" ng-click="cellChartActive=true;cellActive=false;sortType='textRank';sortReverse=!sortReverse">
+                              <h4>Talia the Texter</h4>
+                              <br>
+                              <p>
+                                  Talia is very uncomfortable making calls, but can text for hours. Talia is on the lookout for a great texting phone plan.
+                              </p>
+                          </div>
+                          <div class="col-md-5 imagebox">
+                            <img src="assets/images/Compare/Talia-16.png" class="img-responsive char-image">
+                          </div>
+                      </div>
+                    </div>
+                    <div class="cellChart" ng-show="cellChartActive" ng-hide="cellActive || savingActive || ccardActive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <td>
+                                        <a href="#" ng-click="sortType = 'name1'; sortReverse = !sortReverse">
+                                        NAME
+                                        <span ng-show="sortType == 'name1' && !sortReverse" class="fa fa-caret-down"></span>
+                                        <span ng-show="sortType == 'name1' && sortReverse" class="fa fa-caret-up"></span>
+                                    </td>
+                                    <td>CELL PHONE PLAN</td>
+                                    <td>
+                                        <a href="#" ng-click="sortType = 'callRank'; sortReverse = !sortReverse">
+                                        MINUTES
+                                        <span ng-show="sortType == 'callRank' && !sortReverse" class="fa fa-caret-down"></span>
+                                        <span ng-show="sortType == 'callRank' && sortReverse" class="fa fa-caret-up"></span>
+                                    </td>
+                                    <td>
+                                        <a href="#" ng-click="sortType = 'textRank'; sortReverse = !sortReverse">
+                                        TEXTS
+                                        <span ng-show="sortType == 'textRank' && !sortReverse" class="fa fa-caret-down"></span>
+                                        <span ng-show="sortType == 'textRank' && sortReverse" class="fa fa-caret-up"></span>
+                                    </td>
+                                    <td>
+                                        <a href="#" ng-click="sortType = 'data'; sortReverse = !sortReverse">
+                                        DATA
+                                        <span ng-show="sortType == 'data' && !sortReverse" class="fa fa-caret-down"></span>
+                                        <span ng-show="sortType == 'data' && sortReverse" class="fa fa-caret-up"></span>
+                                    </td>
+                                    <td>AFFORDABILITY</td>
+                                    <td>BONUSES</td>
+                                    <td></td>
+                                </tr>
+                            </thead>
 
-                        <tbody class="table-body">
-                            <tr ng-repeat="company in companies | orderBy:sortType:sortReverse">
-                                <td><a ng-href="{{company.link}}" target="_blank"><img ng-src="{{company.imgsrc}}" class="table-body-logo cell-logo"></a>
-                                    <br>{{company.name1}}
-                                    <br>{{company.name2}}</td>
-                                <td>{{company.plan}}</td>
-                                <td>{{company.minutes}}</td>
-                                <td>{{company.texts}}</td>
-                                <td>{{company.data}} GB</td>
-                                <td>${{company.price}} per <br> month</td>
-                                <td>{{company.bonuses}}</td>
-                                <td><a ng-href="{{company.link}}" target="_blank" class="btn btn-info" role="button">GO</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                            <tbody class="table-body">
+                                <tr ng-repeat="company in companies | orderBy:sortType:sortReverse">
+                                    <td><a ng-href="{{company.link}}" target="_blank"><img ng-src="{{company.imgsrc}}" class="table-body-logo cell-logo"></a>
+                                        <br>{{company.name1}}
+                                        <br>{{company.name2}}</td>
+                                    <td>{{company.plan}}</td>
+                                    <td>{{company.minutes}}</td>
+                                    <td>{{company.texts}}</td>
+                                    <td>{{company.data}} GB</td>
+                                    <td>${{company.price}} per <br> month</td>
+                                    <td>{{company.bonuses}}</td>
+                                    <td><a ng-href="{{company.link}}" target="_blank" class="btn btn-info" role="button">GO</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
             </div>
         </div>
     </div>
