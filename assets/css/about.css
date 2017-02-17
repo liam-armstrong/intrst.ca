@@ -70,25 +70,25 @@ a.button:hover {
     }
 }
 
-@media screen and (max-width: 393px){
+@media screen and (max-width: 423px){
    .gmPhoto{
-       height: 66vw;
+       height: 60vw;
    } 
 }
 
-@media screen and (min-width: 394px){
+@media screen and (min-width: 424px){
     .gmPhoto{
         height: 250px;
     }
 }
 
-@media screen and (max-width: 399px){
+@media screen and (max-width: 494px){
    .Adphoto{
-       height: 50vw;
+       height: 35vw;
    } 
 }
 
-@media screen and (min-width: 400px){
+@media screen and (min-width: 495px){
     .Adphoto{
         height: 170px;
     }
