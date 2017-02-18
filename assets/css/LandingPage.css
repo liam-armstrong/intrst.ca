@@ -128,3 +128,23 @@ a.button:hover {
     color: rgba(255, 255, 255, 0.85);
     box-shadow: RGBA(52, 193, 95, 0.7) 0 0px 0px 40px inset;
 }
+
+body.modal-open  #wrap{
+    -webkit-filter: blur(7px);
+    -moz-filter: blur(15px);
+    -o-filter: blur(15px);
+    -ms-filter: blur(15px);
+    filter: blur(15px);
+}
+  
+.modal-backdrop {background: #f7f7f7;}
+
+.close {
+    font-size: 50px;
+    display:block;
+}
+
+.popup{
+    background-color: rgba(20, 20, 20, 0.70);
+    color: white;
+}
