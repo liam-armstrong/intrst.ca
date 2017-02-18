@@ -43,18 +43,13 @@ h4 {
 }
 
 .greybox:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+  background-color: #E5E5E5;
   cursor: pointer;
 }
 
 .transbox {
     margin: 40px;
     padding-left: 10%;
-}
-
-.transbox p {
-
 }
 
 .transbox h4 {
@@ -68,6 +63,10 @@ h4 {
 
 .spencer {
     margin-top: 20px;
+}
+
+.back-button:hover {
+    text-decoration: none;
 }
 
 .control-label {
@@ -143,6 +142,27 @@ thead > tr > td{
       height: 30px;
       font-size: 14px;
   }
+  .sunny {
+  }
+  .transbox {
+      width: 400px;
+      margin-top: 10px;
+      margin-left: 10px;
+      padding-left: 10px;
+      margin-right: 0;
+      padding-right: 0;
+      display: inline-block;
+  }
+  .imagebox {
+      margin-top: 0;
+      margin-bottom: 20px;  
+      display:inline-block;
+      padding-left: 0;
+      margin-left: 0;
+      vertical-align: middle;
+      width: 200px;
+      height: 200px;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -161,6 +181,13 @@ thead > tr > td{
         height: 30px;
         font-size: 14px;
     }
+    .transbox {
+        margin-top: 10px;
+        width: 60%;
+    }
+    .imagebox {
+        margin-top: 0;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -171,11 +198,25 @@ thead > tr > td{
         width: 72%;
         font-size: 12px;
     }
+    .transbox {
+        margin-top: 10px;
+        width: 60%;
+    }
+    .imagebox {
+        margin-top: 0;
+    }
 }
 
 @media only screen and (max-width: 700px) {
     body {
         font-size: 10px;
+    }
+    .transbox {
+        margin-top: 10px;
+        width: 60%;
+    }
+    .imagebox {
+        margin-top: 0;
     }
 }
 
@@ -187,6 +228,21 @@ thead > tr > td{
         width: 250px !important;
         height: 30px;
         font-size: 10px;
+    }
+    .transbox {
+        margin-top: 10px;
+        width: 50%;
+        padding-left: 1%;
+    }
+    .imagebox {
+        margin-top: 0;
+        margin-left: 25px;
+        margin-bottom: 20px;
+        width: 140px;
+        height: 140px;
+    }
+    h4 {
+        font-size: 12px;
     }
 }
 
@@ -202,6 +258,22 @@ thead > tr > td{
         width: 220px !important;
         height: 28px;
         font-size: 10px;
+    }
+    .greybox {
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .transbox {
+        margin-top: 10px;
+        margin-left: 10px;
+        padding-left: 10px;
+    }
+    .imagebox {
+        margin-top: 0;
+        margin-bottom: 20px;
+        margin-left: 0;
+        width: 100px;
+        height: 100px;
     }
 }
 
