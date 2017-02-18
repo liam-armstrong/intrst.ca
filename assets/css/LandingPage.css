@@ -129,6 +129,8 @@ a.button:hover {
     box-shadow: RGBA(52, 193, 95, 0.7) 0 0px 0px 40px inset;
 }
 
+/* popup */
+
 body.modal-open  #wrap{
     -webkit-filter: blur(7px);
     -moz-filter: blur(15px);
@@ -147,4 +149,55 @@ body.modal-open  #wrap{
 .popup{
     background-color: rgba(20, 20, 20, 0.70);
     color: white;
+}
+
+.option1{
+    text-align: center;
+
+}
+
+#sel1{
+    text-align: center;
+
+}
+
+@media screen and (min-width: 992px){
+    .row2sel{
+        padding-top: 7vh;
+    }
+}
+
+button {
+    -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    -moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+}
+
+@media (max-device-width: 1350px) {
+    .heading {
+        font-size: 40px !important;
+    }
+    .subheading {
+        font-size: 20px !important;
+    }
+}
+
+button.button {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    margin: 20px auto;
+    padding: 10px 30px;
+    color: RGBA(0, 0, 0, 0.6);
+    box-shadow: RGBA(52, 193, 95, 0.4) 0 0px 0px 2px inset;
+    font-size: 24px;
+    background-color: white;
+}
+
+button.button:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: RGBA(52, 193, 95, 0.7) 0 0px 0px 40px inset;
 }
