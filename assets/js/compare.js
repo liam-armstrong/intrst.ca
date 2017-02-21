@@ -59,49 +59,27 @@ app.controller("savingController", ["$scope", function($scope) {
     ];
 }]);
 
-app.controller("chequingController", ["$scope", function($scope) {
-  $scope.banks = [
-      //TD
-      { imgsrc: "assets/images/TD.png", name1: "Youth Savings", name2: "Account", requirement: "12+",
-          bankTrans: "25 free", nonBankFees: "$2.00 per",
-          nonBankTrans: "transaction", numATMS: 73,
-          link: "http://www.tdcanadatrust.com/products-services/banking/accounts/chequing-accounts/everyday.jsp"},
-      //RBC
-      { imgsrc: "assets/images/RBC.png", name1: "Leo's Young", name2: "Savers Account", requirement: "13+",
-          bankTrans: "25 free", nonBankFees: "$1.50 per",
-          nonBankTrans: "transaction", numATMS: 49,
-          link: "http://www.rbcroyalbank.com/products/deposits/student-banking.html"},
-      //CIBC
-      { imgsrc: "assets/images/CIBC.png", name1: "Advantage", name2: "for Youth", requirement: "18+",
-          bankTrans: "None", nonBankFees: "$1.50 per",
-          nonBankTrans: "transaction", numATMS: "61 + PC Financial ATMs",
-          link: "https://www.cibc.com/en/personal-banking/ways-to-bank/ways-to-pay/advantage-debit-card.html"},
-      //Scotiabank
-      { imgsrc: "assets/images/Scotiabank.png", name1: "Getting There", name2: "", requirement: "18+",
-          bankTrans: "None", nonBankFees: "$1.50 per",
-          nonBankTrans: "transaction", numATMS: "37",
-          link: "http://www.scotiabank.com/ca/en/0,,60,00.html"},
-      //National Bank
-      { imgsrc: "assets/images/NationalBank.png", name1: "Strategist Account", name2: "", requirement: "7-12",
-          bankTrans: "Unlimited", nonBankFees: "N/A",
-          nonBankTrans: "", numATMS: 15,
-          link: "https://www.nbc.ca/en/personal/banking/accounts-and-packages/youth-chequing-account/coolcash.html"},
-      //PC Financial
-      { imgsrc: "assets/images/PCFinancial.png", name1: "Interest Plus", name2: "Savings Account", requirement: "18+",
-          bankTrans: "Unlimited", nonBankFees: "$1.50 per",
-          nonBankTrans: "transaction", numATMS: "14 + CIBC ATMs",
-          link: "http://www.banking.pcfinancial.ca/mkt/bankaccounts/nofeebankaccount-en.html"},
-      //Tangerine
-      { imgsrc: "assets/images/Tangerine.png", name1: "Children's", name2: "Savings Account", requirement: "16+",
-          bankTrans: "Unlimited", nonBankFees: "$1.00 per",
-          nonBankTrans: "transaction", numATMS: "Scotiabank ATMS",
-          link: "https://www.tangerine.ca/en/spending/chequing-account/index.html"},
-      //ATB
-      { imgsrc: "assets/images/ATB.png", name1: "Generation Account", requirement: "University Students",
-          bankTrans: "Unlimited", nonBankFees: "$1.50 per",
-          nonBankTrans: "transaction", numATMS: 0,
-          link: "https://get.atb.com/Personal/Bank/Student-Accounts/Students-First-Account/p/2307"}
-  ];
+app.controller("ccardController", ["$scope", function($scope) {
+    $scope.banks = [
+      { imgsrc: "assets/images/compare/Scotiabank.png", name: "Scotiabank Scene", fee: 0, limit: 500, features: "4000 bonus signup bonus, Sportschek discount, 1 scene point / $1 spent",
+          worth: 500, link: "http://www.scotiabank.com/ca/en/0,,91,00.html" },
+      { imgsrc: "assets/images/compare/TD.png", name: "TD Bank Green", fee: 0, limit: 500, features: "Basic Insurance provided (carrier insurance)",
+          worth: 0, link: "https://www.tdcanadatrust.com/products-services/banking/credit-cards/view-all-cards/green-card.jsp" },
+      { imgsrc: "assets/images/compare/RBC.png", name: "RBC Cashback Mastercard", fee: 0, limit: 500, features: "2% cashback on groceries, 1% on every dollar spent",
+          worth: 0, link: "http://www.rbcroyalbank.com/credit-cards/cash-back-credit-cards/cash-back-mastercard/" },
+      { imgsrc: "assets/images/compare/BMO.png", name: "BMO SPC Cashback", fee: 0, limit: 500, features: "SPC Card Benefits, 1% cashback on purchases, BONUS - $60 first year",
+          worth: 0, link: "https://www.bmo.com/main/personal/credit-cards/spc-cashback-student-credit-cards#"},
+      { imgsrc: "assets/images/compare/CIBC.png", name: "Tims Double Double Visa Card", fee: 0, limit: 500, features: "1% tims ($20 signing bonus)", worth: "",
+          link: "https://www.cibc.com/en/personal-banking/credit-cards/retail-rewards-cards/tim-hortons-rewards-card.html"},
+      { imgsrc: "assets/images/compare/CIBC.png", name: "Classic Visa", fee: 0, limit: 500, features: "100,000$ basic insurance", worth: 0,
+          link: "https://www.cibc.com/en/personal-banking/credit-cards/everyday-cards/classic-visa.html"},
+      { imgsrc: "assets/images/compare/CIBC.png", name: "Dividend Visa", fee: 0, limit: 500, features: "1% everything / 2% groceries", worth: "",
+          link: "https://www.cibc.com/ca/visa/dividend-card.html"},
+      { imgsrc: "assets/images/compare/CIBC.png", name: "Telus Rewards Visa", fee: 0, limit: 500, features: "1 Telus point / $1 spent", worth: 500 },
+      { imgsrc: "assets/images/compare/Tangerine.png", name: "Tangerine", fee: 0, limit: "TBD", features: "2% on select purchases, 1% on everything else", worth: "" },
+      { imgsrc: "assets/images/compare/mbna.png", name: "MBNA ", fee: 0, limit: 500, features: "1 MBNA point / $1 spent", worth: 500},
+      { imgsrc: "assets/images/compare/NationalBank.png", name: "National Bank ", fee: 0, limit: "500+", features: "1% cash back for instore purchases, 1.5% online", worth: 0 }
+    ];
 }]);
 
 app.controller("cellController", ["$scope", function($scope) {
