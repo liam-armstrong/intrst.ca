@@ -130,7 +130,7 @@
                                 </p>
                             </div>
                             <div class="col-md-5 imagebox">
-                                <img src="assets/images/Compare/Sunny-11.png" class="img-responsive char-image">
+                                <img src="assets/images/compare/Sunny-11.png" class="img-responsive char-image">
                             </div>
                         </div>
                         <br>
@@ -143,7 +143,7 @@
                                 </p>
                             </div>
                             <div class="col-md-5 imagebox">
-                                <img src="assets/images/Compare/Spencer-12.png" class="img-responsive char-image spencer">
+                                <img src="assets/images/compare/Spencer-12.png" class="img-responsive char-image spencer">
                             </div>
                         </div>
                         <br>
@@ -156,7 +156,7 @@
                                 </p>
                             </div>
                             <div class="col-md-5 imagebox">
-                                <img src="assets/images/Compare/Robert-13.png" class="img-responsive char-image">
+                                <img src="assets/images/compare/Robert-13.png" class="img-responsive char-image">
                             </div>
                         </div>
                     </div>
@@ -229,33 +229,6 @@
                     </div>
                 </div>
 
-                <div class="chequings" ng-controller="chequingController" ng-show="ccardActive" ng-hide="savingActive || cellActive">
-
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td style="font-size:20px">COMING SOON</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                        </thead>
-
-                        <tbody class="table-body">
-                            <tr ng-repeat="bank in banks">
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
                 <div class="cell" ng-controller="cellController">
                     <div class="cellChars" ng-show="cellActive" ng-hide="cellChartActive || savingActive || ccardActive">
                         <h4>What do <span style="color: #34C15F">you</span> do with your <span style="color: #34C15F">money</span>?</h4>
@@ -268,7 +241,7 @@
                                 </p>
                             </div>
                             <div class="col-md-5 imagebox">
-                                <img src="assets/images/Compare/David-14.png" class="img-responsive char-image">
+                                <img src="assets/images/compare/David-14.png" class="img-responsive char-image">
                             </div>
                         </div>
                         <br>
@@ -281,7 +254,7 @@
                                 </p>
                             </div>
                             <div class="col-md-5 imagebox">
-                                <img src="assets/images/Compare/Caitlyn-15.png" class="img-responsive char-image">
+                                <img src="assets/images/compare/Caitlyn-15.png" class="img-responsive char-image">
                             </div>
                         </div>
                         <br>
@@ -294,7 +267,7 @@
                                 </p>
                             </div>
                             <div class="col-md-5 imagebox">
-                                <img src="assets/images/Compare/Talia-16.png" class="img-responsive char-image">
+                                <img src="assets/images/compare/Talia-16.png" class="img-responsive char-image">
                             </div>
                         </div>
                     </div>
@@ -308,7 +281,7 @@
                                         <span ng-show="sortType == 'name1' && !sortReverse" class="fa fa-caret-down"></span>
                                         <span ng-show="sortType == 'name1' && sortReverse" class="fa fa-caret-up"></span>
                                     </td>
-                                    <td>CELL PHONE PLAN</td>
+                                    <td>PLAN</td>
                                     <td>
                                         <a href="#" ng-click="sortType = 'callRank'; sortReverse = !sortReverse">
                                             MINUTES </a>
@@ -347,7 +320,43 @@
                                     <td>{{company.bonuses}}</td>
                                     <td><a ng-href="{{company.link}}" target="_blank" class="btn btn-info" role="button">GO</a></td>
                                 </tr>
-                                </tbody>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="ccardChart" ng-show="ccardActive" ng-hide="cellActive || savingActive || cellChartActive" ng-controller="ccardController">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <td>
+                                          NAME
+                                    </td>
+                                    <td>FEE</td>
+                                    <td>
+                                        LIMIT
+                                    </td>
+                                    <td>
+                                        FEATURES
+                                    </td>
+                                    <td>
+                                        WORTH
+                                    </td>
+                                    <td></td>
+                                </tr>
+                            </thead>
+
+                            <tbody class="table-body">
+                                <tr ng-repeat="bank in banks">
+                                    <td><a ng-href="{{bank.link}}" target="_blank"><img ng-src="{{bank.imgsrc}}" class="table-body-logo cell-logo"></a>
+                                      <br>{{bank.name}}
+                                    </td>
+                                    <td>${{bank.fee}}</td>
+                                    <td>${{bank.limit}}</td>
+                                    <td>{{bank.features}}</td>
+                                    <td>{{bank.worth}}</td>
+                                    <td><a ng-href="{{bank.link}}" target="_blank" class="btn btn-info" role="button">GO</a></td>
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
                 </div>
