@@ -109,17 +109,19 @@
         <div class="row" style="margin-bottom: 5vw;">
             <div class="col-md-1"></div>
             <div class="col-md-10">
+                <br><br><br>
                 <h2>PRODUCT RANKING</h2>
                 <br>
 
                 <ul class="nav nav-tabs" ng-init="savingActive=true">
-                    <li ng-class="{'active' : savingActive}"><a href="#" ng-click="savingActive=true;ccardActive=false;cellActive=false">SAVINGS</a></li>
-                    <li ng-class="{'active' : cellActive}"><a href="#" ng-click="savingActive=false;ccardActive=false;cellActive=true">CELL PHONES</a></li>
-                    <li ng-class="{'active' : ccardActive}"><a href="#" ng-click="savingActive=false;ccardActive=true;cellActive=false">CREDIT CARDS</a></li>
+                    <li ng-class="{'active' : savingActive}"><a href="#" ng-click="savingActive=true;ccardActive=false;cellActive=false;foodActive=false">SAVINGS</a></li>
+                    <li ng-class="{'active' : cellActive}"><a href="#" ng-click="savingActive=false;ccardActive=false;cellActive=true;foodActive=false">CELL PHONES</a></li>
+                    <li ng-class="{'active' : ccardActive}"><a href="#" ng-click="savingActive=false;ccardActive=true;cellActive=false;foodActive=false">CREDIT CARDS</a></li>
+                    <li ng-class="{'active' : foodActive}"><a href="#" ng-click="savingActive=false;ccardActive=false;cellActive=false;foodActive=true">FOOD DELIVERY</a></li>
                 </ul>
 
                 <div class="savings" ng-controller="savingController">
-                    <div class="savChars" ng-show="savingActive" ng-hide="savingChartActive || cellActive || ccardActive">
+                    <div class="savChars" ng-show="savingActive" ng-hide="savingChartActive || cellActive || ccardActive || foodActive">
                         <h4>What do <span style="color: #34C15F">you</span> do with your <span style="color: #34C15F">money</span>?</h4>
                         <div class="greybox" ng-click="savingChartActive=true;savingActive=false;sortType='rate';sortReverse=!sortReverse">
                             <div class="col-md-5 transbox sunny">
@@ -161,7 +163,7 @@
                         </div>
                     </div>
 
-                    <div class="savingChart" ng-show="savingChartActive" ng-hide="savingActive|| ccardActive || cellActive">
+                    <div class="savingChart" ng-show="savingChartActive" ng-hide="savingActive|| ccardActive || cellActive || foodActive">
                         <form class="form-horizontal" role="form">
                             <div class="input-group">
                                 <label for="calculator" class="col-md-9 control-label">How much money are you planning to save?</label>
@@ -230,7 +232,7 @@
                 </div>
 
                 <div class="cell" ng-controller="cellController">
-                    <div class="cellChars" ng-show="cellActive" ng-hide="cellChartActive || savingActive || ccardActive">
+                    <div class="cellChars" ng-show="cellActive" ng-hide="cellChartActive || savingActive || ccardActive || foodActive">
                         <h4>What do <span style="color: #34C15F">you</span> do with your <span style="color: #34C15F">money</span>?</h4>
                         <div class="greybox">
                             <div class="col-md-5 transbox" ng-click="cellChartActive=true;cellActive=false;sortType='data';sortReverse=!sortReverse">
@@ -271,7 +273,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="cellChart" ng-show="cellChartActive" ng-hide="cellActive || savingActive || ccardActive">
+                    <div class="cellChart" ng-show="cellChartActive" ng-hide="cellActive || savingActive || ccardActive || foodActive">
                         <table class="table table-striped">
                             <thead>
                                 <tr>
@@ -324,7 +326,7 @@
                         </table>
                     </div>
 
-                    <div class="ccardChart" ng-show="ccardActive" ng-hide="cellActive || savingActive || cellChartActive" ng-controller="ccardController">
+                    <div class="ccardChart" ng-show="ccardActive" ng-hide="cellActive || savingActive || cellChartActive || foodActive" ng-controller="ccardController">
                         <table class="table table-striped">
                             <thead>
                                 <tr>
@@ -355,6 +357,44 @@
                                     <td>{{bank.features}}</td>
                                     <td>{{bank.worth}}</td>
                                     <td><a ng-href="{{bank.link}}" target="_blank" class="btn btn-info" role="button">GO</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="foodChart" ng-show="foodActive" ng-hide="cellActive || savingActive || cellChartActive || ccardActive" ng-controller="foodController">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <td>
+                                          NAME
+                                    </td>
+                                    <td>ACCESS</td>
+                                    <td>
+                                        DELIVERY CHARGE
+                                    </td>
+                                    <td>
+                                        SPECIALIZED DRINKS
+                                    </td>
+                                    <td>
+                                        FOOD
+                                    </td>
+                                    <td>RANGE</td>
+                                    <td></td>
+                                </tr>
+                            </thead>
+
+                            <tbody class="table-body">
+                                <tr ng-repeat="company in companies">
+                                    <td>
+                                      {{company.name}}
+                                    </td>
+                                    <td>{{company.access}}</td>
+                                    <td>{{company.charge}}</td>
+                                    <td>{{company.drinks}}</td>
+                                    <td>{{company.food}}</td>
+                                    <td>{{company.range}}</td>
+                                    <td><a ng-href="{{company.link}}" target="_blank" class="btn btn-info" role="button">GO</a></td>
                                 </tr>
                             </tbody>
                         </table>

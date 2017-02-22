@@ -129,3 +129,14 @@ app.controller("cellController", ["$scope", function($scope) {
           link: "http://www.virginmobile.ca/en/plans/details.html?province=ON&geoResult=ON#!/postpaid/byop"}
   ];
 }]);
+
+app.controller("foodController", ["$scope", function($scope) {
+    $scope.companies = [
+      { name: "UberEats", access: "Mobile App and Website Available", charge: "$5.00", drinks: "Bubble tea, Juice and smoothies", food: "#NAME?", range: "Toronto, Mississauga, Edmonton, Ottawa", link: "https://www.ubereats.com", },
+      { name: "JustEat", access: "Mobile App and Website Available", charge: "Typically $3.00",  drinks: "N/A", food: "#NAME?", range: "Most Major Cities in Canada", link: "https://www.just-eat.ca", },
+      { name: "Foodora", access: "Mobile App and Website Available", charge: "$5.50 plus $2 per kilometer from pick-up point to destination",  drinks: "Bubble tea, Juices and Smoothies", food: "#NAME?", range: "Dupont to Lake Ontario, Keele to the DVP", link: "https://www.foodora.ca/", },
+      { name: "So Hungry", access: "Website Only", charge: "$0.00",  drinks: "N/A", food: "#NAME?", range: "Toronto", link: "http://www.sohungry.com/order-food.html", },
+      { name: "Feast Bank", access: "Mobile App and Website Available", charge: "N/A",  drinks: "N/A", food: "#NAME?", range: "Toronto", link: "https://www.eatfeast.com/guiding-principles", },
+      { name: "Door Dash", access: "Mobile app and website available", charge: "Between $3.99 and $4.99",  drinks: "Smoothies", food: "#NAME?", range: "Toronto, Vancouver, Etobicoke", link: "https://www.doordash.com/" }
+    ];
+}]);
