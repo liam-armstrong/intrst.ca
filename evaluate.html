@@ -407,8 +407,20 @@
                                     <td>{{company.access}}</td>
                                     <td>{{company.charge}}</td>
                                     <td>{{company.drinks}}</td>
-                                    <td>{{company.food}}</td>
-                                    <td>{{company.range}}</td>
+                                    <td>
+                                        <ul ng-repeat="food in company.food">
+                                          <li class="cell-list">
+                                              {{food}}
+                                          </li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul ng-repeat="range in company.range">
+                                          <li class="cell-list">
+                                              {{range}}
+                                          </li>
+                                        </ul>
+                                    </td>
                                     <td><a ng-href="{{company.link}}" target="_blank" class="btn btn-info" role="button">GO</a></td>
                                 </tr>
                             </tbody>
@@ -434,12 +446,24 @@
 
                             <tbody class="table-body">
                                 <tr ng-repeat="company in companies">
-                                    <td>
-                                      {{company.name}}
+                                    <td><a ng-href="{{company.link}}" target="_blank"><img ng-src="{{company.imgsrc}}" class="table-body-logo cell-logo"></a>
+                                      <br>{{company.name}}
                                     </td>
                                     <td>{{company.cost}}</td>
-                                    <td>{{company.accessibility}}</td>
-                                    <td>{{company.features}}</td>
+                                    <td>
+                                        <ul ng-repeat="access in company.accessibility">
+                                          <li class="cell-list">
+                                              {{access}}
+                                          </li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                      <ul ng-repeat="feature in company.features">
+                                        <li class="cell-list">
+                                            {{feature}}
+                                        </li>
+                                      </ul>
+                                    </td>
                                     <td><a ng-href="{{company.link}}" target="_blank" class="btn btn-info" role="button">GO</a></td>
                                 </tr>
                             </tbody>
