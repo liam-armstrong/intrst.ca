@@ -31,7 +31,7 @@ body {
 .nav-tabs {
     text-align: center;
 }
- 
+
 h2 {
     text-align: center;
 }
@@ -115,6 +115,10 @@ thead > tr > td{
     max-height: 25px;
 }
 
+.cell-list {
+    text-align: left;
+}
+
 .input-group {
     padding-top: 20px;
     padding-left: 10px;
@@ -131,6 +135,12 @@ thead > tr > td{
     border-radius: 5px;
     margin-right: 20px;
     line-height: 1em;
+}
+
+.cell-overflow {
+    height: 50px !important;
+    overflow: hidden !important;
+    overflow-y: scroll !important;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -208,6 +218,9 @@ thead > tr > td{
     }
     .imagebox {
         margin-top: 0;
+    }
+    .nav-tabs > li {
+        
     }
 }
 

@@ -109,17 +109,20 @@
         <div class="row" style="margin-bottom: 5vw;">
             <div class="col-md-1"></div>
             <div class="col-md-10">
+                <br><br><br>
                 <h2>PRODUCT RANKING</h2>
                 <br>
 
                 <ul class="nav nav-tabs" ng-init="savingActive=true">
-                    <li ng-class="{'active' : savingActive}"><a href="#" ng-click="savingActive=true;ccardActive=false;cellActive=false">SAVINGS</a></li>
-                    <li ng-class="{'active' : cellActive}"><a href="#" ng-click="savingActive=false;ccardActive=false;cellActive=true">CELL PHONES</a></li>
-                    <li ng-class="{'active' : ccardActive}"><a href="#" ng-click="savingActive=false;ccardActive=true;cellActive=false">CREDIT CARDS</a></li>
+                    <li ng-class="{'active' : savingActive}"><a href="#savings" ng-click="savingActive=true;ccardActive=false;cellActive=false;foodActive=false;tvactive=false">SAVINGS</a></li>
+                    <li ng-class="{'active' : cellActive}"><a href="#cellphones" ng-click="savingActive=false;ccardActive=false;cellActive=true;foodActive=false;tvactive=false">CELL PHONES</a></li>
+                    <li ng-class="{'active' : ccardActive}"><a href="#credit-cards" ng-click="savingActive=false;ccardActive=true;cellActive=false;foodActive=false;tvactive=false">CREDIT CARDS</a></li>
+                    <li ng-class="{'active' : foodActive}"><a href="#food-delivery" ng-click="savingActive=false;ccardActive=false;cellActive=false;foodActive=true;tvactive=false">FOOD DELIVERY</a></li>
+                    <li ng-class="{'active' : tvactive}"><a href="#tv-networks" ng-click="savingActive=false;ccardActive=false;cellActive=false;foodActive=false;tvactive=true;">TV NETWORKS</a></li>
                 </ul>
 
                 <div class="savings" ng-controller="savingController">
-                    <div class="savChars" ng-show="savingActive" ng-hide="savingChartActive || cellActive || ccardActive">
+                    <div class="savChars" ng-show="savingActive" ng-hide="savingChartActive || cellActive || ccardActive || foodActive || tvactive">
                         <h4>What do <span style="color: #34C15F">you</span> do with your <span style="color: #34C15F">money</span>?</h4>
                         <div class="greybox" ng-click="savingChartActive=true;savingActive=false;sortType='rate';sortReverse=!sortReverse">
                             <div class="col-md-5 transbox sunny">
@@ -161,7 +164,7 @@
                         </div>
                     </div>
 
-                    <div class="savingChart" ng-show="savingChartActive" ng-hide="savingActive|| ccardActive || cellActive">
+                    <div class="savingChart" ng-show="savingChartActive" ng-hide="savingActive|| ccardActive || cellActive || foodActive || tvactive">
                         <form class="form-horizontal" role="form">
                             <div class="input-group">
                                 <label for="calculator" class="col-md-9 control-label">How much money are you planning to save?</label>
@@ -186,7 +189,12 @@
                                         <span ng-show="sortType == 'rate' && !sortReverse" class="fa fa-caret-down"></span>
                                         <span ng-show="sortType == 'rate' && sortReverse" class="fa fa-caret-up"></span>
                                     </td>
-                                    <td>INTERAC E-TRANSFERS</td>
+                                    <td>
+                                        <a href="#" ng-click="sortType = 'transRank'; sortReverse = !sortReverse">
+                                            INTERAC E-TRANSFERS</a>
+                                        <span ng-show="sortType == 'transRank' && !sortReverse" class="fa fa-caret-down"></span>
+                                        <span ng-show="sortType == 'transRank' && sortReverse" class="fa fa-caret-up"></span>
+                                    </td>
                                     <td>
                                         <a href="#" ng-click="sortType = 'atmRank'; sortReverse = !sortReverse">
                                             ATM FEES </a>
@@ -230,10 +238,10 @@
                 </div>
 
                 <div class="cell" ng-controller="cellController">
-                    <div class="cellChars" ng-show="cellActive" ng-hide="cellChartActive || savingActive || ccardActive">
+                    <div class="cellChars" ng-show="cellActive" ng-hide="cellChartActive || savingActive || ccardActive || foodActive || tvactive">
                         <h4>What do <span style="color: #34C15F">you</span> do with your <span style="color: #34C15F">money</span>?</h4>
-                        <div class="greybox">
-                            <div class="col-md-5 transbox" ng-click="cellChartActive=true;cellActive=false;sortType='data';sortReverse=!sortReverse">
+                        <div class="greybox" ng-click="cellChartActive=true;cellActive=false;sortType='data';sortReverse=!sortReverse">
+                            <div class="col-md-5 transbox">
                                 <h4>David the Data User</h4>
                                 <br>
                                 <p>
@@ -245,8 +253,8 @@
                             </div>
                         </div>
                         <br>
-                        <div class="greybox">
-                            <div class="col-md-5 transbox" ng-click="cellChartActive=true;cellActive=false;sortType='callRank';sortReverse=!sortReverse">
+                        <div class="greybox" ng-click="cellChartActive=true;cellActive=false;sortType='callRank';sortReverse=!sortReverse">
+                            <div class="col-md-5 transbox">
                                 <h4>Caitlyn the Caller</h4>
                                 <br>
                                 <p>
@@ -258,8 +266,8 @@
                             </div>
                         </div>
                         <br>
-                        <div class="greybox">
-                            <div class="col-md-5 transbox" ng-click="cellChartActive=true;cellActive=false;sortType='textRank';sortReverse=!sortReverse">
+                        <div class="greybox" ng-click="cellChartActive=true;cellActive=false;sortType='textRank';sortReverse=!sortReverse">
+                            <div class="col-md-5 transbox">
                                 <h4>Talia the Texter</h4>
                                 <br>
                                 <p>
@@ -271,7 +279,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="cellChart" ng-show="cellChartActive" ng-hide="cellActive || savingActive || ccardActive">
+                    <div class="cellChart" ng-show="cellChartActive" ng-hide="cellActive || savingActive || ccardActive || foodActive || tvactive">
                         <table class="table table-striped">
                             <thead>
                                 <tr>
@@ -300,7 +308,12 @@
                                         <span ng-show="sortType == 'data' && !sortReverse" class="fa fa-caret-down"></span>
                                         <span ng-show="sortType == 'data' && sortReverse" class="fa fa-caret-up"></span>
                                     </td>
-                                    <td>AFFORDABILITY</td>
+                                    <td>
+                                        <a href="#" ng-click="sortType = 'price'; sortReverse = !sortReverse">
+                                            AFFORDABILITY</a>
+                                        <span ng-show="sortType == 'price' && !sortReverse" class="fa fa-caret-down"></span>
+                                        <span ng-show="sortType == 'price' && sortReverse" class="fa fa-caret-up"></span>
+                                    </td>
                                     <td>BONUSES</td>
                                     <td></td>
                                 </tr>
@@ -317,14 +330,20 @@
                                     <td>{{company.data}} GB</td>
                                     <td>${{company.price}} per
                                         <br> month</td>
-                                    <td>{{company.bonuses}}</td>
+                                    <td>
+                                        <ul ng-repeat="bonus in company.bonuses">
+                                          <li class="cell-list">
+                                              {{bonus}}
+                                          </li>
+                                        </ul>
+                                    </td>
                                     <td><a ng-href="{{company.link}}" target="_blank" class="btn btn-info" role="button">GO</a></td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
 
-                    <div class="ccardChart" ng-show="ccardActive" ng-hide="cellActive || savingActive || cellChartActive" ng-controller="ccardController">
+                    <div class="ccardChart" ng-show="ccardActive" ng-hide="cellActive || savingActive || cellChartActive || foodActive || tvactive" ng-controller="ccardController">
                         <table class="table table-striped">
                             <thead>
                                 <tr>
@@ -339,8 +358,9 @@
                                         FEATURES
                                     </td>
                                     <td>
-                                        WORTH
+                                        WORTH (POINTS)
                                     </td>
+                                    <td>CAN REDEEM</td>
                                     <td></td>
                                 </tr>
                             </thead>
@@ -352,9 +372,109 @@
                                     </td>
                                     <td>${{bank.fee}}</td>
                                     <td>${{bank.limit}}</td>
-                                    <td>{{bank.features}}</td>
+                                    <td>
+                                        <ul ng-repeat="feature in bank.features">
+                                            <li class="cell-list">
+                                                {{feature}}
+                                            </li>
+                                        </ul>
+                                    </td>
                                     <td>{{bank.worth}}</td>
+                                    <td>{{bank.money}}</td>
                                     <td><a ng-href="{{bank.link}}" target="_blank" class="btn btn-info" role="button">GO</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="foodChart" ng-show="foodActive" ng-hide="cellActive || savingActive || cellChartActive || ccardActive || tvactive" ng-controller="foodController">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <td>
+                                          NAME
+                                    </td>
+                                    <td>ACCESS</td>
+                                    <td>
+                                        DELIVERY CHARGE
+                                    </td>
+                                    <td>
+                                        SPECIALIZED DRINKS
+                                    </td>
+                                    <td>
+                                        FOOD
+                                    </td>
+                                    <td>RANGE</td>
+                                    <td></td>
+                                </tr>
+                            </thead>
+
+                            <tbody class="table-body">
+                                <tr ng-repeat="company in companies">
+                                    <td><a ng-href="{{company.link}}" target="_blank"><img ng-src="{{company.imgsrc}}" class="table-body-logo cell-logo"></a>
+                                      <br>{{company.name}}
+                                    </td>
+                                    <td>{{company.access}}</td>
+                                    <td>{{company.charge}}</td>
+                                    <td>{{company.drinks}}</td>
+                                    <td>
+                                        <ul ng-repeat="food in company.food">
+                                          <li class="cell-list">
+                                              {{food}}
+                                          </li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul ng-repeat="range in company.range">
+                                          <li class="cell-list">
+                                              {{range}}
+                                          </li>
+                                        </ul>
+                                    </td>
+                                    <td><a ng-href="{{company.link}}" target="_blank" class="btn btn-info" role="button">GO</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="tvChart" ng-show="tvactive" ng-hide="cellActive || savingActive || cellChartActive || ccardActive || foodActive" ng-controller="TvController">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <td>
+                                          NAME
+                                    </td>
+                                    <td>COST</td>
+                                    <td> ACCESSIBILITY
+                                    </td>
+                                    <td>
+                                        OTHER FEATURES
+                                    </td>
+                                    <td></td>
+                                </tr>
+                            </thead>
+
+                            <tbody class="table-body">
+                                <tr ng-repeat="company in companies">
+                                    <td><a ng-href="{{company.link}}" target="_blank"><img ng-src="{{company.imgsrc}}" class="table-body-logo cell-logo"></a>
+                                      <br>{{company.name}}
+                                    </td>
+                                    <td>{{company.cost}}</td>
+                                    <td>
+                                        <ul ng-repeat="access in company.accessibility">
+                                          <li class="cell-list">
+                                              {{access}}
+                                          </li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                      <ul ng-repeat="feature in company.features">
+                                        <li class="cell-list">
+                                            {{feature}}
+                                        </li>
+                                      </ul>
+                                    </td>
+                                    <td><a ng-href="{{company.link}}" target="_blank" class="btn btn-info" role="button">GO</a></td>
                                 </tr>
                             </tbody>
                         </table>
