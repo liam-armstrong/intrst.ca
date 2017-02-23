@@ -31,7 +31,7 @@ body {
 .nav-tabs {
     text-align: center;
 }
- 
+
 h2 {
     text-align: center;
 }
@@ -113,6 +113,10 @@ thead > tr > td{
 
 .cell-logo {
     max-height: 25px;
+}
+
+.cell-list {
+    text-align: left;
 }
 
 .input-group {
