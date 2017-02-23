@@ -8,52 +8,52 @@ app.controller("savingController", ["$scope", function($scope) {
     $scope.banks = [
         //ATB
         { imgsrc: "assets/images/compare/ATB.png", name1: "Generation", name2: "Account", rate: 0.10,
-            eTransfer: "$1.50 per", eTrans: "transaction", nonBankFees: "$1.50 per", atmRank: 3,
+            eTransfer: "$1.50 per", eTrans: "transaction", transRank: 5,nonBankFees: "$1.50 per", atmRank: 2,
             nonBankTrans: "transaction", prep: "Over", branches: 200,
             link: "https://get.atb.com/Personal/Bank/Youth-Accounts/Generation-Account/p/2315"},
         //BMO
         { imgsrc: "assets/images/compare/BMO.png", name1: "Smart Saver", name2: "", rate: 0.40,
-            eTransfer: "Unlimited", eTrans: "", nonBankFees: "$1.50 per", atmRank: 4,
+            eTransfer: "Unlimited", eTrans: "", transRank: 1, nonBankFees: "$1.50 per", atmRank: 3,
             nonBankTrans: "transaction", prep: "Over", branches: 960,
             link: "https://www.bmo.com/main/personal/bank-accounts/smart-saver/"},
         //CIBC
         { imgsrc: "assets/images/compare/CIBC.png", name1: "Advantage", name2: "for Youth", rate: 0.15,
-            eTransfer: "$1.50 per", eTrans: "transaction", nonBankFees: "$1.50 per", atmRank: 5,
+            eTransfer: "$1.50 per", eTrans: "transaction", transRank: 6, nonBankFees: "$1.50 per", atmRank: 4,
             nonBankTrans: "transaction", prep: "", branches: 1108,
             link: "https://www.cibc.com/en/personal-banking/bank-accounts/youth-banking-offers.html"},
         //CWB
         { imgsrc: "assets/images/compare/CWB.png", name1: "Youth Account", name2: "", rate: 0.05,
-            eTransfer: "$1.50 per", eTrans: "transaction", nonBankFees: "$1.50 per", atmRank: 6,
+            eTransfer: "$1.50 per", eTrans: "transaction", transRank: 7, nonBankFees: "$1.50 per", atmRank: 5,
             nonBankTrans: "transaction", prep: "Over", branches: 40,
             link: "http://www.cwbank.com/personal-banking/bank-accounts/youth-account"},
         //National Bank
         { imgsrc: "assets/images/compare/NationalBank.png", name1: "Strategist", name2: "Account", rate: 0.02,
-            eTransfer: "$1.25 per", eTrans: "transaction", nonBankFees: "$0.75 per", atmRank: 2,
+            eTransfer: "$1.25 per", eTrans: "transaction", transRank: 4, nonBankFees: "$0.75 per", atmRank: 1,
             nonBankTrans: "transaction", prep: "Around", branches: 450,
             link: "https://www.rbc.ca/en/personal/banking/saving-accounts/strategist-account.html"},
         //PC Financial
         { imgsrc: "assets/images/compare/PCFinancial.png", name1: "Interest Plus", name2: "Savings Account", rate: 0.85,
-            eTransfer: "$1.50 per", eTrans: "transaction", nonBankFees: "$1.50 per", atmRank: 7,
+            eTransfer: "$1.50 per", eTrans: "transaction", transRank: 8, nonBankFees: "$1.50 per", atmRank: 6,
             nonBankTrans: "transaction", prep: "", branches: 0,
             link: "http://www.banking.pcfinancial.ca/mkt/bankaccounts/interestplussavingsaccount-en.html"},
         //RBC
         { imgsrc: "assets/images/compare/RBC.png", name1: "Leo's Young", name2: "Savers Account", rate: 0.01,
-          eTransfer: "Unlimited", eTrans: "", nonBankFees: "$1.50 per", atmRank: 8,
+          eTransfer: "Unlimited", eTrans: "", transRank: 2, nonBankFees: "$1.50 per", atmRank: 7,
           nonBankTrans: "transaction", prep: "Around", branches: 1200,
           link: "http://www.rbcroyalbank.com/products/deposits/leo-young-savers-account.html"},
         //Scotiabank
         { imgsrc: "assets/images/compare/Scotiabank.png", name1: "Getting There", name2: "", rate: 0.10,
-            eTransfer: "$1.00 per", eTrans: "transaction", nonBankFees: "$1.50 per", atmRank: 9,
+            eTransfer: "$1.00 per", eTrans: "transaction", transRank: 3, nonBankFees: "$1.50 per", atmRank: 8,
             nonBankTrans: "transaction", prep: "", branches: 980,
             link: "http://www.scotiabank.com/ca/en/0,,61,00.html"},
         //Tangerine
         { imgsrc: "assets/images/compare/Tangerine.png", name1: "Children's", name2: "Savings Account", rate: 0.90,
-            eTransfer: "N/A", eTrans: "", nonBankFees: "N/A", atmRank: 1,
+            eTransfer: "N/A", eTrans: "", transRank: 10, nonBankFees: "N/A", atmRank: 10,
             nonBankTrans: "", prep: "", branches: 0,
             link: "https://www.tangerine.ca/en/saving/savings-accounts/childrens-savings-account/index.html"},
         //TD
         { imgsrc: "assets/images/compare/TD.png", name1: "Youth Savings", name2: "Account", rate: 0.05,
-            eTransfer: "$1.50 per", eTrans: "transaction", nonBankFees: "$2.00 per", atmRank: 10,
+            eTransfer: "$1.50 per", eTrans: "transaction", transRank: 9, nonBankFees: "$2.00 per", atmRank: 9,
             nonBankTrans: "transaction", prep: "Over", branches: 1150,
             link: "https://www.tdcanadatrust.com/products-services/banking/accounts/savings-accounts/youth.jsp"}
     ];

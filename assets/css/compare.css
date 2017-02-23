@@ -219,6 +219,9 @@ thead > tr > td{
     .imagebox {
         margin-top: 0;
     }
+    .nav-tabs > li {
+        
+    }
 }
 
 @media only screen and (max-width: 700px) {

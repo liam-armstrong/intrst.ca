@@ -189,7 +189,12 @@
                                         <span ng-show="sortType == 'rate' && !sortReverse" class="fa fa-caret-down"></span>
                                         <span ng-show="sortType == 'rate' && sortReverse" class="fa fa-caret-up"></span>
                                     </td>
-                                    <td>INTERAC E-TRANSFERS</td>
+                                    <td>
+                                        <a href="#" ng-click="sortType = 'transRank'; sortReverse = !sortReverse">
+                                            INTERAC E-TRANSFERS</a>
+                                        <span ng-show="sortType == 'transRank' && !sortReverse" class="fa fa-caret-down"></span>
+                                        <span ng-show="sortType == 'transRank' && sortReverse" class="fa fa-caret-up"></span>
+                                    </td>
                                     <td>
                                         <a href="#" ng-click="sortType = 'atmRank'; sortReverse = !sortReverse">
                                             ATM FEES </a>
@@ -303,7 +308,12 @@
                                         <span ng-show="sortType == 'data' && !sortReverse" class="fa fa-caret-down"></span>
                                         <span ng-show="sortType == 'data' && sortReverse" class="fa fa-caret-up"></span>
                                     </td>
-                                    <td>AFFORDABILITY</td>
+                                    <td>
+                                        <a href="#" ng-click="sortType = 'price'; sortReverse = !sortReverse">
+                                            AFFORDABILITY</a>
+                                        <span ng-show="sortType == 'price' && !sortReverse" class="fa fa-caret-down"></span>
+                                        <span ng-show="sortType == 'price' && sortReverse" class="fa fa-caret-up"></span>
+                                    </td>
                                     <td>BONUSES</td>
                                     <td></td>
                                 </tr>
