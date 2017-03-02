@@ -114,17 +114,17 @@
                 <br>
 
                 <ul class="nav nav-tabs">
-                    <li ng-class="{'active' : savingActive || savingChartActive}"><a href="#savings" ng-click="savingActive=true;savingChartActive=false;cellChartActive=false;ccardActive=false;cellActive=false;foodActive=false;tvactive=false">SAVINGS</a></li>
-                    <li ng-class="{'active' : cellActive || cellChartActive}"><a href="#cellphones" ng-click="savingActive=false;savingChartActive=false;cellChartActive=false;ccardActive=false;cellActive=true;foodActive=false;tvactive=false">CELL PHONES</a></li>
-                    <li ng-class="{'active' : ccardActive}"><a href="#credit-cards" ng-click="savingActive=false;savingChartActive=false;cellChartActive=false;ccardActive=true;cellActive=false;foodActive=false;tvactive=false">CREDIT CARDS</a></li>
-                    <li ng-class="{'active' : foodActive}"><a href="#food-delivery" ng-click="savingActive=false;savingChartActive=false;cellChartActive=false;ccardActive=false;cellActive=false;foodActive=true;tvactive=false">FOOD DELIVERY</a></li>
-                    <li ng-class="{'active' : tvactive}"><a href="#tv-networks" ng-click="savingActive=false;savingChartActive=false;cellChartActive=false;ccardActive=false;cellActive=false;foodActive=false;tvactive=true;">TV NETWORKS</a></li>
+                    <li ng-class="{'active' : currentActive=='saving' || currentActive=='savingChart'}"><a href="#savings" ng-click="currentActive='saving'">SAVINGS</a></li>
+                    <li ng-class="{'active' : currentActive=='cell' || currentActive=='cellChart'}"><a href="#cellphones" ng-click="currentActive='cell'">CELL PHONES</a></li>
+                    <li ng-class="{'active' : currentActive=='ccard'}"><a href="#credit-cards" ng-click="currentActive='ccard'">CREDIT CARDS</a></li>
+                    <li ng-class="{'active' : currentActive=='food'}"><a href="#food-delivery" ng-click="currentActive='food'">FOOD DELIVERY</a></li>
+                    <li ng-class="{'active' : currentActive=='tv'}"><a href="#tv-networks" ng-click="currentActive='tv'">TV NETWORKS</a></li>
                 </ul>
 
                 <div class="savings">
-                    <div class="savChars" ng-show="savingActive" ng-hide="savingChartActive || cellActive || cellChartActive || ccardActive || foodActive || tvactive">
+                    <div class="savChars" ng-show="currentActive=='saving'" ng-hide="!(currentActive=='saving')">
                         <h4>What do <span style="color: #34C15F">you</span> do with your <span style="color: #34C15F">money</span>?</h4>
-                        <div class="greybox" ng-click="savingChartActive=true;savingActive=false;sortTypeSaving='rate';sortReverseSaving=!sortReverseSaving">
+                        <div class="greybox" ng-click="currentActive='savingChart';sortTypeSaving='rate';sortReverseSaving=true">
                             <div class="col-md-5 transbox sunny">
                                 <h4>Sunny the Saver</h4>
                                 <br>
@@ -137,7 +137,7 @@
                             </div>
                         </div>
                         <br>
-                        <div class="greybox" ng-click="savingChartActive=true;savingActive=false;sortTypeSaving='atmRank'">
+                        <div class="greybox" ng-click="currentActive='savingChart';sortTypeSaving='atmRank'">
                             <div class="col-md-5 transbox">
                                 <h4>Spencer the Spender</h4>
                                 <br>
@@ -150,7 +150,7 @@
                             </div>
                         </div>
                         <br>
-                        <div class="greybox" ng-click="savingChartActive=true;savingActive=false;sortTypeSaving='branches';sortReverseSaving=!sortReverseSaving">
+                        <div class="greybox" ng-click="currentActive='savingChart';sortTypeSaving='branches';sortReverseSaving=true">
                             <div class="col-md-5 transbox">
                                 <h4>Robert the Roamer </h4>
                                 <br>
@@ -164,7 +164,7 @@
                         </div>
                     </div>
 
-                    <div class="savingChart" ng-show="savingChartActive" ng-hide="savingActive || cellChartActive || ccardActive || cellActive || foodActive || tvactive">
+                    <div class="savingChart" ng-show="currentActive=='savingChart'" ng-hide="!(currentActive=='savingChart')">
                         <form class="form-horizontal" role="form">
                             <div class="input-group">
                                 <label for="calculator" class="col-md-9 control-label">How much money are you planning to save?</label>
@@ -238,9 +238,9 @@
                 </div>
 
                 <div class="cell">
-                    <div class="cellChars" ng-show="cellActive" ng-hide="savingChartActive || cellChartActive || savingActive || ccardActive || foodActive || tvactive">
+                    <div class="cellChars" ng-show="currentActive=='cell'" ng-hide="!(currentActive=='cell')">
                         <h4>What do <span style="color: #34C15F">you</span> do with your <span style="color: #34C15F">money</span>?</h4>
-                        <div class="greybox" ng-click="cellChartActive=true;cellActive=false;sortTypeCell='data';sortReverseCell=!sortReverseCell">
+                        <div class="greybox" ng-click="currentActive='cellChart';sortTypeCell='data';sortReverseCell=true">
                             <div class="col-md-5 transbox">
                                 <h4>David the Data User</h4>
                                 <br>
@@ -253,7 +253,7 @@
                             </div>
                         </div>
                         <br>
-                        <div class="greybox" ng-click="cellChartActive=true;cellActive=false;sortTypeCell='callRank';sortReverseCell=!sortReverseCell">
+                        <div class="greybox" ng-click="currentActive='cellChart';sortTypeCell='callRank';sortReverseCell=true">
                             <div class="col-md-5 transbox">
                                 <h4>Caitlyn the Caller</h4>
                                 <br>
@@ -266,7 +266,7 @@
                             </div>
                         </div>
                         <br>
-                        <div class="greybox" ng-click="cellChartActive=true;cellActive=false;sortTypeCell='textRank';sortReverseCell=!sortReverseCell">
+                        <div class="greybox" ng-click="currentActive='cellChart';sortTypeCell='textRank';sortReverseCell=true">
                             <div class="col-md-5 transbox">
                                 <h4>Talia the Texter</h4>
                                 <br>
@@ -279,7 +279,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="cellChart" ng-show="cellChartActive" ng-hide="savingChartActive || cellChartActive || cellActive || savingActive || ccardActive || foodActive || tvactive">
+                    <div class="cellChart" ng-show="currentActive=='cellChart'" ng-hide="!(currentActive=='cellChart')">
                         <table class="table table-striped">
                             <thead>
                                 <tr>
@@ -343,7 +343,7 @@
                         </table>
                     </div>
 
-                    <div class="ccardChart" ng-show="ccardActive" ng-hide="savingChartActive || cellActive || savingActive || cellChartActive || foodActive || tvactive">
+                    <div class="ccardChart" ng-show="currentActive=='ccard'" ng-hide="!(currentActive=='ccard')">
                         <table class="table table-striped">
                             <thead>
                                 <tr>
@@ -389,7 +389,7 @@
                         <h5>*ALL HAVE FRAUD PROTECTION + SOME BASIC INSURANCE (DEPENDING ON BANK) - all points based on monthly amount spent</h5>
                     </div>
 
-                    <div class="foodChart" ng-show="foodActive" ng-hide="savingChartActive || cellActive || savingActive || cellChartActive || ccardActive || tvactive">
+                    <div class="foodChart" ng-show="currentActive=='food'" ng-hide="!(currentActive=='food')">
                         <table class="table table-striped">
                             <thead>
                                 <tr>
@@ -439,7 +439,7 @@
                         </table>
                     </div>
 
-                    <div class="tvChart" ng-show="tvactive" ng-hide="savingChartActive || cellActive || savingActive || cellChartActive || ccardActive || foodActive">
+                    <div class="tvChart" ng-show="currentActive=='tv'" ng-hide="!(currentActive=='tv')">
                         <table class="table table-striped">
                             <thead>
                                 <tr>

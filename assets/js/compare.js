@@ -1,13 +1,8 @@
 var app = angular.module("comparison", [])
 
 app.controller("compareController", ["$scope", function($scope) {
-    $scope.savingChartActive = false;
-    $scope.savingActive = true;
-    $scope.cellChartActive = false;
-    $scope.cellActive = false;
-    $scope.ccardActive = false;
-    $scope.foodActive = false;
-    $scope.tvactive = false;
+
+    $scope.currentActive = "saving"
 
     $scope.calcInput = 1000;
     $scope.sortTypeSaving = "name";
