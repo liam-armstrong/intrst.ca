@@ -1,11 +1,19 @@
 var app = angular.module("comparison", [])
 
-app.controller("savingController", ["$scope", function($scope) {
+app.controller("compareController", ["$scope", function($scope) {
+    $scope.savingChartActive = false;
+    $scope.savingActive = true;
+    $scope.cellChartActive = false;
+    $scope.cellActive = false;
+    $scope.ccardActive = false;
+    $scope.foodActive = false;
+    $scope.tvactive = false;
+
     $scope.calcInput = 1000;
-    $scope.sortType = "name";
-    $scope.sortReverse = false;
+    $scope.sortTypeSaving = "name";
+    $scope.sortReverseSaving = false;
     //list of banks
-    $scope.banks = [
+    $scope.savingBanks = [
         //ATB
         { imgsrc: "assets/images/compare/ATB.png", name1: "Generation", name2: "Account", rate: 0.10,
             eTransfer: "$1.50 per", eTrans: "transaction", transRank: 5,nonBankFees: "$1.50 per", atmRank: 2,
@@ -57,10 +65,8 @@ app.controller("savingController", ["$scope", function($scope) {
             nonBankTrans: "transaction", prep: "Over", branches: 1150,
             link: "https://www.tdcanadatrust.com/products-services/banking/accounts/savings-accounts/youth.jsp"}
     ];
-}]);
 
-app.controller("ccardController", ["$scope", function($scope) {
-    $scope.banks = [
+    $scope.ccardBanks = [
       { imgsrc: "assets/images/compare/Scotiabank.png", name: "Scotiabank Scene", fee: 0, limit: 500, features: ["4000 bonus signup bonus", "Sportchek discount", "1 scene point / $1 spent"],
           worth: 500, money: "500 Scene Points", link: "http://www.scotiabank.com/ca/en/0,,91,00.html" },
       { imgsrc: "assets/images/compare/TD.png", name: "TD Bank Green", fee: 0, limit: 500, features: ["Basic Insurance provided (carrier insurance)"],
@@ -82,13 +88,10 @@ app.controller("ccardController", ["$scope", function($scope) {
       { imgsrc: "assets/images/compare/NationalBank.png", name: "National Bank ", fee: 0, limit: "500+", features: ["1% cash back for instore purchases, 1.5% online"], worth: 0,
           money: "N/A", link: "https://www.nbc.ca/en/personal/credit-cards/mastercard-credit-cards/cashback-cards/echo.html" }
     ];
-}]);
 
-app.controller("cellController", ["$scope", function($scope) {
-
-  $scope.sortType = "name1";
-  $scope.sortReverse = false;
-  $scope.companies = [
+    $scope.sortTypeCell = "name1";
+    $scope.sortReverseCell = false;
+    $scope.cellCompanies = [
       //Bell
       { imgsrc: "assets/images/compare/bell.png", name1: "Bell", name2: "", plan: "Unlimited anytime nationwide minutes + 2 GB (Share Plan)",
           minutes: "Unlimited in Canada", texts: "Unlimited in Canada", callRank: 4, textRank: 3,
@@ -130,10 +133,8 @@ app.controller("cellController", ["$scope", function($scope) {
           data: 2, price: 55, bonuses: ["MyPeeps", "voicemail 3", "call display", "Canada-Wide calling", "unlimited weekends and evenings"],
           link: "http://www.virginmobile.ca/en/plans/details.html?province=ON&geoResult=ON#!/postpaid/byop"}
   ];
-}]);
 
-app.controller("foodController", ["$scope", function($scope) {
-    $scope.companies = [
+  $scope.foodCompanies = [
       { imgsrc: "assets/images/compare/ubereats.png", name: "UberEats", access: "Mobile App and Website", charge: "$5.00", drinks: "Bubble tea, Juice and smoothies", food: ["Asian", "Canadian", "Dessert", "Halal", "Pizza", "Sushi"], range: ["Toronto", "Mississauga", "Edmonton", "Ottawa"], link: "https://www.ubereats.com", },
       { imgsrc: "assets/images/compare/justeat.png", name: "JustEat", access: "Mobile App and Website", charge: "Typically $3.00",  drinks: "N/A", food: ["American", "Asian", "Canadian", "Chinese", "Indian", "Italian", "Mediterranean", "Pizza"], range: ["Most Major Cities in Canada"], link: "https://www.just-eat.ca", },
       { imgsrc: "assets/images/compare/foodora.jpg", name: "Foodora", access: "Mobile App and Website", charge: "$5.50 plus $2 per kilometer from pick-up point to destination",  drinks: "Bubble tea, Juices and Smoothies", food: ["American", "Bakery and Cafe", "Burger", "Canadian", "Chinese", "Healthy", "Indian", "Japanese", "Latin American", "Mediterranean", "Mexican", "Pizza",
@@ -144,10 +145,8 @@ app.controller("foodController", ["$scope", function($scope) {
           "American","Asian","Barbeque","Breakfast","British","Burgers","Cafes","Caribbean","Comfort Food","Deserts","Ethiopian","European","Fast food","French","Gluten Free","Greek","Indian","Italian","Japanese","Korean","Mediterranean","Middle Eastern","Pakistani","Soup","Steaks",
           "Sushi","Thai","Vegan","Vegetarian","Vietnamese"] , range: ["Toronto", "Vancouver", "Etobicoke"], link: "https://www.doordash.com/" }
     ];
-}]);
 
-app.controller("TvController", ["$scope", function($scope) {
-    $scope.companies = [
+    $scope.tvCompanies = [
       { imgsrc: "assets/images/compare/netflix.jpg", name: "Netflix", cost: "$9.99/month", accessibility: ["PC and Mac", "Apple TV", "PS4", "Mobile", "internet-enabled TVs"],
            features: ["Offers gift cards HD quality", "One month free trial Available in different countries", "Selection of shows varies among countries", "Own award-winning original series"] },
       { imgsrc: "assets/images/compare/amazon.jpg", name: "Amazon Prime Instant Video", cost: "$79/year", accessibility: ["PC and Mac", "Kindle Fire HD", "iPad", "consoles", "internet-enabled TVs and Blu-ray players", "Sony's Home Cinema system", "Sony's Network Media Player"],  features: ["Comes with Amazon Prime membership 30 day free trial", "Available in different countries", "Own original series", "Content is limited compared to other platforms", "Entire library is available for offline viewing"]},
