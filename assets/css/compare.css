@@ -156,8 +156,6 @@ thead > tr > td{
       height: 30px;
       font-size: 14px;
   }
-  .sunny {
-  }
   .transbox {
       width: 400px;
       margin-top: 10px;
@@ -220,7 +218,7 @@ thead > tr > td{
         margin-top: 0;
     }
     .nav-tabs > li {
-        
+
     }
 }
 

@@ -1,8 +1,19 @@
 var app = angular.module("comparison", [])
 
-app.controller("compareController", ["$scope", function($scope) {
+app.controller("compareController", ["$scope", "$window", function($scope, $window) {
+    $scope.currentActive = "saving";
 
-    $scope.currentActive = "saving"
+    $scope.addHistory = function(active, path) {
+        var title = "Intrst | Evaluate";
+        history.pushState(active, title, ("/"+path));
+    };
+
+    $window.addEventListener("popstate", function(event) {
+        var state = event.originalEvent.state;
+        if(state) {
+            $scope.currentActive = state;
+        }
+    });
 
     $scope.calcInput = 1000;
     $scope.sortTypeSaving = "name";

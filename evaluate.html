@@ -114,11 +114,11 @@
                 <br>
 
                 <ul class="nav nav-tabs">
-                    <li ng-class="{'active' : currentActive=='saving' || currentActive=='savingChart'}"><a href="#savings" ng-click="currentActive='saving'">SAVINGS</a></li>
-                    <li ng-class="{'active' : currentActive=='cell' || currentActive=='cellChart'}"><a href="#cellphones" ng-click="currentActive='cell'">CELL PHONES</a></li>
-                    <li ng-class="{'active' : currentActive=='ccard'}"><a href="#credit-cards" ng-click="currentActive='ccard'">CREDIT CARDS</a></li>
-                    <li ng-class="{'active' : currentActive=='food'}"><a href="#food-delivery" ng-click="currentActive='food'">FOOD DELIVERY</a></li>
-                    <li ng-class="{'active' : currentActive=='tv'}"><a href="#tv-networks" ng-click="currentActive='tv'">TV NETWORKS</a></li>
+                    <li ng-class="{'active' : currentActive=='saving' || currentActive=='savingChart'}"><a href="#savings" ng-click="currentActive='saving';addHistory('saving','evaluate.html#savings');">SAVINGS</a></li>
+                    <li ng-class="{'active' : currentActive=='cell' || currentActive=='cellChart'}"><a href="#cellphones" ng-click="currentActive='cell';addHistory('cell','evaluate.html#cellphones');">CELL PHONES</a></li>
+                    <li ng-class="{'active' : currentActive=='ccard'}"><a href="#credit-cards" ng-click="currentActive='ccard';addHistory('ccard','evaluate.html#credit-cards');">CREDIT CARDS</a></li>
+                    <li ng-class="{'active' : currentActive=='food'}"><a href="#food-delivery" ng-click="currentActive='food';addHistory('food','evaluate.html#food-delivery');">FOOD DELIVERY</a></li>
+                    <li ng-class="{'active' : currentActive=='tv'}"><a href="#tv-networks" ng-click="currentActive='tv';addHistory('tv','evaluate.html#tv-networks');">TV NETWORKS</a></li>
                 </ul>
 
                 <div class="savings">
@@ -164,7 +164,7 @@
                         </div>
                     </div>
 
-                    <div class="savingChart" ng-show="currentActive=='savingChart'" ng-hide="!(currentActive=='savingChart')">
+                    <div class="savingChart  table-responsive" ng-show="currentActive=='savingChart'" ng-hide="!(currentActive=='savingChart')">
                         <form class="form-horizontal" role="form">
                             <div class="input-group">
                                 <label for="calculator" class="col-md-9 control-label">How much money are you planning to save?</label>
@@ -279,7 +279,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="cellChart" ng-show="currentActive=='cellChart'" ng-hide="!(currentActive=='cellChart')">
+                    <div class="cellChart table-responsive" ng-show="currentActive=='cellChart'" ng-hide="!(currentActive=='cellChart')">
                         <table class="table table-striped">
                             <thead>
                                 <tr>
@@ -343,7 +343,7 @@
                         </table>
                     </div>
 
-                    <div class="ccardChart" ng-show="currentActive=='ccard'" ng-hide="!(currentActive=='ccard')">
+                    <div class="ccardChart table-responsive" ng-show="currentActive=='ccard'" ng-hide="!(currentActive=='ccard')">
                         <table class="table table-striped">
                             <thead>
                                 <tr>
@@ -389,7 +389,7 @@
                         <h5>*ALL HAVE FRAUD PROTECTION + SOME BASIC INSURANCE (DEPENDING ON BANK) - all points based on monthly amount spent</h5>
                     </div>
 
-                    <div class="foodChart" ng-show="currentActive=='food'" ng-hide="!(currentActive=='food')">
+                    <div class="foodChart table-responsive" ng-show="currentActive=='food'" ng-hide="!(currentActive=='food')">
                         <table class="table table-striped">
                             <thead>
                                 <tr>
@@ -439,7 +439,7 @@
                         </table>
                     </div>
 
-                    <div class="tvChart" ng-show="currentActive=='tv'" ng-hide="!(currentActive=='tv')">
+                    <div class="tvChart table-responsive" ng-show="currentActive=='tv'" ng-hide="!(currentActive=='tv')">
                         <table class="table table-striped">
                             <thead>
                                 <tr>
