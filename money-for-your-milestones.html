@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device, initial-scale=1.0">
+    <title>Money for Your Milestones</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href=".\assets\css\explore.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <!--Header-->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico"/>
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+
+    <!-- Google Analytics -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-90233927-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- start Mixpanel -->
+    <script type="text/javascript">
+        (function (e, a) {
+            if (!a.__SV) {
+                var b = window;
+                try {
+                    var c, l, i, j = b.location,
+                        g = j.hash;
+                    c = function (a, b) {
+                        return (l = a.match(RegExp(b + "=([^&]*)"))) ? l[1] : null
+                    };
+                    g && c(g, "state") && (i = JSON.parse(decodeURIComponent(c(g, "state"))), "mpeditor" === i.action && (b.sessionStorage.setItem("_mpcehash", g), history.replaceState(i.desiredHash || "", e.title, j.pathname + j.search)))
+                } catch (m) {}
+                var k, h;
+                window.mixpanel = a;
+                a._i = [];
+                a.init = function (b, c, f) {
+                    function e(b, a) {
+                        var c = a.split(".");
+                        2 == c.length && (b = b[c[0]], a = c[1]);
+                        b[a] = function () {
+                            b.push([a].concat(Array.prototype.slice.call(arguments,
+                                0)))
+                        }
+                    }
+                    var d = a;
+                    "undefined" !== typeof f ? d = a[f] = [] : f = "mixpanel";
+                    d.people = d.people || [];
+                    d.toString = function (b) {
+                        var a = "mixpanel";
+                        "mixpanel" !== f && (a += "." + f);
+                        b || (a += " (stub)");
+                        return a
+                    };
+                    d.people.toString = function () {
+                        return d.toString(1) + ".people (stub)"
+                    };
+                    k = "disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+                    for (h = 0; h < k.length; h++) e(d, k[h]);
+                    a._i.push([b, c, f])
+                };
+                a.__SV = 1.2;
+                b = e.createElement("script");
+                b.type = "text/javascript";
+                b.async = !0;
+                b.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ? MIXPANEL_CUSTOM_LIB_URL : "file:" === e.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";
+                c = e.getElementsByTagName("script")[0];
+                c.parentNode.insertBefore(b, c)
+            }
+        })(document, window.mixpanel || []);
+        mixpanel.init("fe63d2a2e139d9b81764772db277aa01");
+    </script>
+
+    </head>
+
+    <div w3-include-html="header.html"></div>
+
+    <style type="text/css">
+
+        *{
+            font-family: 'Raleway', sans-serif;
+        }
+
+        #share-buttons img {
+          max-width: 75px;
+          height:auto;
+          padding: 5px;
+          border: 0;
+          box-shadow: 0;
+          display: inline;
+}
+
+        body {
+            margin-top: 70px;
+
+        }
+    </style>
+
+    <body>
+      <div class = "container">
+        <img class="img-fluid article-image" src="\assets\images\articleheadshots\money-for-your-milestones.jpg">
+        <h1 style="font-weight:700;">MONEY FOR YOUR MILESTONES</h1>
+        <h4 style="font-weight:400; text-align: center; font-family:'Source Sans Pro',sans-serif;"> By Sharon Zheng </h4>
+        <hr style="width:40%">
+      <div style ="line-height:25px;">
+  <p>Let’s say you've just been accepted into the university you've been aspiring to go to since middle school. You’re filled with joy and accomplishment, but the next step may pose to be an obstacle: how are you going to afford your tuition?
+  Do you sometimes wonder how one can afford to pay for tuition, while still devoting savings for other purposes? According to Statistics Canada, the tuition fee of undergraduate students in Canada sits at an average of $6 191.00 CAD, during the school year of 2015 to 2016.
+  There are many options for you to choose from, such as applying for scholarships and grants, part-time jobs, or simply by saving up!</p>
+
+&nbsp;
+  <h4 style="font-weight:600">Scholarships and Bursaries</h4>
+
+  <p>Schools can offer scholarships for academic merit, but bursaries may be available for students who have financial difficulties. Scholarships do require an application process, but just think of the benefits if you do get the scholarship. Think of the potential free money. It would be worth it. Bursaries are only available to students who don’t have the financial capacity to pay the full tuition fee, and is also done on an application process. You can find out more about scholarships through online platforms such as <a href="http://yconic.com"style="color:#34C15F">Yconic</a> or <a href="http://www.electronicinfo.ca/scholarships"style="color:#34C15F">ElectronicInfo</a>, and bursaries through <a href="https://www.ontario.ca/page/osap-ontario-student-assistance-program"style="color:#34C15F">OSAP.</a></p>
+&nbsp;
+    <h4 style="font-weight:600">Part-Time Job</h4>
+
+  	<p>Not only do part time jobs provide experience within the work environment, but it is the perfect way to have more cash to spend for university! And of course, all the cash left over can be used for purchasing items to your pleasure. In fact, some part-time job opportunities can lead to scholarships, such as with Tim Hortons. Find out tips on seeking part-time jobs in one of our new articles <a href="http://intrst.ca/game-for-part-time-job.html"style="color:#34C15F">here.</a></p>
+&nbsp;
+    <h4 style="font-weight:600">Savings</h4>
+
+  <p>An easy way to ensure that you will have enough money to fund your enrollment is to start allocating a portion of your savings, allowances, earnings, etc. for tuition. You can even store this money into a longer-term savings account to earn additional interest, over time. Budgeting your current expenses can help you think long-term for your education. Maybe by holding back on impulse purchases, you can have more money to go to an elite university without sacrificing your other needs. Check out our article about savings accounts <a href="http://intrst.ca/the-right-account.html"style="color:#34C15F">here.</a></p>
+&nbsp;
+    <h4 style="font-weight:600">Loans</h4>
+
+  	<p>Another way of paying for university is to apply for government loans through the <a href ="http://www.internationalstudentloan.com/canadian_student" style="color:#34C15F">Canadian Student Loan Program.</a> This is focused more towards students who have financial difficulties and the loan must be repaid upon graduation.</p>
+&nbsp;
+  	<p>Overall, university is a milestone and a significant part of a student’s life, so funding for it plays a critical role. Just remember, start saving up early and hopefully by considering some of these methods, you’ll feel ready to take on this next step in life!</p>
+
+</div>
+<div class="col-xs-12">
+  <h3 style="margin-top: 3%; text-align:center; font-weight:bold;">SHARE THIS ARTICLE</h3>
+
+<div id="share-buttons" style="text-align:center;">
+  <!-- Facebook -->
+  <a href="http://www.facebook.com/sharer.php?u=http://intrst.ca/money-for-your-milestones.html" target="_blank">
+        <img class="img-fluid" src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+    </a>
+    <!-- Twitter -->
+    <a href="https://twitter.com/share?url=http://intrst.ca/money-for-your-milestones.html&amp;hashtags=intrstfinancial" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+    </a>
+
+    <!-- Google+ -->
+    <a href="https://plus.google.com/share?url=http://intrst.ca/money-for-your-milestones.html" target="_blank">
+        <img class="img-fluid" src="https://simplesharebuttons.com/images/somacro/google.png" alt="Google" />
+    </a>
+
+  </div>
+</div>
+<div>
+<h2 class="col-xs-12" style="text-align:center; font-weight:600">ABOUT THE AUTHOR</h2>
+&nbsp;
+</div>
+<div id="wrap" style="display:block">
+  <div class="col-sm-3 col-xs-12" style="text-align:center">
+<p style="text-align: left;"><span style="font-size: 18pt;"><strong><img class="img-fluid" src= "\assets\images\articleheadshots\sharon.png" alt="" max-width="265" max-height="265" style="height:auto; max-width:100%"/></strong></span></p>
+</div>
+<div class="col-sm-9 col-xs-12" style="margin-top:2%; vertical-align: middle;">
+<span style="font-size: 20pt; line-height: 36px;"><strong>Sharon Zheng</strong></span>
+<p style="text-align: left; font-size: 15pt; line-height: 36px;">Sharon Zheng is currently a tenth-grade student at Earl Haig Secondary School. As an avid member of the CSR and Marketing teams at Intrst Financial, she is excited to continue to contribute her work into helping the company grow. She is passionate about business, art and community involvement.</p>
+</div>
+</div>
+</div>
+
+      </body>
+
+      <div w3-include-html="footer.html"></div>
+
+      <script>
+          w3IncludeHTML();
+      </script>
+
+      </html>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿  <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -88,94 +88,577 @@
         mixpanel.init("fe63d2a2e139d9b81764772db277aa01");
     </script>
     <!-- end Mixpanel -->
+    <script type="text/javascript">
+    <!--
+    if (screen.width > 1080) {
+    document.location = "index.html";
+    }
+    //-->
 
+
+    </script>
+<style>
+a.button.center-block.text-center {
+    background-color: #34C15F;
+    display: block;
+    font-size:1.5vh;
+    text-align: center;
+    max-width: 35%;
+    max-height:10%;
+    text-decoration: none;
+    font-weight:500;
+    border-radius: 4px;
+    margin:none;
+    padding: 10px;
+    padding-left:0px;
+    padding-right:0px;
+    color: rgba(255, 255, 255, 0.85);
+    box-shadow: RGBA(52, 193, 95, 0.4) 0 0px 0px 2px inset;
+}
+
+
+a.button.center-block.text-center:hover {
+    font-weight:700;
+    box-shadow: RGBA(52, 193, 95, 0.7) 0 0px 0px 40px inset;
+    background-color: rgb(52, 193, 95);
+}
+
+ .images, #myImg, #myImg1, #myImg2 {
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 2s; /* Firefox < 16 */
+      -ms-animation: fadein 2s; /* Internet Explorer */
+       -o-animation: fadein 2s; /* Opera < 12.1 */
+          animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+#myImg, #myImg1, #myImg2 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover, #myImg1:hover, #myImg2:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 100%;
+
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption, #caption2, #caption3{
+    margin: auto;
+    display: block;
+    width: 100%;
+
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+    height: 150px;
+}
+
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, .event, #caption, #caption2, #caption3 {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  top:0;
+  padding:15%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  display:none;
+}
+.images:hover + .text  {
+  display:block;
+}
+.text:hover {
+  display:block;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot, .dot2 {
+  cursor:pointer;
+  height: 3.5vh;
+  width: 3.5vh;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  opacity:1;
+}
+
+.fade-fast {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+  opacity:1;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+#blue-button {
+  border-color:#53a5c6 !important;
+  box-shadow: none!important;
+}
+
+#blue-button:hover {
+  box-shadow: none!important;
+  background-color:#53a5c6 !important;
+
+}
+
+</style>
 </head>
 
 <div w3-include-html="header.html"></div>
 
 <body>
-
-    <!--div class="col-md-12 col-sm-12 col-xs-12 overall"-->
-    <div class="Jump">
-        <img src=".\assets\images\landing\Firstpic.png" alt="Person junping into water" class="img-responsive">
+  <div class="center-block main" style="padding:0;">
+    <div class="main-slideshow  mySlides2 " style="padding:0; width: 100% auto;  height auto; background-image: url('/assets/images/landingmobile.png'); background-color:#4acf72; background-size:cover; background-repeat:no-repeat"; class="Jump">
+      <div class ="container" style=" padding:6%;">
+      <h1 style="font-family:'Source Sans Pro', sans-serif; font-size:4.5vh; text-align:left; font-weight:800; color:white; vertical-align:middle;">Welcome to Intrst.</h1>
+      <h2 style="font-size:3vh; text-align:left; font-weight:500; color:white;margin-bottom:5%;margin-top:0;">Discover how to make the most of your money.</h2>
+      <a href="/about.html" style="height:10%; font-size:2vh"  target=""  class="button center-block text-center">
+       Who We Are
+      </a>
+      <div style="text-align:center; margin-top:5%;">
+        <span class="dot2" onclick="currentSlide1(1)"></span>
+        <span class="dot2" onclick="currentSlide1(2)"></span>
+        <span class="dot2" onclick="currentSlide1(3)"></span>
+        <span class="dot2" onclick="currentSlide1(4)"></span>
+      </div>
+      </div>
     </div>
-    <!--I Want to... section-->
-    <div class="row cont center-block text-center h3">
-        <div class="col-lg-4 center-block text-center h3">
-            <a class="button" href="educate.html">Learn the Terminology</a>
-        </div>
-        <div class="col-lg-4 center-block text-center h3">
-            <a class="button" href="evaluate.html">Compare Your Options</a>
-        </div>
-        <div class="col-lg-4 center-block text-center h3">
-            <a class="button" href="http://blog.intrst.ca">Explore Our Articles</a>
-        </div>
+  </div>
+  <div class=" mySlides2 " style="padding:0; width: 100% auto; height: 100% auto; background-image: url('/assets/images/landing2mobile.png'); background-color:#4acf72;background-size:cover; background-repeat:no-repeat"; class="Jump">
+  <div class ="container" style=" padding:6%;">
+  <h1 style="font-family:'Source Sans Pro', sans-serif; font-size:4.5vh; text-align:left; font-weight:650; color:white; vertical-align:middle;">Evaluate your options.</h1>
+  <h2 style="font-size:3vh; text-align:left; font-weight:500; color:white;margin-bottom:5%;margin-top:0;">Compare financial and lifestyle products.</h2>
+  <a href="/evaluate.html" style="background-color:#53a5c6; font-size:2vh"  target="" id="blue-button"  class="button center-block text-center">
+   Compare Now
+  </a>
+  <div style="text-align:center;  margin-top:5%;">
+    <span class="dot2" onclick="currentSlide1(1)"></span>
+    <span class="dot2" onclick="currentSlide1(2)"></span>
+    <span class="dot2" onclick="currentSlide1(3)"></span>
+    <span class="dot2" onclick="currentSlide1(4)"></span>
+  </div>
+  </div>
+</div>
+</div>
+<div class="mySlides2"style="padding:0; width: 100% auto; height: 100% auto; background-image: url('/assets/images/landing3mobile.png'); background-color:#4acf72; background-size:cover; background-repeat:no-repeat";>
+  <div class ="container" style=" padding:6%;">
+    <h1 style="font-family:'Source Sans Pro', sans-serif; font-size:4.5vh; text-align:left; font-weight:650; color:white; vertical-align:middle;">Explore our Content.</h1>
+    <h2 style="font-size:3vh; text-align:left; font-weight:500; color:white;margin-bottom:5%; margin-top:0;">Check out financial happenings, tips, and tricks.</h2>
+    <a href="/explore.html"  target="" style="font-size:2vh"  class="button center-block text-center">
+     Learn More
+    </a>
+    <div style="text-align:center;  margin-top:5%;">
+      <span class="dot2" onclick="currentSlide1(1)"></span>
+      <span class="dot2" onclick="currentSlide1(2)"></span>
+      <span class="dot2" onclick="currentSlide1(3)"></span>
+      <span class="dot2" onclick="currentSlide1(4)"></span>
     </div>
-    <div class="event" style="background-image: url('eventbanner.png'); background-size: cover; background-repeat:no-repeat;">
-        <br>
-        <br>
-        <h1 style="color:white; font-weight:bold; text-align: center"> FEATURED EVENT </h1>
-        <h2 style="color:white; text-align:center"> More Money, More Moments Budgeting Seminar </h2>
-        <h3 style="color:white; text-align:center"> Learn the basics of budgeting, investing, and personal finance. </h3> &nbsp;
-        <br> &nbsp;
-        <br>
-        <div class="col-sm-12 center-block text-center">
-            <button type="button" style="color:white; text-align:center" onclick="location.href='http://intrst.ca/seminar.html'">Learn More</button>
-        </div>
-        &nbsp;
-        <br> &nbsp;
-        <br>
     </div>
-    <div class="featured">
-        <h2 class="FeatTi">Featured Articles</h2>
-
-        <div style="margin: 0 auto" class="col-md-4 Featdiv">
-            <a href="http://blog.intrst.ca/2017/01/03/two-sides-one-coin/">
-                <img style="margin: 0 auto" src=".\assets\images\landing\bank-account-410x215.jpg" class="img-responsive" alt="" id="img1">
-                <h3 style="color:white; text-align: center;">Two Sides, One Coin </h3>
-                <h4 style="color:white; text-align: center;">Why do some people choose smaller institutions like Tangerine? Find out here.</h4>
-            </a>
-        </div>
-        <div style="margin: 0 auto" class="col-md-4 Featdiv">
-            <a href="http://blog.intrst.ca/2017/01/03/the-right-account-for-you/">
-                <img style="margin: 0 auto" src=".\assets\images\landing\bank-account2-410x215.jpg" class="img-responsive" alt="" id="img2">
-                <h3 style="color:white; text-align: center;"> The Right Account For You </h3>
-                <h4 style="color:white; text-align: center;">Savings or Chequing account? Find out which is right for you.</h4>
-            </a>
-        </div>
-        <div style="margin: 0 auto" class="col-md-4 Featdiv">
-            <a href="http://blog.intrst.ca/2017/01/03/holiday-savings/">
-                <img style="margin: 0 auto" src=".\assets\images\landing\holiday1-410x215.jpg" class="img-responsive" alt="" id="img3">
-                <h3 style="color:white; text-align: center;">Tips for Saving Money on Holiday Gifts</h3>
-                <h4 style="color:white; text-align: center;">The holidays too expensive? Here's how to give while saving.</h4>
-            </a>
-        </div>
+</div>
+</div>
+<div class="mySlides2 "style="padding:0; width: 100% auto; height: 100% auto; background-image: url('/assets/images/landing4mobile.png'); background-color:#4acf72; background-size:cover; background-repeat:no-repeat";>
+  <div class ="container" style=" padding:6%;">
+    <h1 style="font-family:'Source Sans Pro', sans-serif; font-size:4.5vh; text-align:left; font-weight:650; color:white; vertical-align:middle;">Educate Yourself.</h1>
+    <h2 style="font-size:3vh; text-align:left; font-weight:500; color:white;margin-bottom:5%; margin-top:0;">Learn terminology with the click of a button.</h2>
+    <a href="/educate.html" style="background-color:#53a5c6; font-size:2vh" target="" id="blue-button" class="button center-block text-center">
+     Learn More
+    </a>
+    <div style="text-align:center;  margin-top:5%;">
+      <span class="dot2" onclick="currentSlide1(1)"></span>
+      <span class="dot2" onclick="currentSlide1(2)"></span>
+      <span class="dot2" onclick="currentSlide1(3)"></span>
+      <span class="dot2" onclick="currentSlide1(4)"></span>
     </div>
-    <!-- Write your comments here -->
-    <div style="outline:0; height:125px; margin-top:-10px; width:100%; background-color: #317b96"></div>
-    <!--More money more moments-->
-    <div class="MoreMoney center-block text-center">
-        <h2>More Money. More Moments.</h2>
-        <div class="row moments text-center center-block">
-            <div style="margin: 0 auto" class="col-md-4 text-center center-block"><img style="margin: 0 auto" src=".\assets\images\landing\moremoneymoremoments11-410.jpg" class="img-responsive img"></div>
-            <div style="margin: 0 auto" class="col-md-4"><img style="margin: 0 auto" src=".\assets\images\landing\moremoneymoremoments15-410.jpg" class="img-responsive img"></div>
-            <div style="margin: 0 auto" class="col-md-4"><img style="margin: 0 auto" src=".\assets\images\landing\moremoneymoremoments16-410.jpg" class="img-responsive img"></div>
-        </div>
-    </div>
-    <div class="row center-block text-center learnmore">
-        <div class="col-md-12 center-block text-center">
-            <a class="button h2" href="educate.html">Still Want to Learn?</a>
-        </div>
     </div>
 
+</div>
+<script>
+var slideIndex = 1;
+showSlides1(slideIndex);
 
-    <!--/div-->
+function plusSlides(n) {
+  showSlides1(slideIndex += n);
+}
 
-    </body>
+function currentSlide1(n) {
+  showSlides1(slideIndex = n);
+}
 
-    <div w3-include-html="footer.html"></div>
+function showSlides1(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides2");
+  var dots = document.getElementsByClassName("dot2");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    <div class="moments"  style="background-color:#4acf72; margin-top:0;">
+      <h1 style="text-align:center; line-height:40px;color:white; margin:0; font-size:3vh; padding:2%; padding-top:0">What are <strong>your</strong> moments?</h1>
+      <hr style="width:60%; text-align:center; padding-bottom:2%; margin:0 auto; color:white;">
+
+      <div class="col-xs-12" style="display-block; background-color:#4acf72; "><img id="myImg" class="img-fluid moments-image" style="padding-bottom:30px;width:100%; height:auto;" alt="Going to the Ever After Music festival, because the energy from the people, the music, and atmosphere made me feel alive." src="\assets\images\moremoneymoremoments1.jpg"><!-- The Modal -->
+  <div id="myModal" class="modal"onclick="document.getElementById('myModal').style.display='none'">
+
+    <!-- The Close Button -->
+    <span class="close" onclick="document.getElementById('myModal').style.display='none'"style="padding-top:4%;">&times;</span>
+
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img01">
+
+    <!-- Modal Caption (Image Text) -->
+    <div style="font-size:2.5vh;" id="caption"></div>
+  </div>
+  </div>
+  <script>
+  // Get the modal
+  var modal = document.getElementById('myModal');
+
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  var img = document.getElementById('myImg');
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+  img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+  }
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  </script>
+  <div class="col-xs-12" style="background-color:#4acf72;"><img id="myImg1"  class="img-fluid moments-image" style="padding-bottom:29px;width:100%; height:auto;" alt="With more money, I got to explore the Stone Forest in China!"  src="\assets\images\moremoneymroemoments2.jpg">
+    <!-- The Modal -->
+    <div id="myModal2" class="modal"onclick="document.getElementById('myModal2').style.display='none'">
+
+      <!-- The Close Button -->
+      <span class="close" onclick="document.getElementById('myModal2').style.display='none'"style="padding-top:4%;">&times;</span>
+
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="img02">
+
+      <!-- Modal Caption (Image Text) -->
+      <div id="caption2" style="font-size:2.5vh;" ></div>
+    </div></div>
     <script>
-        w3IncludeHTML();
+    // Get the modal
+    var modal = document.getElementById('myModal2');
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById('myImg1');
+    var modalImg = document.getElementById("img02");
+    var captionText = document.getElementById("caption2");
+    img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
     </script>
+  <div class="col-xs-12" style="background-color:#4acf72; "><img id="myImg2" class="img-fluid moments-image" style=" padding-bottom:30px;width:100%; height:auto;" alt="Couldn’t believe the views up here." src="\assets\images\moremoneymoremoments3.jpg">
+    <!-- The Modal -->
+    <div id="myModal3" class="modal"onclick="document.getElementById('myModal3').style.display='none'">
+
+      <!-- The Close Button -->
+      <span class="close" onclick="document.getElementById('myModal3').style.display='none'"style="padding-top:4%;">&times;</span>
+
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="img03">
+
+      <!-- Modal Caption (Image Text) -->
+      <div id="caption3" style="font-size:2.5vh;"></div>
+    </div>
+  </div>
+
+  </div>
+  <script>
+  // Get the modal
+  var modal = document.getElementById('myModal3');
+
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  var img = document.getElementById('myImg2');
+  var modalImg = document.getElementById("img03");
+  var captionText = document.getElementById("caption3");
+  img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+  }
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  </script>
+  </div>
+    <div  style="background-image: url('/eventbanner.png'); background-size: cover; background-repeat:no-repeat;">
+    &nbsp;<br>
+    &nbsp;<br>
+      <h1 class ="event" style="font-family: 'Source Sans Pro', sans-serif; color:white; font-weight:bold; text-align: center"> FEATURED EVENT </h1>
+      <h2 class ="event" style ="color:white; text-align:center; font-size:3.5vh"> More Money, More Moments Budgeting Seminar </h2>
+      <h3  class ="event"style ="color:white; text-align:center; font-size:2.5vh"> Learn the basics of budgeting, investing, and personal finance. </h3>
+
+      <div class="event col-sm-12 center-block text-center">
+        <a href="/seminargallery.html" style="font-size:2vh"  target=""  class="button center-block text-center">
+         View Gallery
+        </a>
+    </div>
+  <br>
+    &nbsp;<br>
+  </div>
+  <div class="featured-articles" style="background-color:#53a5c6; margin-top:0;">
+    <h1 style="text-align:center;color:white; margin:0; padding:2%; font-size:3vh;">Explore our Articles</h1>
+    <hr style="width:50%; text-align:center; padding-bottom:2%; margin:0 auto; color:white;">
+   <div class="slideshow-container" style=" margin: 0 auto; text-align:center; width:80%; background-color:#53a5c6;">
+    <div class="mySlides fade" style="display:block">
+      <a href ="/money-for-your-milestones.html">
+      <img id="img1" class ="images img-fluid"src="\assets\images\articleheadshots\money-for-your-milestones.jpg" style="width:100%;">
+      <div class="text fade-fast"><h1 style ="font-size:3.5vh; font-weight:600">Money for your Milestones</h1>
+        <h2 style ="font-size:2.5vh; text-align:left;">Worried about the cost of post-secondary education? We can help.</h2>
+
+      </div>
+    </a>
+    </div>
+
+    <div class="mySlides fade-fast"  style="display:block">
+      <a href ="/guest-interview-chris-manning.html">
+      <img id="img2" class="images img-fluid" src="\assets\images\articleheadshots\guest-interview-chris-manning.png" style="width:100%;">
+      <div class="text fade-fast"><h1 style ="font-size:3.5vh; font-weight:600">Guest Interview: To My 16-Year-Old Self</h1>
+      <h2 style ="font-size:2.5vh; text-align:left;"> Learn some financing tips from one of Toronto's rising professionals in the banking industry.</h2>
+      </div>
+    </a>
+    </div>
+
+    <div class="mySlides fade"  style="display:block">
+      <a href ="/two-sides-one-coin.html">
+      <img id="img3" class="images img-fluid" src="\assets\images\articleheadshots\two-sides-one-coin.png" style="width:100%">
+      <div class="text fade-fast"><h1 style ="font-size:3.5vh; font-weight:600">Two Sides, One Coin</h1>
+        <h2 style ="font-size:2.5vh; text-align:left;">Discover Canada's emerging financial institutions, and which one is right for you.</h2>
+      </div>
+    </a>
+    </div>
+
+
+  </div>
+  <br>
+
+  <div style="text-align:center;padding-bottom:2%;">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+  </div>
+  </div>
+  </body>
+
+<div w3-include-html="footer.html"></div>
+<script>
+    w3IncludeHTML();
+</script>
 
 </html>
