@@ -22,9 +22,12 @@ a.back-to-top {
 	border-radius: 30px;
 }
 
-.emptyspace{
-    height: 200px;
-    background-color: lightgrey;
+.title{
+    padding-top: 7vh;
+    padding-bottom: 5vh;
+    font-family: 'Source Sans Pro', sans-serif; 
+    font-size: 4em;
+    color: darkgray;
 }
 
 #override .content{
@@ -35,7 +38,7 @@ a.back-to-top {
     font-family: 'Source Sans Pro', sans-serif; 
     font-size: 20px;
     color: grey;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
 }
 
 .dir a{
