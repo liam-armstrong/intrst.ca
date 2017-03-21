@@ -1,0 +1,62 @@
+*{
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    margin-top: 70px;
+}
+
+a.back-to-top {
+	display: none;
+	width: 60px;
+	height: 60px;
+	text-indent: -9999px;
+	position: fixed;
+	z-index: 999;
+	right: 20px;
+	bottom: 20px;
+	background: #27AE61 url("/assets/images/scroll.png") no-repeat center 43%;
+    background-size: 100% 100%;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+.title{
+    padding-top: 7vh;
+    padding-bottom: 5vh;
+    font-family: 'Source Sans Pro', sans-serif; 
+    font-size: 4em;
+    color: darkgray;
+}
+
+#override .content{
+    margin: 3vh 10vw;
+}
+
+.dir{
+    font-family: 'Source Sans Pro', sans-serif; 
+    font-size: 20px;
+    color: grey;
+    letter-spacing: 4px;
+}
+
+.dir a{
+    color: #34C15F;
+}
+
+.letter{
+    font-family: 'Source Sans Pro', sans-serif; 
+    font-size: 60px;
+    color: lightgrey;
+}
+
+.def{
+    padding-left: 50px;
+}
+
+.def a{
+    text-indent: 30px;
+    font-size: 20px;
+    color: #34C15F;
+}

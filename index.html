@@ -1,24 +1,18 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="viewport" content="width=device, initial-scale=1.0">
-    <meta name="description" content="Intrst is a leading financial product discovery platform for Generation Z. We provide leading information that will help you gain a better understanding of your finances. Through product comparisons, specialized articles, and terminology keys, Intrst will help you discover your path to more money and more moments.">
-    <title>Intrst Financal</title>
+    <title>Intrst Financial</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href=".\assets\css\LandingPage.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-
     <!--Header-->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico"/>
     <link rel="stylesheet" href="assets/css/footer.css">
     <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -94,199 +88,311 @@
         mixpanel.init("fe63d2a2e139d9b81764772db277aa01");
     </script>
     <!-- end Mixpanel -->
-    <script type="text/javascript">
-        <!--
-        if (screen.width <= 1080) {
-            document.location = "mobile.html";
-        }
-        //-->
-    </script>
-    <style>
-        @media (max-device-width: 1350px) {
-            .heading {
-                font-size: 40px !important;
-            }
-            .subheading {
-                font-size: 20px !important;
-            }
-        }
-    </style>
+<script>
+var w = $(window).width();
+ $('.main').css('width', w);
+</script>
+<script type="text/javascript">
+<!--
+if (screen.width <= 1080) {
+document.location = "mobile.html";
+}
+//-->
+
+
+</script>
+<style>
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.mySlides2 {
+padding:0;
+width:100% auto;
+height:100% auto;
+background-size:cover;
+background-repeat:no-repeat;
+}
+
+h1, h3, h4 {
+  font-family: 'Source Sans Pro', sans-serif !important;
+
+}
+.main-copy {
+  font-size: 7.5vh;
+  text-align:left;
+  font-weight:800;
+  color:white;
+  vertical-align:middle;
+
+}
+.sub-copy {
+  line-height: 5vh;
+  font-size: 3.5vh;
+  text-align:left;
+  font-weight: 500;
+  color: white;
+  margin-bottom:5%;
+}
+.quotation {
+   padding-bottom:20%;
+   padding-top:10%;
+   margin-bottom:-18%;
+}
+.quo {
+  font-size:20vh;
+  line-height:6vh;
+  color:white;
+  text-align:center;
+}
+.quote {
+  font-family:'Source Sans Pro', sans-serif;
+  display:flex;
+  padding-left:10%;
+  padding-right:10%;
+  color:white;
+  text-align:center;
+}
+.headshot {
+  background-color:white;
+  margin-color:white;
+  text-align:center;
+  width:35%;
+  height:auto;
+}
+.pic {
+  padding:3%;
+  border-radius-bottom:10px;
+}
+.img-responsive {
+  border-radius-top:10px;
+}
+
+</style>
+
 </head>
 
 <div w3-include-html="header.html"></div>
 
 <body>
-    <div id="wrap">
-    <div class="Jump center-block" style="width:100% auto; height:100% auto;  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('Firstpic.png'); background-size:100% auto; background-repeat:no-repeat;">
-        <h1 class="heading" style="font-size:50px; padding:15%; padding-top:10%; padding-left: 10% ; color:white; padding-bottom:1%"> More Money. More Moments. </h1>
-        <h2 class="subheading" style="font-size:25px; padding:15%;padding-left:10%;padding-top:0%; color: white; "> Gen Z Financial Product Discovery & Rankings </h2>
-    </div>
-    <!--I Want to... section-->
-    <div class="row cont center-block text-center h3">
-        <div class="col-lg-4 center-block text-center h3">
-            <a class="button" href="educate.html">Learn the Terminology</a>
-        </div>
-        <div class="col-lg-4 center-block text-center h3">
-            <a class="button" href="evaluate.html">Compare Your Options</a>
-        </div>
-        <div class="col-lg-4 center-block text-center h3">
-            <a class="button" href="http://blog.intrst.ca">Explore Our Articles</a>
-        </div>
-    </div>
-    <div class="event" style="background-image: url('eventbanner.png'); background-size: cover; background-repeat:no-repeat;">
-        <br>
-        <br>
-        <h1 style="color:white; font-weight:bold; text-align: center"> FEATURED EVENT </h1>
-        <h2 style="color:white; text-align:center"> More Money, More Moments Budgeting Seminar </h2>
-        <h3 style="color:white; text-align:center"> Learn the basics of budgeting, investing, and personal finance. </h3> &nbsp;
-        <br> &nbsp;
-        <br>
-        <div class="col-sm-12 center-block text-center">
-            <button type="button" style="color:white; text-align:center" onclick="location.href='http://intrst.ca/seminar.html'">Learn More</button>
-        </div>
-        &nbsp;
-        <br> &nbsp;
-        <br>
-    </div>
-    <div class="featured">
-        <h2 class="FeatTi">Featured Articles</h2>
+<div class="center-block main" style="padding:0;overflow-x:hidden; width:100% auto">
+  <div>
+  <div class="main-slideshow-1 mySlides2 fade" style="background-image: url('/assets/images/landing.jpg');"; class="Jump">
+    <div class ="container" style=" padding:10%">
+    <h1 class="main-copy" >Learn how to manage money.</h1>
+    <h2 class="sub-copy">Intrst is the leading financial product ranking platform for Generation Z.</h2>
+    <a href="/about.html"  target=""  class="button center-block text-center">
+     Who We Are
+    </a>
+    <div style="text-align:center">
+      <span class="dot2" onclick="currentSlide1(1)"></span>
+      <span class="dot2" onclick="currentSlide1(2)"></span>
+      <span class="dot2" onclick="currentSlide1(3)"></span>
+      <span class="dot2" onclick="currentSlide1(4)"></span>
 
-        <div style="margin: 0 auto" class="col-md-4 Featdiv">
-            <a href="http://blog.intrst.ca/2017/01/03/two-sides-one-coin/">
-                <img style="margin: 0 auto" src=".\assets\images\landing\bank-account-410x215.jpg" class="img-responsive" alt="" id="img1">
-                <h3 style="color:white; text-align: center;">Two Sides, One Coin </h3>
-                <h4 style="color:white; text-align: center;">Why do some people choose smaller institutions like Tangerine? Find out here.</h4>
-            </a>
-        </div>
-        <div style="margin: 0 auto" class="col-md-4 Featdiv">
-            <a href="http://blog.intrst.ca/2017/01/03/the-right-account-for-you/">
-                <img style="margin: 0 auto" src=".\assets\images\landing\bank-account2-410x215.jpg" class="img-responsive" alt="" id="img2">
-                <h3 style="color:white; text-align: center;"> The Right Account For You </h3>
-                <h4 style="color:white; text-align: center;">Savings or Chequing account? Find out which is right for you.</h4>
-            </a>
-        </div>
-        <div style="margin: 0 auto" class="col-md-4 Featdiv">
-            <a href="http://blog.intrst.ca/2017/01/03/holiday-savings/">
-                <img style="margin: 0 auto" src=".\assets\images\landing\holiday1-410x215.jpg" class="img-responsive" alt="" id="img3">
-                <h3 style="color:white; text-align: center;">Tips for Saving Money on Holiday Gifts</h3>
-                <h4 style="color:white; text-align: center;">The holidays too expensive? Here's how to give while saving.</h4>
-            </a>
-        </div>
-    </div>
-    <!-- Write your comments here -->
-    <div style="outline:0; height:125px; margin-top:-10px; width:100%; background-color: #317b96"></div>
-    <!--More money more moments-->
-    <div class="MoreMoney center-block text-center">
-        <h2>More Money. More Moments.</h2>
-        <div class="row moments text-center center-block">
-            <div style="margin: 0 auto" class="col-md-4 text-center center-block"><img style="margin: 0 auto" src=".\assets\images\landing\moremoneymoremoments11-410.jpg" class="img-responsive img"></div>
-            <div style="margin: 0 auto" class="col-md-4"><img style="margin: 0 auto" src=".\assets\images\landing\moremoneymoremoments15-410.jpg" class="img-responsive img"></div>
-            <div style="margin: 0 auto" class="col-md-4"><img style="margin: 0 auto" src=".\assets\images\landing\moremoneymoremoments16-410.jpg" class="img-responsive img"></div>
-        </div>
-    </div>
-    <div class="row center-block text-center learnmore">
-        <div class="col-md-12 center-block text-center">
-            <a class="button h2" href="educate.html">Still Want to Learn?</a>
-        </div>
     </div>
     </div>
-
-    <!-- Popup -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="container" style="margin-top:20vh">
-    <div class="row">
-      <div class="col-sm-12 text-center popup">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">×</button>
-            <div class="modal-header">
-                <h1>Nice to meet you!</h1>
-                <h4>Tell us a bit about yourself.</h4>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <form class="form-inline col-lg-12" action="">
-                        <div class="row">
-                            <div class="form-group col-lg-5">
-                                <div class="row">
-                                    <label class="control-label col-lg-4 col-lg-offset-1" for="email"><h4>Email Address:</h4></label>
-                                    <div class="input-group col-lg-6">  
-                                        <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
-                                        <input type="email" class="form-control" id="email" name="email" placeholder="Email Address"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group col-lg-5 col-lg-offset-1">
-                                <div class="row">
-                                    <label class="control-label col-lg-5 col-lg-offset-1" for="Intrst"><h4>What is your Intrst?</h4></label>
-                                    <div class="input-group col-lg-6" style="margin: auto">
-                                        <select class="form-control" id="sel1">
-                                            <option class="option1">Learn more about finance</option>
-                                            <option class="option1">Compare Products</option>
-                                            <option class="option1">Read Articles</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-group col-lg-5 row2sel">
-                                <div class="row">
-                                    <label class="control-label col-lg-5" for="Intrst"><h4>Education</h4></label>
-                                    <div class="input-group col-lg-6" style="margin: auto">
-                                        <select class="form-control" id="sel1">
-                                            <option class="option1">High School</option>
-                                            <option class="option1">Post-Secondary</option>
-                                            <option class="option1">Graduate</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group col-lg-5 col-lg-offset-1 row2sel">
-                                <div class="row">
-                                    <label class="control-label col-lg-5 col-lg-offset-1" for="Intrst"><h4>Region</h4></label>
-                                    <div class="input-group col-lg-6" style="margin: auto">
-                                        <select class="form-control" id="sel1">
-                                            <option class="option1">Downtown</option>
-                                            <option class="option1">East York</option>
-                                            <option class="option1">North York</option>
-                                            <option class="option1">Etobicoke</option>
-                                            <option class="option1">Scarbrough</option>
-                                            <option class="option1">Midtown</option>
-                                            <option class="option1">Other</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-4 col-lg-offset-4 row2sel">
-                                <button type="submit" class="button" id="modal-submit">Submit</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-      </div>
-    </div>
+</div>
+  </div>
+  <div class=" mySlides2 fade" style=" background-image: url('/assets/images/landing2.png'); "; class="Jump">
+  <div class ="container" style=" padding:10%">
+  <h1 class="main-copy" >Compare financial products.</h1>
+  <h2 class="sub-copy">Find the best student credit cards and savings accounts.</h2>
+  <a href="/evaluate.html" style="background-color:#53a5c6"  target="" id="blue-button"  class="button center-block text-center">
+   Compare Now
+  </a>
+  <div style="text-align:center">
+    <span class="dot2" onclick="currentSlide1(1)"></span>
+    <span class="dot2" onclick="currentSlide1(2)" style="background-color:#717171"></span>
+    <span class="dot2" onclick="currentSlide1(3)"></span>
+    <span class="dot2" onclick="currentSlide1(4)"></span>
+  </div>
   </div>
 </div>
-    <!--/div-->
+</div>
 
-</body>
-
- <script>
-    $(document).ready(setTimeout(function(){if (sessionStorage["PopupShown"] != 'yes'){ $("#myModal").modal({backdrop: "static"},{keyboard: true});}}, 1000))
-</script>
-
+  <div class="mySlides2 fade"style="background-image: url('/assets/images/landing3.png');";>
+    <div class ="container" style=" padding:10%">
+      <h1 class="main-copy" >Get financial advice from the pros.</h1>
+      <h2 class="sub-copy" >Articles and videos with tips, tricks and financial happenings.</h2>
+      <a href="/explore.html"  target=""  class="button center-block text-center">
+       Learn More
+      </a>
+      <div style="text-align:center">
+        <span class="dot2" onclick="currentSlide1(1)"></span>
+        <span class="dot2" onclick="currentSlide1(2)"></span>
+        <span class="dot2" onclick="currentSlide1(3)" style="background-color:#717171"></span>
+        <span class="dot2" onclick="currentSlide1(4)"></span>
+      </div>
+      </div>
+  </div>
+</div>
+<div class="mySlides2 fade"style=" background-image: url('/assets/images/landing4.png');";>
+  <div class ="container" style=" padding:10%">
+    <h1 class="main-copy">Confused by finance jargon?</h1>
+    <h2 class="sub-copy" >Our simplified terms make it easy for you to understand.</h2>
+    <a href="/educate.html" style="background-color:#53a5c6" target="" id="blue-button" class="button center-block text-center">
+     Learn More
+    </a>
+    <div style="text-align:center">
+      <span class="dot2" onclick="currentSlide1(1)"></span>
+      <span class="dot2" onclick="currentSlide1(2)"></span>
+      <span class="dot2" onclick="currentSlide1(3)"></span>
+      <span class="dot2" onclick="currentSlide1(4)" style="background-color:#717171"></span>
+    </div>
+    </div>
+</div>
+</div>
 <script>
-    $("#modal-submit").click(function (e)
-  {
-     HideDialog();
-     e.preventDefault();
-     sessionStorage["PopupShown"] = 'yes'; //Save in the sessionStorage if the modal has been shown
-  });
+var slideIndex = 1;
+var time;
+showSlides1(slideIndex);
 
-  
-  </script>
+function plusSlides(n) {
+  showSlides1(slideIndex += n);
+}
+
+function currentSlide1(n) {
+  slideIndex = n;
+  showSlides1(n);
+  clearTimeout(time);
+}
+
+function showSlides1(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides2");
+  var dots = document.getElementsByClassName("dot2");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+
+  if(slideIndex==4)
+  {
+    slideIndex = 1;
+  }
+  else {
+  slideIndex++;
+  }
+   time = setTimeout(showSlides1, 6000);
+}
+</script>
+</div>
+
+  <div class="moments fade" style="display: flex; background-color:white; margin-top:0; ">
+<div class = "col-xs-12 col-sm-4 " style="padding:3%">
+  <img class="img-responsive" style="border-top-right-radius:10px; border-top-left-radius:10px;" src="\assets\images\moremoneymoremoments1.jpg">
+  <div style="margin-bottom:-5%">
+    <div class="quotation" style="background-color:#4acf72; border-bottom-right-radius:10px; border-bottom-left-radius:10px;" >
+    <h1 class="quo">&ldquo;</h1>
+    <h2 class="quote" style="background-color:#4acf72;">"I went to the Ever After Music festival. The energy from the people, the music, and atmosphere made me feel alive."</h2>
+  </div>
+    <img class ="img-responsive img-circle center-block headshot" src = "\assets\images\about\timurheadshot.jpg">
+
+    <h3 style="text-align:center;">Tim Kazbek</h3>
+      <h3 style="text-align:center; color:#A9A9A9;margin-top:0; ">Northern Secondary School</h3>
+
+
+
+</div>
+</div>
+<div class = "col-xs-12 col-sm-4 "  style="padding:3%">
+  <img class="img-responsive" style="border-top-right-radius:10px; border-top-left-radius:10px;" src="\assets\images\moremoneymroemoments2.jpg">
+  <div style="margin-bottom:-5%">
+    <div class="quotation" style="background-color:#53a5c6; border-bottom-right-radius:10px; border-bottom-left-radius:10px;" >
+    <h1 class="quo" >&ldquo;</h1>
+    <h2 class="quote" style="background-color:#53a5c6">"Couldn’t believe the views here. All thanks to my travel rewards."</h2>
+  </div>
+    <img class ="img-responsive img-circle center-block headshot" src = "\assets\images\andrew.png">
+
+    <h3 style="text-align:center;">Andrew O' Reilly</h3>
+      <h3 style="text-align:center; color:#A9A9A9;margin-top:0;">Upper Canada College</h3>
+
+
+
+</div>
+</div>
+<div class = "col-xs-12 col-sm-4 "  style="padding:3%">
+  <img class="img-responsive"style="border-top-right-radius:10px; border-top-left-radius:10px;" src="\assets\images\moremoneymoremoments3.jpg">
+  <div style="margin-bottom:-5%">
+    <div class="quotation" style="background-color:#4acf72; border-bottom-right-radius:10px; border-bottom-left-radius:10px;" >
+    <h1 class="quo">&ldquo;</h1>
+    <h2 class="quote" style="background-color:#4acf72;">"My new, cheaper cell phone plan allowed me to save money towards a Drake concert."</h2>
+  </div>
+    <img class ="img-responsive img-circle center-block headshot" src = "\assets\images\about\caitlynheadshot.jpg">
+
+    <h3 style="text-align:center;">Caitlyn Liu</h3>
+      <h3 style="text-align:center; color:#A9A9A9; margin-top:0;">York Mills Collegiate</h3>
+
+
+
+</div>
+</div>
+</div>
+
+
+<div class="fade" style="background-color:	#F6F6F6; border-radius: 7px;margin:2%; overflow:hidden">
+  <h1 style="font-weight:bold; font-size: 6vh; padding-left:5%; padding-top:3%; padding-right:15%; font-family:'Source Sans Pro', sans-serif;">
+    We held a <span style="color:#53a5c6;">financial literacy</span> workshop to teach students the basics of <span style="color:#4acf72;">budgeting</span>, <span style="color:#4acf72;">investing</span>, and <span style="color:#4acf72;">personal finance</span>.</h1>
+    <a href="/seminargallery.html">
+    <div class="col-xs-6 col-sm-4 pic" >
+      <img class="img-responsive" style="border-radius:10px;" src="\assets\images\seminar_pics\IMG_7030.jpg">
+    </div>
+    <div class="col-xs-6 col-sm-4 pic" >
+      <img class="img-responsive"  style="border-radius:10px;" src="\assets\images\seminar_pics\IMG_7049.jpg">
+    </div>
+    <div class="col-xs-6 col-sm-4 pic" >
+      <img class="img-responsive"  style="border-radius:10px;" src="\assets\images\seminar_pics\IMG_7134.jpg">
+    </div>
+  </a>
+    <div class=" col-sm-12 center-block text-center">
+      <a href="/seminargallery.html" style="background-color:#4acf72; font-weight:600; margin-bottom: 3%;"  target=""  class="button center-block text-center">
+       View Gallery
+      </a>
+  </div>
+  </div>
+
+
+<div class="financialtips fade" style="margin:2%; overflow:hidden">
+  <h1 style="font-weight:bold; font-size: 5vh; padding-left:3%; font-family:'Source Sans Pro', sans-serif;">Learn the best <span style="color:#4acf72;">financial tips</span> from the pros.</h1>
+  <a href="/guest-interview-chris-manning.html">
+  <div class="col-xs-6 col-sm-4 pic" >
+    <img class="img-responsive"  style="border-radius:10px;" src="\assets\images\articleheadshots\guest-interview-chris-manning.jpg">
+    <h3 style="font-weight:bold;">Guest Interview: Chris Manning </h3>
+    <h4 style="font-weight: lighter; color:#A9A9A9;">Learn some financing tips from one of Toronto's rising professionals in the banking industry.</h4>
+    <h4 style="color:#A9A9A9;"><i>With Chris Manning</i></h4>
+  </div>
+</a>
+<a href ="/money-for-your-milestones.html">
+  <div class="col-xs-6 col-sm-4 pic" >
+    <img class="img-responsive"  style="border-radius:10px;" src="\assets\images\articleheadshots\money-for-your-milestones.jpg">
+    <h3 style=" font-weight:bold;">Money for your Milestones </h3>
+    <h4 style=" font-weight: lighter; color:#A9A9A9;">Worried about the cost of post-secondary education? We can help.</h4>
+    <h4 style="color:#A9A9A9;"><i>By Sharon Zheng</i></h4>
+  </div>
+</a>
+<a href ="/cut-back-on-costs.html">
+  <div class="col-xs-6 col-sm-4 pic" >
+    <img class="img-responsive" style="border-radius:10px;" src="\assets\images\articleheadshots\cut-back-on-costs.jpg">
+    <h3 style=" font-weight:bold;">Cut Back on Costs </h3>
+    <h4 style=" font-weight: lighter; color:#A9A9A9;">Struggling with budgeting? Here are some strategies to save.</h4>
+    <h4 style="color:#A9A9A9;"><i>By Saba Yasrebi</i></h4>
+  </div>
+</a>
+  <div class=" col-sm-12 center-block text-center">
+    <a href="/explore.html" style="background-color:#4acf72; font-weight:600;"  target=""  class="button center-block text-center">
+     View All Articles
+    </a>
+</div>
+</div>
+</div>
+</body>
 
 <div w3-include-html="footer.html"></div>
 <script>
