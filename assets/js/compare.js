@@ -72,27 +72,29 @@ app.controller("compareController", ["$scope", "$window", function($scope, $wind
             link: "https://www.tdcanadatrust.com/products-services/banking/accounts/savings-accounts/youth.jsp"}
     ];
 
+    $scope.sortTypeCcard = "name";
+    $scope.sortReverseCcard = "true";
     $scope.ccardBanks = [
-      { imgsrc: "assets/images/compare/Scotiabank.png", name: "Scotiabank® SCENE® VISA Card", fee: 0, limit: 500, features: ["4000 bonus signup bonus", "Sportchek discount", "1 scene point / $1 spent"],
-          worth: 500, money: "500 Scene Points", link: "http://www.scotiabank.com/ca/en/0,,91,00.html" },
-      { imgsrc: "assets/images/compare/TD.png", name: "TD Green Visa Card", fee: 0, limit: 500, features: ["Basic Insurance provided (carrier insurance)"],
-          worth: 0, money: "100,000 insurance", link: "https://www.tdcanadatrust.com/products-services/banking/credit-cards/view-all-cards/green-card.jsp" },
-      { imgsrc: "assets/images/compare/RBC.png", name: "RBC® Cash Back Mastercard", fee: 0, limit: 500, features: ["2% cashback on groceries", "1% on every dollar spent"],
-          worth: 0, money: "5 dollars back", link: "http://www.rbcroyalbank.com/credit-cards/cash-back-credit-cards/cash-back-mastercard/" },
       { imgsrc: "assets/images/compare/BMO.png", name: "BMO SPC CashBack Mastercard®", fee: 0, limit: 500, features: ["SPC Card Benefits", "1% cashback on purchases", "BONUS - $60 first year"],
-          worth: 0, money: "5 dollars back", link: "https://www.bmo.com/main/personal/credit-cards/spc-cashback-student-credit-cards#"},
-      { imgsrc: "assets/images/compare/CIBC.png", name: "CIBC Tim Hortons® Double Double™ Visa Card*" , fee: 0, limit: 500, features: ["1% tims ($20 signing bonus)"], worth: "N/A",
-          money: "5 Tim Hortons cash back", link: "https://www.cibc.com/en/personal-banking/credit-cards/retail-rewards-cards/tim-hortons-rewards-card.html"},
-      { imgsrc: "assets/images/compare/CIBC.png", name: "CIBC Classic Visa Card*", fee: 0, limit: 500, features: ["100,000$ basic insurance"], worth: 0,
-          money: "100,000 insurance", link: "https://www.cibc.com/en/personal-banking/credit-cards/everyday-cards/classic-visa.html"},
-      { imgsrc: "assets/images/compare/CIBC.png", name: "CIBC Dividend® Visa Card*", fee: 0, limit: 500, features: ["1% everything / 2% groceries"], worth: "N/A",
-          money: "5 dollars back", link: "https://www.cibc.com/ca/visa/dividend-card.html"},
-      { imgsrc: "assets/images/compare/Tangerine.png", name: "Tangerine Money-Back Credit Card", fee: 0, limit: "TBD", features: ["2% on select purchases, 1% on everything else"], worth: "N/A",
-          money: "5 dollars back", link: "https://www.tangerine.ca/moneybackcreditcard"},
-      { imgsrc: "assets/images/compare/mbna.png", name: "MBNA Rewards MasterCard® Credit Card", fee: 0, limit: 500, features: ["1 MBNA point / $1 spent"], worth: 500,
-          money: "Redeemed for items", link: "https://rewards.mbna.ca/?src=DAAF11"},
-      { imgsrc: "assets/images/compare/NationalBank.png", name: "ECHO® CASHBACK MASTERCARD®", fee: 0, limit: "500+", features: ["1% cash back for instore purchases, 1.5% online"], worth: 0,
-          money: "N/A", link: "https://www.nbc.ca/en/personal/credit-cards/mastercard-credit-cards/cashback-cards/echo.html" }
+          worth: 0, worthRank: 3, money: "5 dollars back", redeemRank: 4, link: "https://www.bmo.com/main/personal/credit-cards/spc-cashback-student-credit-cards#"},
+      { imgsrc: "assets/images/compare/CIBC.png", name: "CIBC Classic Visa Card*", fee: 0, limit: 500, features: ["$100,000 basic insurance"], worth: 0, worthRank: 4,
+          money: "$100,000 insurance", redeemRank: 1, link: "https://www.cibc.com/en/personal-banking/credit-cards/everyday-cards/classic-visa.html"},
+      { imgsrc: "assets/images/compare/CIBC.png", name: "CIBC Dividend® Visa Card*", fee: 0, limit: 500, features: ["1% everything / 2% groceries"], worth: "N/A", worthRank: 8,
+          money: "5 dollars back", redeemRank: 5, link: "https://www.cibc.com/ca/visa/dividend-card.html"},
+      { imgsrc: "assets/images/compare/CIBC.png", name: "CIBC Tim Hortons® Double Double™ Visa Card*" , fee: 0, limit: 500, features: ["1% tims ($20 signing bonus)"], worth: "N/A", worthRank: 9,
+          money: "5 Tim Hortons cash back", redeemRank: 8, link: "https://www.cibc.com/en/personal-banking/credit-cards/retail-rewards-cards/tim-hortons-rewards-card.html"},
+      { imgsrc: "assets/images/compare/mbna.png", name: "MBNA Rewards MasterCard® Credit Card", fee: 0, limit: 500, features: ["1 MBNA point / $1 spent"], worth: 500, worthRank: 1,
+          money: "Redeemed for items", redeemRank: 9, link: "https://rewards.mbna.ca/?src=DAAF11"},
+      { imgsrc: "assets/images/compare/NationalBank.png", name: "ECHO® CASHBACK MASTERCARD®", fee: 0, limit: "500+", features: ["1% cash back for instore purchases, 1.5% online"], worth: 0, worthRank: 5,
+          money: "N/A", redeemRank: 10, link: "https://www.nbc.ca/en/personal/credit-cards/mastercard-credit-cards/cashback-cards/echo.html" },
+      { imgsrc: "assets/images/compare/RBC.png", name: "RBC® Cash Back Mastercard", fee: 0, limit: 500, features: ["2% cashback on groceries", "1% on every dollar spent"],
+          worth: 0, worthRank: 6, money: "5 dollars back", redeemRank: 6, link: "http://www.rbcroyalbank.com/credit-cards/cash-back-credit-cards/cash-back-mastercard/" },
+      { imgsrc: "assets/images/compare/Scotiabank.png", name: "Scotiabank® SCENE® VISA Card", fee: 0, limit: 500, features: ["4000 bonus signup bonus", "Sportchek discount", "1 scene point / $1 spent"],
+          worth: 500, worthRank: 2, money: "500 Scene Points", redeemRank: 3, link: "http://www.scotiabank.com/ca/en/0,,91,00.html" },
+      { imgsrc: "assets/images/compare/Tangerine.png", name: "Tangerine Money-Back Credit Card", fee: 0, limit: "TBD", features: ["2% on select purchases, 1% on everything else"], worth: "N/A", worthRank: 10,
+          money: "5 dollars back", redeemRank: 7, link: "https://www.tangerine.ca/moneybackcreditcard"},
+      { imgsrc: "assets/images/compare/TD.png", name: "TD Green Visa Card", fee: 0, limit: 500, features: ["Basic Insurance provided (carrier insurance)"],
+          worth: 0, worthRank: 7, money: "$100,000 insurance", redeemRank: 2, link: "https://www.tdcanadatrust.com/products-services/banking/credit-cards/view-all-cards/green-card.jsp" }
     ];
 
     $scope.sortTypeCell = "name1";
