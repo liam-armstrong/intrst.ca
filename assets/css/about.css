@@ -42,10 +42,6 @@ a {
 
 }
 
-.logo{
-    margin: auto;
-}
-
 a.button {
     display: block;
     text-align: center;
@@ -74,25 +70,15 @@ a.button:hover {
     }
 }
 
-@media screen and (max-width: 423px){
-   .gmPhoto{
-       height: 40vw;
-   } 
-}
 
-@media screen and (min-width: 424px){
-    .gmPhoto{
-        height: 180px;
-    }
-}
 
-@media screen and (max-width: 494px){
+@media screen and (max-width: 399px){
    .Adphoto{
-       height: 35vw;
+       height: 50vw;
    } 
 }
 
-@media screen and (min-width: 495px){
+@media screen and (min-width: 400px){
     .Adphoto{
         height: 170px;
     }

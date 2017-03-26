@@ -117,14 +117,14 @@
                     <li ng-class="{'active' : currentActive=='saving' || currentActive=='savingChart'}"><a href="#savings" ng-click="currentActive='saving';addHistory('saving','evaluate.html#savings');">SAVINGS</a></li>
                     <li ng-class="{'active' : currentActive=='cell' || currentActive=='cellChart'}"><a href="#cellphones" ng-click="currentActive='cell';addHistory('cell','evaluate.html#cellphones');">CELL PHONES</a></li>
                     <li ng-class="{'active' : currentActive=='ccard'}"><a href="#credit-cards" ng-click="currentActive='ccard';addHistory('ccard','evaluate.html#credit-cards');">CREDIT CARDS</a></li>
-                    <li ng-class="{'active' : currentActive=='food'}"><a href="#food-delivery" ng-click="currentActive='food';addHistory('food','evaluate.html#food-delivery');">FOOD DELIVERY</a></li>
-                    <li ng-class="{'active' : currentActive=='tv'}"><a href="#tv-networks" ng-click="currentActive='tv';addHistory('tv','evaluate.html#tv-networks');">TV NETWORKS</a></li>
+                    <!--<li ng-class="{'active' : currentActive=='food'}"><a href="#food-delivery" ng-click="currentActive='food';addHistory('food','evaluate.html#food-delivery');">FOOD DELIVERY</a></li>
+                    <li ng-class="{'active' : currentActive=='tv'}"><a href="#tv-networks" ng-click="currentActive='tv';addHistory('tv','evaluate.html#tv-networks');">TV NETWORKS</a></li>-->
                 </ul>
 
                 <div class="savings">
                     <div class="savChars" ng-show="currentActive=='saving'" ng-hide="!(currentActive=='saving')">
                         <h4>What do <span style="color: #34C15F">you</span> do with your <span style="color: #34C15F">money</span>?</h4>
-                        <div class="greybox" ng-click="currentActive='savingChart';sortTypeSaving='rate';sortReverseSaving=true">
+                        <div class="greybox" ng-click="currentActive='savingChart';sortTypeSaving='rate';sortReverseSaving=true" style="background-color: #6DBEB0;">
                             <div class="col-md-5 transbox sunny">
                                 <h4>Sunny the Saver</h4>
                                 <br>
@@ -137,7 +137,7 @@
                             </div>
                         </div>
                         <br>
-                        <div class="greybox" ng-click="currentActive='savingChart';sortTypeSaving='atmRank'">
+                        <div class="greybox" ng-click="currentActive='savingChart';sortTypeSaving='atmRank'" style="background-color: #99BC77;">
                             <div class="col-md-5 transbox">
                                 <h4>Spencer the Spender</h4>
                                 <br>
@@ -150,7 +150,7 @@
                             </div>
                         </div>
                         <br>
-                        <div class="greybox" ng-click="currentActive='savingChart';sortTypeSaving='branches';sortReverseSaving=true">
+                        <div class="greybox" ng-click="currentActive='savingChart';sortTypeSaving='branches';sortReverseSaving=true" style="background-color: #FBB03C;">
                             <div class="col-md-5 transbox">
                                 <h4>Robert the Roamer </h4>
                                 <br>
@@ -240,7 +240,7 @@
                 <div class="cell">
                     <div class="cellChars" ng-show="currentActive=='cell'" ng-hide="!(currentActive=='cell')">
                         <h4>What do <span style="color: #34C15F">you</span> do with your <span style="color: #34C15F">money</span>?</h4>
-                        <div class="greybox" ng-click="currentActive='cellChart';sortTypeCell='data';sortReverseCell=true">
+                        <div class="greybox" ng-click="currentActive='cellChart';sortTypeCell='data';sortReverseCell=true" style="background-color: #6DBEB0;">
                             <div class="col-md-5 transbox">
                                 <h4>David the Data User</h4>
                                 <br>
@@ -253,7 +253,7 @@
                             </div>
                         </div>
                         <br>
-                        <div class="greybox" ng-click="currentActive='cellChart';sortTypeCell='callRank';sortReverseCell=true">
+                        <div class="greybox" ng-click="currentActive='cellChart';sortTypeCell='callRank';sortReverseCell=true" style="background-color: #99BC77;">
                             <div class="col-md-5 transbox">
                                 <h4>Caitlyn the Caller</h4>
                                 <br>
@@ -266,7 +266,7 @@
                             </div>
                         </div>
                         <br>
-                        <div class="greybox" ng-click="currentActive='cellChart';sortTypeCell='textRank';sortReverseCell=true">
+                        <div class="greybox" ng-click="currentActive='cellChart';sortTypeCell='textRank';sortReverseCell=true" style="background-color: #FBB03C;">
                             <div class="col-md-5 transbox">
                                 <h4>Talia the Texter</h4>
                                 <br>
