@@ -24,12 +24,23 @@ a.back-to-top {
 
 .title {
     height: 50vh;
-    background: url(/assets/images/terminology/banner.jpg) center center no-repeat;
-    background-size: cover;
     padding-top: 19vh;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 4em;
-    color: lightgrey;
+}
+
+.title::after {
+    height: 60vh;
+    content: "";
+    background: url(/assets/images/terminology/banner.jpg) center center no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
 }
 
 #override .content {
@@ -40,7 +51,7 @@ a.back-to-top {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 20px;
     color: grey;
-    letter-spacing: 4px;
+    letter-spacing: 10px;
 }
 
 .dir a {
