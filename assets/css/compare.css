@@ -2,9 +2,7 @@
     font-family: 'Raleway', sans-serif;
 }
 
-.navbar-nav > li > a:hover {
-    font-size: larger;
-}
+
 
 body {
     font-size: 15px;
@@ -47,7 +45,6 @@ h4 {
 }
 
 .greybox:hover {
-  background-color: #E5E5E5;
   cursor: pointer;
 }
 
@@ -115,10 +112,6 @@ thead > tr > td{
     max-height: 25px;
 }
 
-.cell-list {
-    text-align: left;
-}
-
 .input-group {
     padding-top: 20px;
     padding-left: 10px;
@@ -137,12 +130,6 @@ thead > tr > td{
     line-height: 1em;
 }
 
-.cell-overflow {
-    height: 50px !important;
-    overflow: hidden !important;
-    overflow-y: scroll !important;
-}
-
 @media only screen and (max-width: 1200px) {
     .form-control {
         width: 200px !important;
@@ -155,6 +142,8 @@ thead > tr > td{
       width: 350px !important;
       height: 30px;
       font-size: 14px;
+  }
+  .sunny {
   }
   .transbox {
       width: 400px;
@@ -216,9 +205,6 @@ thead > tr > td{
     }
     .imagebox {
         margin-top: 0;
-    }
-    .nav-tabs > li {
-
     }
 }
 
