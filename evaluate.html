@@ -116,7 +116,7 @@
                 <ul class="nav nav-tabs">
                     <li ng-class="{'active' : currentActive=='saving' || currentActive=='savingChart'}"><a href="#savings" ng-click="currentActive='saving';addHistory('saving','evaluate.html#savings');">SAVINGS</a></li>
                     <li ng-class="{'active' : currentActive=='cell' || currentActive=='cellChart'}"><a href="#cellphones" ng-click="currentActive='cell';addHistory('cell','evaluate.html#cellphones');">CELL PHONES</a></li>
-                    <li ng-class="{'active' : currentActive=='ccard'}"><a href="#credit-cards" ng-click="currentActive='ccard';addHistory('ccard','evaluate.html#credit-cards');">CREDIT CARDS</a></li>
+                    <li ng-class="{'active' : currentActive=='ccard' || currentActive=='ccardChart'}"><a href="#credit-cards" ng-click="currentActive='ccard';addHistory('ccard','evaluate.html#credit-cards');">CREDIT CARDS</a></li>          
                     <!--<li ng-class="{'active' : currentActive=='food'}"><a href="#food-delivery" ng-click="currentActive='food';addHistory('food','evaluate.html#food-delivery');">FOOD DELIVERY</a></li>
                     <li ng-class="{'active' : currentActive=='tv'}"><a href="#tv-networks" ng-click="currentActive='tv';addHistory('tv','evaluate.html#tv-networks');">TV NETWORKS</a></li>-->
                 </ul>
@@ -343,12 +343,45 @@
                         </table>
                     </div>
 
-                    <div class="ccardChart table-responsive" ng-show="currentActive=='ccard'" ng-hide="!(currentActive=='ccard')">
+                    <div class="ccardChars" ng-show="currentActive=='ccard'" ng-hide="!(currentActive=='ccard')">
+                        <h4>What do <span style="color: #34C15F">you</span> do with your <span style="color: #34C15F">money</span>?</h4>
+                        <div class="greybox" ng-click="currentActive='ccardChart';sortTypeCcard='worthRank';sortReverseCcard=false" style="background-color: #6DBEB0;">
+                            <div class="col-md-5 transbox">
+                                <h4>Callie the Collector</h4>
+                                <br>
+                                <p>
+                                    Callie is driven by point systems. She loves collecting enough points to afford free incentives.
+                                </p>
+                            </div>
+                            <div class="col-md-5 imagebox">
+                                <img src="assets/images/compare/Callie-07.png" class="img-responsive char-image">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="greybox" ng-click="currentActive='ccardChart';sortTypeCcard='redeemRank';sortReverseCcard=false" style="background-color: #99BC77";>
+                            <div class="col-md-5 transbox">
+                                <h4>Fanny the Fearful-Spender</h4>
+                                <br>
+                                <p>
+                                    Fanny wants a credit card but she’s always afraid of spending too much money. She wants a card that can get the best cashback deals..
+                                </p>
+                            </div>
+                            <div class="col-md-5 imagebox">
+                                <img src="assets/images/compare/Fanny.png" class="img-responsive char-image">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="ccardChart table-responsive" ng-show="currentActive=='ccardChart'" ng-hide="!(currentActive=='ccardChart')">
                         <table class="table table-striped">
                             <thead>
                                 <tr>
                                     <td>
-                                          NAME
+                                      <a href="#" ng-click="sortTypeCcard = 'name'; sortReverseCcard = !sortReverseCcard">
+                                          NAME </a>
+                                      <span ng-show="sortTypeCcard == 'name' && !sortReverseCcard" class="fa fa-caret-down"></span>
+                                      <span ng-show="sortTypeCcard == 'name' && sortReverseCcard" class="fa fa-caret-up"></span>
                                     </td>
                                     <td>FEE</td>
                                     <td>
@@ -358,15 +391,23 @@
                                         FEATURES
                                     </td>
                                     <td>
-                                        WORTH (POINTS)
+                                      <a href="#" ng-click="sortTypeCcard = 'worthRank'; sortReverseCcard = !sortReverseCcard">
+                                          WORTH (POINTS) </a>
+                                      <span ng-show="sortTypeCcard == 'worthRank' && !sortReverseCcard" class="fa fa-caret-down"></span>
+                                      <span ng-show="sortTypeCcard == 'worthRank' && sortReverseCcard" class="fa fa-caret-up"></span>
                                     </td>
-                                    <td>CAN REDEEM</td>
+                                    <td>
+                                      <a href="#" ng-click="sortTypeCcard = 'redeemRank'; sortReverseCcard = !sortReverseCcard">
+                                          CAN REDEEM </a>
+                                      <span ng-show="sortTypeCcard == 'redeemRank' && !sortReverseCcard" class="fa fa-caret-down"></span>
+                                      <span ng-show="sortTypeCcard == 'redeemRank' && sortReverseCcard" class="fa fa-caret-up"></span>
+                                    </td>
                                     <td></td>
                                 </tr>
                             </thead>
 
                             <tbody class="table-body">
-                                <tr ng-repeat="bank in ccardBanks">
+                                <tr ng-repeat="bank in ccardBanks | orderBy:sortTypeCcard:sortReverseCcard">
                                     <td><a ng-href="{{bank.link}}" target="_blank"><img ng-src="{{bank.imgsrc}}" class="table-body-logo cell-logo"></a>
                                       <br>{{bank.name}}
                                     </td>
@@ -388,6 +429,7 @@
 
                         <h5>*ALL HAVE FRAUD PROTECTION + SOME BASIC INSURANCE (DEPENDING ON BANK) - all points based on monthly amount spent</h5>
                     </div>
+
 
                     <div class="foodChart table-responsive" ng-show="currentActive=='food'" ng-hide="!(currentActive=='food')">
                         <table class="table table-striped">
