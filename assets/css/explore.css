@@ -1,0 +1,177 @@
+h1, h2 {
+  font-family:"Source Sans Pro", sans-serif;
+  font-weight: 400;
+  margin-botom:5%;
+  text-align: center;
+}
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	overflow:hidden;
+}
+iframe {
+  display:block;
+  margin: 0 auto;
+  margin-top:5%;
+  margin-bottom:5%;
+  overflow:hidden;
+}
+
+.tabcontent {
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* Style the tab */
+div.tab {
+  margin-bottom:3%;
+    display:inline-block;
+    margin: 0 auto;
+    text-align: center;
+    float:left;
+       width:100%;
+       overflow:hidden;
+       position:relative;
+}
+div.tab ul {
+
+  clear:left;
+   float:left;
+   list-style:none;
+   margin:0;
+   padding:0;
+   position:relative;
+   left:50%;
+   text-align:center;
+}
+
+div.tab ul li {
+  display:block;
+  float:left;
+  list-style:none;
+  margin:0;
+  padding:0;
+  position:relative;
+  right:50%;
+}
+
+/* Style the links inside the tab */
+div.tab a {
+    margin-bottom:3%;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+
+}
+
+/* Change background color of links on hover */
+div.tab a:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tab a:focus, .active {
+    background-color: #ccc;
+}
+
+.tablinks {
+  float:none;
+  text-align:center;
+  margin: 0 auto;
+
+}
+
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    margin-top:3%;
+    border-top: none;
+}
+
+
+.divTable{
+	display: table;
+	width: 100%;
+}
+.divTableRow {
+	display: table-row;
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+}
+.divTableCell, .divTableHead {
+	border: 1px solid #999999;
+	display: table-cell;
+	padding: 3px 10px;
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+	font-weight: bold;
+}
+.divTableFoot {
+	background-color: #EEE;
+	display: table-footer-group;
+	font-weight: bold;
+}
+.divTableBody {
+	display: table-row-group;
+}
+
+.headshot, .bio    {
+
+  display: inline-block;
+      margin: 0 auto;
+
+}
+
+#wrap {
+    display: inline-block;
+  height:265px;
+}
+
+a.button.center-block.text-center {
+    display: block;
+    text-align: center;
+    max-width: 200px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin: 20px auto;
+    padding: 20px 30px;
+    color: RGBA(0, 0, 0, 0.6);
+    box-shadow: RGBA(52, 193, 95, 0.4) 0 0px 0px 2px inset;
+}
+
+a.button.center-block.text-center:hover {
+    color: rgba(255, 255, 255, 0.85);
+    box-shadow: RGBA(52, 193, 95, 0.7) 0 0px 0px 40px inset;
+}
+
+img.article-image {
+  width:80%;
+   display:block;
+   margin:auto;
+}
+    @media screen and (max-width: 1080px) {
+img.article-image {
+  width:100%;
+}
+}
