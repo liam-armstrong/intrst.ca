@@ -1,21 +1,23 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="viewport" content="width=device, initial-scale=1.0">
     <title>Intrst Financial</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href=".\assets\css\LandingPage.css">
+
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <!--Header-->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico"/>
     <link rel="stylesheet" href="assets/css/footer.css">
     <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="http://www.w3schools.com/lib/w3data.js"></script>
+
     <!-- Google Analytics -->
     <script>
         (function (i, s, o, g, r, a, m) {
@@ -23,11 +25,13 @@
             i[r] = i[r] || function () {
                 (i[r].q = i[r].q || []).push(arguments)
             }, i[r].l = 1 * new Date();
-            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
             a.async = 1;
             a.src = g;
             m.parentNode.insertBefore(a, m)
         })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
         ga('create', 'UA-90233927-1', 'auto');
         ga('send', 'pageview');
     </script>
@@ -37,14 +41,13 @@
             if (!a.__SV) {
                 var b = window;
                 try {
-                    var c, l, i, j = b.location
-                        , g = j.hash;
+                    var c, l, i, j = b.location,
+                        g = j.hash;
                     c = function (a, b) {
                         return (l = a.match(RegExp(b + "=([^&]*)"))) ? l[1] : null
                     };
                     g && c(g, "state") && (i = JSON.parse(decodeURIComponent(c(g, "state"))), "mpeditor" === i.action && (b.sessionStorage.setItem("_mpcehash", g), history.replaceState(i.desiredHash || "", e.title, j.pathname + j.search)))
-                }
-                catch (m) {}
+                } catch (m) {}
                 var k, h;
                 window.mixpanel = a;
                 a._i = [];
@@ -53,7 +56,8 @@
                         var c = a.split(".");
                         2 == c.length && (b = b[c[0]], a = c[1]);
                         b[a] = function () {
-                            b.push([a].concat(Array.prototype.slice.call(arguments, 0)))
+                            b.push([a].concat(Array.prototype.slice.call(arguments,
+                                0)))
                         }
                     }
                     var d = a;
@@ -84,247 +88,312 @@
         mixpanel.init("fe63d2a2e139d9b81764772db277aa01");
     </script>
     <!-- end Mixpanel -->
-    <script>
-        var w = $(window).width();
-        $('.main').css('width', w);
-    </script>
-    <script type="text/javascript">
-        <!--
-        if (screen.width <= 1080) {
-            document.location = "mobile.html";
-        }
-        //-->
-    </script>
-    <style>
-        html,
-        body {
-            max-width: 100%;
-            overflow-x: hidden;
-        }
-        
-        .mySlides2 {
-            padding: 0;
-            width: 100% auto;
-            height: 100% auto;
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-        
-        h1,
-        h3,
-        h4 {
-            font-family: 'Source Sans Pro', sans-serif !important;
-        }
-        
-        .main-copy {
-            font-size: 7.5vh;
-            text-align: left;
-            font-weight: 800;
-            color: white;
-            vertical-align: middle;
-        }
-        
-        .sub-copy {
-            line-height: 5vh;
-            font-size: 3.5vh;
-            text-align: left;
-            font-weight: 500;
-            color: white;
-            margin-bottom: 5%;
-        }
-        
-        .quotation {
-            padding-bottom: 20%;
-            padding-top: 10%;
-            margin-bottom: -18%;
-        }
-        
-        .quo {
-            font-size: 20vh;
-            line-height: 6vh;
-            color: white;
-            text-align: center;
-        }
-        
-        .quote {
-            font-family: 'Source Sans Pro', sans-serif;
-            display: flex;
-            padding-left: 10%;
-            padding-right: 10%;
-            color: white;
-            text-align: center;
-        }
-        
-        .headshot {
-            background-color: white;
-            margin-color: white;
-            text-align: center;
-            width: 35%;
-            height: auto;
-        }
-        
-        .pic {
-            padding: 3%;
-            border-radius-bottom: 10px;
-        }
-        
-        .img-responsive {
-            border-radius-top: 10px;
-        }
-    </style>
+<script>
+var w = $(window).width();
+ $('.main').css('width', w);
+</script>
+<script type="text/javascript">
+<!--
+if (screen.width <= 1080) {
+document.location = "mobile.html";
+}
+//-->
+
+
+</script>
+<style>
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.mySlides2 {
+padding:0;
+width:100% auto;
+height:100% auto;
+background-size:cover;
+background-repeat:no-repeat;
+}
+
+h1, h3, h4 {
+  font-family: 'Source Sans Pro', sans-serif !important;
+
+}
+.main-copy {
+  font-size: 7.5vh;
+  text-align:left;
+  font-weight:800;
+  color:white;
+  vertical-align:middle;
+
+}
+.sub-copy {
+  line-height: 5vh;
+  font-size: 3.5vh;
+  text-align:left;
+  font-weight: 500;
+  color: white;
+  margin-bottom:5%;
+}
+.quotation {
+   padding-bottom:20%;
+   padding-top:10%;
+   margin-bottom:-18%;
+}
+.quo {
+  font-size:20vh;
+  line-height:6vh;
+  color:white;
+  text-align:center;
+}
+.quote {
+  font-family:'Source Sans Pro', sans-serif;
+  display:flex;
+  padding-left:10%;
+  padding-right:10%;
+  color:white;
+  text-align:center;
+}
+.headshot {
+  background-color:white;
+  margin-color:white;
+  text-align:center;
+  width:35%;
+  height:auto;
+}
+.pic {
+  padding:3%;
+  border-radius-bottom:10px;
+}
+.img-responsive {
+  border-radius-top:10px;
+}
+
+</style>
+
 </head>
+
 <div w3-include-html="header.html"></div>
 
 <body>
-    <div class="center-block main" style="padding:0;overflow-x:hidden; width:100% auto">
-        <div>
-            <div class="main-slideshow-1 mySlides2 fade" style="background-image: url('/assets/images/landing.jpg');" ; class="Jump">
-                <div class="container" style=" padding:10%">
-                    <h1 class="main-copy">Learn how to manage money.</h1>
-                    <h2 class="sub-copy">Intrst is the leading financial product ranking platform for Generation Z.</h2> <a href="/about.html" target="" class="button center-block text-center">
+<div class="center-block main" style="padding:0;overflow-x:hidden; width:100% auto">
+  <div>
+  <div class="main-slideshow-1 mySlides2 fade" style="background-image: url('/assets/images/landing.jpg');"; class="Jump">
+    <div class ="container" style=" padding:10%">
+    <h1 class="main-copy" >Learn how to manage money.</h1>
+    <h2 class="sub-copy">Intrst is the leading financial product ranking platform for Generation Z.</h2>
+    <a href="/about.html"  target=""  class="button center-block text-center">
      Who We Are
     </a>
-                    <div style="text-align:center"> <span class="dot2" onclick="currentSlide1(1)"></span> <span class="dot2" onclick="currentSlide1(2)"></span> <span class="dot2" onclick="currentSlide1(3)"></span> <span class="dot2" onclick="currentSlide1(4)"></span> </div>
-                </div>
-            </div>
-        </div>
-        <div class=" mySlides2 fade" style=" background-image: url('/assets/images/landing2.png'); " ; class="Jump">
-            <div class="container" style=" padding:10%">
-                <h1 class="main-copy">Compare financial products.</h1>
-                <h2 class="sub-copy">Find the best student credit cards and savings accounts.</h2> <a href="/evaluate.html" style="background-color:#53a5c6" target="" id="blue-button" class="button center-block text-center">
+    <div style="text-align:center">
+      <span class="dot2" onclick="currentSlide1(1)"></span>
+      <span class="dot2" onclick="currentSlide1(2)"></span>
+      <span class="dot2" onclick="currentSlide1(3)"></span>
+      <span class="dot2" onclick="currentSlide1(4)"></span>
+
+    </div>
+    </div>
+</div>
+  </div>
+  <div class=" mySlides2 fade" style=" background-image: url('/assets/images/landing2.png'); "; class="Jump">
+  <div class ="container" style=" padding:10%">
+  <h1 class="main-copy" >Compare financial products.</h1>
+  <h2 class="sub-copy">Find the best student credit cards and savings accounts.</h2>
+  <a href="/evaluate.html" style="background-color:#53a5c6"  target="" id="blue-button"  class="button center-block text-center">
    Compare Now
   </a>
-                <div style="text-align:center"> <span class="dot2" onclick="currentSlide1(1)"></span> <span class="dot2" onclick="currentSlide1(2)" style="background-color:#717171"></span> <span class="dot2" onclick="currentSlide1(3)"></span> <span class="dot2" onclick="currentSlide1(4)"></span> </div>
-            </div>
-        </div>
-    </div>
-    <div class="mySlides2 fade" style="background-image: url('/assets/images/landing3.png');" ;>
-        <div class="container" style=" padding:10%">
-            <h1 class="main-copy">Get financial advice from the pros.</h1>
-            <h2 class="sub-copy">Articles and videos with tips, tricks and financial happenings.</h2> <a href="/explore.html" target="" class="button center-block text-center">
+  <div style="text-align:center">
+    <span class="dot2" onclick="currentSlide1(1)"></span>
+    <span class="dot2" onclick="currentSlide1(2)" style="background-color:#717171"></span>
+    <span class="dot2" onclick="currentSlide1(3)"></span>
+    <span class="dot2" onclick="currentSlide1(4)"></span>
+  </div>
+  </div>
+</div>
+</div>
+
+  <div class="mySlides2 fade"style="background-image: url('/assets/images/landing3.png');";>
+    <div class ="container" style=" padding:10%">
+      <h1 class="main-copy" >Get financial advice from the pros.</h1>
+      <h2 class="sub-copy" >Articles and videos with tips, tricks and financial happenings.</h2>
+      <a href="/explore.html"  target=""  class="button center-block text-center">
        Learn More
       </a>
-            <div style="text-align:center"> <span class="dot2" onclick="currentSlide1(1)"></span> <span class="dot2" onclick="currentSlide1(2)"></span> <span class="dot2" onclick="currentSlide1(3)" style="background-color:#717171"></span> <span class="dot2" onclick="currentSlide1(4)"></span> </div>
-        </div>
-    </div>
-    </div>
-    <div class="mySlides2 fade" style=" background-image: url('/assets/images/landing4.png');" ;>
-        <div class="container" style=" padding:10%">
-            <h1 class="main-copy">Confused by finance jargon?</h1>
-            <h2 class="sub-copy">Our simplified terms make it easy for you to understand.</h2> <a href="/terminology.html" style="background-color:#53a5c6" target="" id="blue-button" class="button center-block text-center">
+      <div style="text-align:center">
+        <span class="dot2" onclick="currentSlide1(1)"></span>
+        <span class="dot2" onclick="currentSlide1(2)"></span>
+        <span class="dot2" onclick="currentSlide1(3)" style="background-color:#717171"></span>
+        <span class="dot2" onclick="currentSlide1(4)"></span>
+      </div>
+      </div>
+  </div>
+</div>
+<div class="mySlides2 fade"style=" background-image: url('/assets/images/landing4.png');";>
+  <div class ="container" style=" padding:10%">
+    <h1 class="main-copy">Confused by finance jargon?</h1>
+    <h2 class="sub-copy" >Our simplified terms make it easy for you to understand.</h2>
+    <a href="/educate.html" style="background-color:#53a5c6" target="" id="blue-button" class="button center-block text-center">
      Learn More
     </a>
-            <div style="text-align:center"> <span class="dot2" onclick="currentSlide1(1)"></span> <span class="dot2" onclick="currentSlide1(2)"></span> <span class="dot2" onclick="currentSlide1(3)"></span> <span class="dot2" onclick="currentSlide1(4)" style="background-color:#717171"></span> </div>
-        </div>
+    <div style="text-align:center">
+      <span class="dot2" onclick="currentSlide1(1)"></span>
+      <span class="dot2" onclick="currentSlide1(2)"></span>
+      <span class="dot2" onclick="currentSlide1(3)"></span>
+      <span class="dot2" onclick="currentSlide1(4)" style="background-color:#717171"></span>
     </div>
     </div>
-    <script>
-        var slideIndex = 1;
-        var time;
-        showSlides1(slideIndex);
+</div>
+</div>
+<script>
+var slideIndex = 1;
+var time;
+showSlides1(slideIndex);
 
-        function plusSlides(n) {
-            showSlides1(slideIndex += n);
-        }
+function plusSlides(n) {
+  showSlides1(slideIndex += n);
+}
 
-        function currentSlide1(n) {
-            slideIndex = n;
-            showSlides1(n);
-            clearTimeout(time);
-        }
+function currentSlide1(n) {
+  slideIndex = n;
+  showSlides1(n);
+  clearTimeout(time);
+}
 
-        function showSlides1(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides2");
-            var dots = document.getElementsByClassName("dot2");
-            if (n > slides.length) {
-                slideIndex = 1
-            }
-            if (n < 1) {
-                slideIndex = slides.length
-            }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            if (slideIndex == 4) {
-                slideIndex = 1;
-            }
-            else {
-                slideIndex++;
-            }
-            time = setTimeout(showSlides1, 6000);
-        }
-    </script>
-    </div>
-    <div class="moments fade" style="display: flex; background-color:white; margin-top:5vh; ">
-        <div class="col-xs-12 col-sm-4 " style="padding:3%"> <img class="img-responsive" style="border-top-right-radius:10px; border-top-left-radius:10px;" src="\assets\images\moremoneymoremoments1.jpg">
-            <div style="margin-bottom:-5%">
-                <div class="quotation" style="background-color:#4acf72; border-bottom-right-radius:10px; border-bottom-left-radius:10px;">
-                    <h1 class="quo">&ldquo;</h1>
-                    <h2 class="quote" style="background-color:#4acf72;">"I went to the Ever After Music festival. The energy from the people, the music, and atmosphere made me feel alive."</h2> </div> <img class="img-responsive img-circle center-block headshot" src="\assets\images\about\timurheadshot.jpg">
-                <h3 style="text-align:center;">Tim Kazbek</h3>
-                <h3 style="text-align:center; color:#A9A9A9;margin-top:0; ">Northern Secondary School</h3> </div>
-        </div>
-        <div class="col-xs-12 col-sm-4 " style="padding:3%"> <img class="img-responsive" style="border-top-right-radius:10px; border-top-left-radius:10px;" src="\assets\images\moremoneymroemoments2.jpg">
-            <div style="margin-bottom:-5%">
-                <div class="quotation" style="background-color:#53a5c6; border-bottom-right-radius:10px; border-bottom-left-radius:10px;">
-                    <h1 class="quo">&ldquo;</h1>
-                    <h2 class="quote" style="background-color:#53a5c6">"Couldn’t believe the views here. All thanks to my travel rewards."</h2> </div> <img class="img-responsive img-circle center-block headshot" src="\assets\images\andrew.png">
-                <h3 style="text-align:center;">Andrew O' Reilly</h3>
-                <h3 style="text-align:center; color:#A9A9A9;margin-top:0;">Upper Canada College</h3> </div>
-        </div>
-        <div class="col-xs-12 col-sm-4 " style="padding:3%"> <img class="img-responsive" style="border-top-right-radius:10px; border-top-left-radius:10px;" src="\assets\images\moremoneymoremoments3.jpg">
-            <div style="margin-bottom:-5%">
-                <div class="quotation" style="background-color:#4acf72; border-bottom-right-radius:10px; border-bottom-left-radius:10px;">
-                    <h1 class="quo">&ldquo;</h1>
-                    <h2 class="quote" style="background-color:#4acf72;">"My new, cheaper cell phone plan allowed me to save money towards a Drake concert."</h2> </div> <img class="img-responsive img-circle center-block headshot" src="\assets\images\about\caitlynheadshot.jpg">
-                <h3 style="text-align:center;">Caitlyn Liu</h3>
-                <h3 style="text-align:center; color:#A9A9A9; margin-top:0;">York Mills Collegiate</h3> </div>
-        </div>
-    </div>
-    <div class="fade" style="background-color:	#F6F6F6; border-radius: 7px;margin:2%; overflow:hidden">
-        <h1 style="font-weight:bold; font-size: 6vh; padding-left:5%; padding-top:3%; padding-right:15%; font-family:'Source Sans Pro', sans-serif;">
+function showSlides1(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides2");
+  var dots = document.getElementsByClassName("dot2");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+
+  if(slideIndex==4)
+  {
+    slideIndex = 1;
+  }
+  else {
+  slideIndex++;
+  }
+   time = setTimeout(showSlides1, 6000);
+}
+</script>
+</div>
+
+  <div class="moments fade" style="display: flex; background-color:white; margin-top:0; ">
+<div class = "col-xs-12 col-sm-4 " style="padding:3%">
+  <img class="img-responsive" style="border-top-right-radius:10px; border-top-left-radius:10px;" src="\assets\images\moremoneymoremoments1.jpg">
+  <div style="margin-bottom:-5%">
+    <div class="quotation" style="background-color:#4acf72; border-bottom-right-radius:10px; border-bottom-left-radius:10px;" >
+    <h1 class="quo">&ldquo;</h1>
+    <h2 class="quote" style="background-color:#4acf72;">"I went to the Ever After Music festival. The energy from the people, the music, and atmosphere made me feel alive."</h2>
+  </div>
+    <img class ="img-responsive img-circle center-block headshot" src = "\assets\images\about\timurheadshot.jpg">
+
+    <h3 style="text-align:center;">Tim Kazbek</h3>
+      <h3 style="text-align:center; color:#A9A9A9;margin-top:0; ">Northern Secondary School</h3>
+
+
+
+</div>
+</div>
+<div class = "col-xs-12 col-sm-4 "  style="padding:3%">
+  <img class="img-responsive" style="border-top-right-radius:10px; border-top-left-radius:10px;" src="\assets\images\moremoneymroemoments2.jpg">
+  <div style="margin-bottom:-5%">
+    <div class="quotation" style="background-color:#53a5c6; border-bottom-right-radius:10px; border-bottom-left-radius:10px;" >
+    <h1 class="quo" >&ldquo;</h1>
+    <h2 class="quote" style="background-color:#53a5c6">"Couldn’t believe the views here. All thanks to my travel rewards."</h2>
+  </div>
+    <img class ="img-responsive img-circle center-block headshot" src = "\assets\images\andrew.png">
+
+    <h3 style="text-align:center;">Andrew O' Reilly</h3>
+      <h3 style="text-align:center; color:#A9A9A9;margin-top:0;">Upper Canada College</h3>
+
+
+
+</div>
+</div>
+<div class = "col-xs-12 col-sm-4 "  style="padding:3%">
+  <img class="img-responsive"style="border-top-right-radius:10px; border-top-left-radius:10px;" src="\assets\images\moremoneymoremoments.jpg">
+  <div style="margin-bottom:-5%">
+    <div class="quotation" style="background-color:#4acf72; border-bottom-right-radius:10px; border-bottom-left-radius:10px;" >
+    <h1 class="quo">&ldquo;</h1>
+    <h2 class="quote" style="background-color:#4acf72;">"My new, cheaper cell phone plan allowed me to save money towards a Grad Trip to Punta Cana."</h2>
+  </div>
+    <img class ="img-responsive img-circle center-block headshot" src = "\assets\images\yashar.png">
+
+    <h3 style="text-align:center;">Yashar Ebadi</h3>
+      <h3 style="text-align:center; color:#A9A9A9; margin-top:0;">Earl Haig Secondary School</h3>
+
+
+
+</div>
+</div>
+</div>
+
+
+<div class="fade" style="background-color:	#F6F6F6; border-radius: 7px;margin:2%; overflow:hidden">
+  <h1 style="font-weight:bold; font-size: 6vh; padding-left:5%; padding-top:3%; padding-right:15%; font-family:'Source Sans Pro', sans-serif;">
     We held a <span style="color:#53a5c6;">financial literacy</span> workshop to teach students the basics of <span style="color:#4acf72;">budgeting</span>, <span style="color:#4acf72;">investing</span>, and <span style="color:#4acf72;">personal finance</span>.</h1>
-        <a href="/seminargallery.html">
-            <div class="col-xs-6 col-sm-4 pic"> <img class="img-responsive" style="border-radius:10px;" src="\assets\images\seminar_pics\IMG_7030.jpg"> </div>
-            <div class="col-xs-6 col-sm-4 pic"> <img class="img-responsive" style="border-radius:10px;" src="\assets\images\seminar_pics\IMG_7049.jpg"> </div>
-            <div class="col-xs-6 col-sm-4 pic"> <img class="img-responsive" style="border-radius:10px;" src="\assets\images\seminar_pics\IMG_7134.jpg"> </div>
-        </a>
-        <div class=" col-sm-12 center-block text-center"> <a href="/seminargallery.html" style="background-color:#4acf72; font-weight:600; margin-bottom: 3%;" target="" class="button center-block text-center">
+    <a href="/seminargallery.html">
+    <div class="col-xs-6 col-sm-4 pic" >
+      <img class="img-responsive" style="border-radius:10px;" src="\assets\images\seminar_pics\IMG_7030.jpg">
+    </div>
+    <div class="col-xs-6 col-sm-4 pic" >
+      <img class="img-responsive"  style="border-radius:10px;" src="\assets\images\seminar_pics\IMG_7049.jpg">
+    </div>
+    <div class="col-xs-6 col-sm-4 pic" >
+      <img class="img-responsive"  style="border-radius:10px;" src="\assets\images\seminar_pics\IMG_7134.jpg">
+    </div>
+  </a>
+    <div class=" col-sm-12 center-block text-center">
+      <a href="/seminargallery.html" style="background-color:#4acf72; font-weight:600; margin-bottom: 3%;"  target=""  class="button center-block text-center">
        View Gallery
-      </a> </div>
-    </div>
-    <div class="financialtips fade" style="margin:2%; overflow:hidden">
-        <h1 style="font-weight:bold; font-size: 5vh; padding-left:3%; font-family:'Source Sans Pro', sans-serif;">Learn the best <span style="color:#4acf72;">financial tips</span> from the pros.</h1>
-        <a href="/guest-interview-chris-manning.html">
-            <div class="col-xs-6 col-sm-4 pic"> <img class="img-responsive" style="border-radius:10px;" src="\assets\images\articleheadshots\guest-interview-chris-manning.jpg">
-                <h3 style="font-weight:bold;">Guest Interview: Chris Manning </h3>
-                <h4 style="font-weight: lighter; color:#A9A9A9;">Learn some financing tips from one of Toronto's rising professionals in the banking industry.</h4>
-                <h4 style="color:#A9A9A9;"><i>With Chris Manning</i></h4> </div>
-        </a>
-        <a href="/money-for-your-milestones.html">
-            <div class="col-xs-6 col-sm-4 pic"> <img class="img-responsive" style="border-radius:10px;" src="\assets\images\articleheadshots\money-for-your-milestones.jpg">
-                <h3 style=" font-weight:bold;">Money for your Milestones </h3>
-                <h4 style=" font-weight: lighter; color:#A9A9A9;">Worried about the cost of post-secondary education? We can help.</h4>
-                <h4 style="color:#A9A9A9;"><i>By Sharon Zheng</i></h4> </div>
-        </a>
-        <a href="/cut-back-on-costs.html">
-            <div class="col-xs-6 col-sm-4 pic"> <img class="img-responsive" style="border-radius:10px;" src="\assets\images\articleheadshots\cut-back-on-costs.jpg">
-                <h3 style=" font-weight:bold;">Cut Back on Costs </h3>
-                <h4 style=" font-weight: lighter; color:#A9A9A9;">Struggling with budgeting? Here are some strategies to save.</h4>
-                <h4 style="color:#A9A9A9;"><i>By Saba Yasrebi</i></h4> </div>
-        </a>
-        <div class=" col-sm-12 center-block text-center"> <a href="/explore.html" style="background-color:#4acf72; font-weight:600;" target="" class="button center-block text-center">
+      </a>
+  </div>
+  </div>
+
+
+<div class="financialtips fade" style="margin:2%; overflow:hidden">
+  <h1 style="font-weight:bold; font-size: 5vh; padding-left:3%; font-family:'Source Sans Pro', sans-serif;">Learn the best <span style="color:#4acf72;">financial tips</span> from the pros.</h1>
+  <a href="/guest-interview-chris-manning.html">
+  <div class="col-xs-6 col-sm-4 pic" >
+    <img class="img-responsive"  style="border-radius:10px;" src="\assets\images\articleheadshots\guest-interview-chris-manning.jpg">
+    <h3 style="font-weight:bold;">Guest Interview: Chris Manning </h3>
+    <h4 style="font-weight: lighter; color:#A9A9A9;">Learn some financing tips from one of Toronto's rising professionals in the banking industry.</h4>
+    <h4 style="color:#A9A9A9;"><i>With Chris Manning</i></h4>
+  </div>
+</a>
+<a href ="/money-for-your-milestones.html">
+  <div class="col-xs-6 col-sm-4 pic" >
+    <img class="img-responsive"  style="border-radius:10px;" src="\assets\images\articleheadshots\money-for-your-milestones.jpg">
+    <h3 style=" font-weight:bold;">Money for your Milestones </h3>
+    <h4 style=" font-weight: lighter; color:#A9A9A9;">Worried about the cost of post-secondary education? We can help.</h4>
+    <h4 style="color:#A9A9A9;"><i>By Sharon Zheng</i></h4>
+  </div>
+</a>
+<a href ="/cut-back-on-costs.html">
+  <div class="col-xs-6 col-sm-4 pic" >
+    <img class="img-responsive" style="border-radius:10px;" src="\assets\images\articleheadshots\cut-back-on-costs.jpg">
+    <h3 style=" font-weight:bold;">Cut Back on Costs </h3>
+    <h4 style=" font-weight: lighter; color:#A9A9A9;">Struggling with budgeting? Here are some strategies to save.</h4>
+    <h4 style="color:#A9A9A9;"><i>By Saba Yasrebi</i></h4>
+  </div>
+</a>
+  <div class=" col-sm-12 center-block text-center">
+    <a href="/financial-tips.html" style="background-color:#4acf72; font-weight:600;"  target=""  class="button center-block text-center">
      View All Articles
-    </a> </div>
-    </div>
-    </div>
+    </a>
+</div>
+</div>
+</div>
 </body>
+
 <div w3-include-html="footer.html"></div>
 <script>
     w3IncludeHTML();
