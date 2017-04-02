@@ -169,9 +169,9 @@ margin: 3vh 10vw;
 
 
                 <ul class="nav nav-tabs">
-                    <li ng-class="{'active' : currentActive=='saving' || currentActive=='savingChart'}"><a href="#savings" ng-click="currentActive='saving';addHistory('saving','evaluate.html#savings');">SAVINGS</a></li>
-                    <li ng-class="{'active' : currentActive=='cell' || currentActive=='cellChart'}"><a href="#cellphones" ng-click="currentActive='cell';addHistory('cell','evaluate.html#cellphones');">CELL PHONES</a></li>
-                    <li ng-class="{'active' : currentActive=='ccard' || currentActive=='ccardChart'}"><a href="#credit-cards" ng-click="currentActive='ccard';addHistory('ccard','evaluate.html#credit-cards');">CREDIT CARDS</a></li>
+                    <li ng-class="{'active' : currentActive=='saving' || currentActive=='savingChart'}"><a href="#savings" ng-click="currentActive='saving';addHistory('saving','product-rankings.html#savings');">SAVINGS</a></li>
+                    <li ng-class="{'active' : currentActive=='cell' || currentActive=='cellChart'}"><a href="#cellphones" ng-click="currentActive='cell';addHistory('cell','product-rankings.html#cellphones');">CELL PHONES</a></li>
+                    <li ng-class="{'active' : currentActive=='ccard' || currentActive=='ccardChart'}"><a href="#credit-cards" ng-click="currentActive='ccard';addHistory('ccard','product-rankings.html#credit-cards');">CREDIT CARDS</a></li>
                      <!-- <li ng-class="{'active' : currentActive=='food'}"><a href="#food-delivery" ng-click="currentActive='food';addHistory('food','evaluate.html#food-delivery');">FOOD DELIVERY</a></li>  -->
                     <!-- <li ng-class="{'active' : currentActive=='tv'}"><a href="#tv-networks" ng-click="currentActive='tv';addHistory('tv','evaluate.html#tv-networks');">TV NETWORKS</a></li> -->
                 </ul>
@@ -400,7 +400,7 @@ margin: 3vh 10vw;
 
                     <div class="ccardChars" ng-show="currentActive=='ccard'" ng-hide="!(currentActive=='ccard')">
                         <h4>What do <span style="color: #34C15F">you</span> do with your <span style="color: #34C15F">money</span>?</h4>
-                        <div class="greybox" ng-click="currentActive='ccardChart';sortTypeCcard='worthRank';sortReverseCcard=false" style="background-color: #6DBEB0;">
+                        <div class="greybox" ng-click="currentActive='ccardChart';sortTypeCcard='worthRank';sortReverseCcard=false" style="background-color: #6DBEB0; color: white;">
                             <div class="col-md-5 transbox">
                                 <h4>Callie the Collector</h4>
                                 <br>
@@ -413,7 +413,7 @@ margin: 3vh 10vw;
                             </div>
                         </div>
                         <br>
-                        <div class="greybox" ng-click="currentActive='ccardChart';sortTypeCcard='redeemRank';sortReverseCcard=false" style="background-color: #99BC77";>
+                        <div class="greybox" ng-click="currentActive='ccardChart';sortTypeCcard='redeemRank';sortReverseCcard=false" style="background-color: #99BC77; color: white;">
                             <div class="col-md-5 transbox">
                                 <h4>Fanny the Fearful-Spender</h4>
                                 <br>
