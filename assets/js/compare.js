@@ -1,4 +1,4 @@
-﻿var app = angular.module("comparison", [])
+var app = angular.module("comparison", ['ngAnimate'])
 
 app.controller("compareController", ["$scope", "$window", function($scope, $window) {
     $scope.currentActive = "saving";
@@ -142,5 +142,25 @@ app.controller("compareController", ["$scope", "$window", function($scope, $wind
           link: "http://www.virginmobile.ca/en/plans/details.html?province=ON&geoResult=ON#!/postpaid/byop"}
   ];
 
-  
+  $scope.foodCompanies = [
+      { imgsrc: "assets/images/compare/ubereats.png", name: "UberEats", access: "Mobile App and Website", charge: "$5.00", drinks: "Bubble tea, Juice and smoothies", food: ["Asian", "Canadian", "Dessert", "Halal", "Pizza", "Sushi"], range: ["Toronto", "Mississauga", "Edmonton", "Ottawa"], link: "https://www.ubereats.com", },
+      { imgsrc: "assets/images/compare/justeat.png", name: "JustEat", access: "Mobile App and Website", charge: "Typically $3.00",  drinks: "N/A", food: ["American", "Asian", "Canadian", "Chinese", "Indian", "Italian", "Mediterranean", "Pizza"], range: ["Most Major Cities in Canada"], link: "https://www.just-eat.ca", },
+      { imgsrc: "assets/images/compare/foodora.jpg", name: "Foodora", access: "Mobile App and Website", charge: "$5.50 plus $2 per kilometer from pick-up point to destination",  drinks: "Bubble tea, Juices and Smoothies", food: ["American", "Bakery and Cafe", "Burger", "Canadian", "Chinese", "Healthy", "Indian", "Japanese", "Latin American", "Mediterranean", "Mexican", "Pizza",
+          "Seafood", "Spanish", "Sushi", "Vegetarian"], range: ["Dupont to Lake Ontario", "Keele to the DVP"], link: "https://www.foodora.ca/", },
+      { imgsrc: "assets/images/compare/sohungry.png", name: "So Hungry", access: "Website Only", charge: "$0.00",  drinks: "N/A", food: ["Canadian", "Chinese", "Indian", "Japanese", "Thai", "Vietnamese"], range: ["Toronto"], link: "http://www.sohungry.com/order-food.html", },
+      { imgsrc: "assets/images/compare/feastbank.png", name: "Feast Bank", access: "Mobile App and Website", charge: "N/A",  drinks: "N/A", food: ["New Menu Every Day"], range: ["Toronto"], link: "https://www.eatfeast.com/guiding-principles", },
+      { imgsrc: "assets/images/compare/doordash.png", name: "Door Dash", access: "Mobile app and Website", charge: "Between $3.99 and $4.99",  drinks: "Smoothies", food: ["African",
+          "American","Asian","Barbeque","Breakfast","British","Burgers","Cafes","Caribbean","Comfort Food","Deserts","Ethiopian","European","Fast food","French","Gluten Free","Greek","Indian","Italian","Japanese","Korean","Mediterranean","Middle Eastern","Pakistani","Soup","Steaks",
+          "Sushi","Thai","Vegan","Vegetarian","Vietnamese"] , range: ["Toronto", "Vancouver", "Etobicoke"], link: "https://www.doordash.com/" }
+    ];
+
+    $scope.tvCompanies = [
+      { imgsrc: "assets/images/compare/netflix.jpg", name: "Netflix", cost: "$9.99/month", accessibility: ["PC and Mac", "Apple TV", "PS4", "Mobile", "internet-enabled TVs"],
+           features: ["Offers gift cards HD quality", "One month free trial Available in different countries", "Selection of shows varies among countries", "Own award-winning original series"] },
+      { imgsrc: "assets/images/compare/amazon.jpg", name: "Amazon Prime Instant Video", cost: "$79/year", accessibility: ["PC and Mac", "Kindle Fire HD", "iPad", "consoles", "internet-enabled TVs and Blu-ray players", "Sony's Home Cinema system", "Sony's Network Media Player"],  features: ["Comes with Amazon Prime membership 30 day free trial", "Available in different countries", "Own original series", "Content is limited compared to other platforms", "Entire library is available for offline viewing"]},
+      { imgsrc: "assets/images/compare/cravetv.jpg", name: "Crave TV", cost: "$7.99/month $6/month with Bell TV", accessibility: ["iOS", "Android", "Xbox One and Apple TV"],  features: ["They do not have any movies, just hundreds of TV shows and a few documentaries", "They have exclusive content as the service features HBO's back catalogue of content as well as new Showtime content, for no additional fee", "Produces their own shows such as Letter Kenney", "Allows a one month free trial"]  },
+      { imgsrc: "assets/images/compare/shomi.jpg", name: "Shomi", cost: "$8.99/month", accessibility: ["Cable connection through Rogers and Shaw", "Apple TV and Chromecast"],  features: ["They distinguish themselves with 'human curation'; whereby a content team of between 10 and 15 people crafts collections to suggest to users, rather than relying solely on algorithms", "They have limited movie selection", "However, their content is focused on new and recent TV shows rather than older ones", "Shomi has an exclusive deal to air Amazon's original content, starting with acclaimed comedy Transparent. They are also the only streaming service in Canada with shows such as American Horror Story"]  },
+      { imgsrc: "assets/images/compare/slingtv.png", name: "Sling TV", cost: "$20/month", accessibility: ["PC and Mac", "iOS, Android", "Amazon Fire TV and Amazon Fire TV Stick", "Google's Nexus Player", "Xbox One and Roku TV", "Select LG and Samsung smart TVs"],  features: ["They provide 13 cable channels - ESPN, ESPN2, TNT, TBS, HGTV, DIY Network, Food Network, Travel Channel, CNN, Cartoon Network, ABC Family, Disney Channel and AMC", "They also have three add-on packages are available for $5 apiece per month:Kids Extra, with Disney Jr, Disney XD, Boomerang, Duck TV, and Baby TV.", "Sports Extra, which includes the SEC Network, ESPNEWS, ESPNU, Universal Sports, Univision Deportes, beIN Sports, ESPN Buzzer Beater, ESPN Bases Loaded and ESPN Goal Line.", "News and info extra, which has HLN, Cooking Channel and Bloomberg TV"]  },
+      { imgsrc: "assets/images/compare/crunchyroll.png", name: "Crunchyroll", cost: "$6.95 to watch any content in HD", accessibility: ["Mobile", "consoles", "Chromecast", "Apple TV", "Roku", "Google TV and Samsung and Panasonic Smart TVs"],  features: ["This network is exclusively for an audience that watches anime, manga or any East-Asian cinema", "All their content is in standard definition, but you can pay a small fee to watch in HD"] }
+    ];
 }]);
