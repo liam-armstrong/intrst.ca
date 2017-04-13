@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -29,8 +29,7 @@
             i[r] = i[r] || function () {
                 (i[r].q = i[r].q || []).push(arguments)
             }, i[r].l = 1 * new Date();
-            a = s.createElement(o)
-                , m = s.getElementsByTagName(o)[0];
+            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
             a.async = 1;
             a.src = g;
             m.parentNode.insertBefore(a, m)
@@ -97,23 +96,26 @@
                 width: 90% !important;
             }
         }
+.title::after {
+	opacity:0.7;
+}
     </style>
 </head>
 <div w3-include-html="header.html"></div>
 
 <body>
+    <div class="title center-block text-center">ABOUT US</div>
     <!-- Page Content -->
     <div class="container">
         <!-- Introduction Row -->
         <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header text-center" style="font-family:'Source Sans Pro', sans-serif; font-weight:400;">ABOUT US</h1> <img class="img-responsive center-block skyline" src="assets/images/about/skyline.jpg" alt="Skyline">
+            <div class="col-lg-12" id="Desc">
                 <div class="col-lg-8 center-block">
                     <p>
                         <br> Intrst is a leading financial product discovery platform for Generation Z.
                         <br> We provide leading information that will help you gain a better understanding of your finances. Through product comparisons, specialized articles, and terminology keys, Intrst will help you discover your path to more money and more moments. </p>
                 </div>
-                <div class="col-lg-4 center-block"> <a href="mailto:contact@intrst.ca" class="button">Contact Us</a> </div>
+                <div class="col-lg-4 center-block"> <a href="mailto:contact@intrst.ca" class="button" id="Descbutton">Contact Us</a> </div>
                 <script>
                     mixpanel.track_link("button", {
                         "page", "about"
@@ -124,351 +126,324 @@
         <!-- Team Members Row -->
         <div class="row">
             <div class="col-lg-12">
-                <h2 class="page-header text-center">Our Team</h2> </div>
+                <h2 class="page-header text-center">The <c style="color:#34C15F">People</c> Behind <c style="color:#34C15F">Intrst</c></h2></div>
         </div>
         <div class="row">
             <div class="panel-group col-lg-12">
-                <div class="panel panel-default">
-                    <div class="panel-heading"> <a data-toggle="collapse" href="#collapse1" style="text-decoration: none;"><h3 class="panel-title AdvisorsHeading">Executives</h3></a> </div>
-                    <div id="collapse1" class="panel-collapse collapse in">
-                        <div class="panel-body">
-                            <div class="row">
-                                <div class="col-lg-3 col-sm-6 text-center portraits" align="center">
-                                    <div class="centerBlock"> <img class="img-responsive center-block img-circle" src="assets/images/about/veraheadshot.jpg" alt="Vera" style="height:auto"> </div>
-                                    <h3>Vera Wang
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6 text-center portraits" align="center">
+                            <div class="centerBlock"> <img class="img-responsive center-block img-circle" src="assets/images/about/veraheadshot.jpg" alt="Vera" style="height:auto"> </div>
+                            <h3>Vera Wang
                                     </h3>
-                                    <p>Chief Executive Officer</p>
-                                </div>
-                                <div class="col-lg-3 col-sm-6 text-center portraits" align="center">
-                                    <div class="centerBlock"> <img class="img-circle img-responsive center-block" src="assets/images/about/yingningheadshot.jpg" alt="Yingning" style="height:auto"> </div>
-                                    <h3>Yingning Gui
+                            <p>Chief Executive Officer</p>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 text-center portraits" align="center">
+                            <div class="centerBlock"> <img class="img-circle img-responsive center-block" src="assets/images/about/yingningheadshot.jpg" alt="Yingning" style="height:auto"> </div>
+                            <h3>Yingning Gui
                                 </h3>
-                                    <p>Chief Product Officer</p>
+                            <p>Chief Product Officer</p>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 text-center portraits">
+                            <div class="centerBlock"> <img class="img-circle img-responsive center-block" src="assets/images/about/liamheadshot.jpg" alt="liam" style="height:auto"> </div>
+                            <h3>Liam Armstrong
+                                </h3>
+                            <p>Chief Technology Officer</p>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 text-center portraits">
+                            <div class="centerBlock"> <img class="img-circle img-responsive center-block" src="assets/images/about/timurheadshot.jpg" alt="timur" style="height:auto"> </div>
+                            <h3>Timur Kazbek
+                                </h3>
+                            <p>Chief Sales Officer</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="col-lg-3 col-sm-6 text-center portraits">
+                                    <div class="centerBlock"> <img class="img-circle img-responsive center-block " src="assets/images/about/drewheadshot.jpg" alt="drew" style="height:auto"> </div>
+                                    <h3>Drew Barot
+                                </h3>
+                                    <p>Chief Financial Officer</p>
                                 </div>
                                 <div class="col-lg-3 col-sm-6 text-center portraits">
-                                    <div class="centerBlock"> <img class="img-circle img-responsive center-block" src="assets/images/about/liamheadshot.jpg" alt="liam" style="height:auto"> </div>
-                                    <h3>Liam Armstrong
+                                    <div class="centerBlock"> <img class="img-circle img-responsive center-block" src="assets/images/about/shreeheadshot.jpg" alt="shree" style="height:auto"> </div>
+                                    <h3>Shree Gandhi
                                 </h3>
-                                    <p>Chief Technology Officer</p>
+                                    <p>Chief Human Resources Officer</p>
                                 </div>
                                 <div class="col-lg-3 col-sm-6 text-center portraits">
-                                    <div class="centerBlock"> <img class="img-circle img-responsive center-block" src="assets/images/about/timurheadshot.jpg" alt="timur" style="height:auto"> </div>
-                                    <h3>Timur Kazbek
+                                    <div class="centerBlock"> <img class="img-circle img-responsive center-block" src="assets/images/about/caitlynheadshot.jpg" alt="caitlyn" style="height:auto"> </div>
+                                    <h3>Caitlyn Liu
                                 </h3>
-                                    <p>Chief Sales Officer</p>
+                                    <p>Chief Marketing Officer</p>
                                 </div>
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="col-lg-3 col-sm-6 text-center portraits">
-                                            <div class="centerBlock"> <img class="img-circle img-responsive center-block " src="assets/images/about/drewheadshot.jpg" alt="drew" style="height:auto"> </div>
-                                            <h3>Drew Barot
+                                <div class="col-lg-3 col-sm-6 text-center portraits">
+                                    <div class="centerBlock"> <img class="img-circle img-responsive center-block" src="assets/images/about/sophiaheadshot.jpg" alt="sophia" style="height:auto"> </div>
+                                    <h3>Sophia Su
                                 </h3>
-                                            <p>Chief Financial Officer</p>
-                                        </div>
-                                        <div class="col-lg-3 col-sm-6 text-center portraits">
-                                            <div class="centerBlock"> <img class="img-circle img-responsive center-block" src="assets/images/about/shreeheadshot.jpg" alt="shree" style="height:auto"> </div>
-                                            <h3>Shree Gandhi
-                                </h3>
-                                            <p>Chief Human Resources Officer</p>
-                                        </div>
-                                        <div class="col-lg-3 col-sm-6 text-center portraits">
-                                            <div class="centerBlock"> <img class="img-circle img-responsive center-block" src="assets/images/about/caitlynheadshot.jpg" alt="caitlyn" style="height:auto"> </div>
-                                            <h3>Caitlyn Liu
-                                </h3>
-                                            <p>Chief Marketing Officer</p>
-                                        </div>
-                                        <div class="col-lg-3 col-sm-6 text-center portraits">
-                                            <div class="centerBlock"> <img class="img-circle img-responsive center-block" src="assets/images/about/sophiaheadshot.jpg" alt="sophia" style="height:auto"> </div>
-                                            <h3>Sophia Su
-                                </h3>
-                                            <p>Chief Community Officer</p>
-                                        </div>
-                                    </div>
+                                    <p>Chief Community Officer</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="panel-group col-lg-12">
-                <div class="panel panel-default">
-                    <div class="panel-heading"> <a data-toggle="collapse" href="#collapse2" style="text-decoration: none;"><h3 class="panel-title AdvisorsHeading">General Members</h3></a> </div>
-                    <div id="collapse2" class="panel-collapse collapse in">
-                        <div class="panel-body">
-                            <div class="row">
-                                <div class="col-lg-1"></div>
-                                <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
-                                    <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\I-ryanheadshot.jpg" alt="Ryan"> </div>
-                                    <h3>Ryan Min</h3>
-                                    <p>IT Department</p>
-                                </div>
-                                <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
-                                    <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\I-ericheadshot.jpg" alt="Eric"> </div>
-                                    <h3>Eric Pang</h3>
-                                    <p>IT Department</p>
-                                </div>
-                                <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
-                                    <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\shaanheadshot.jpg" alt="Shaan"> </div>
-                                    <h3>Shaan Hudani</h3>
-                                    <p>IT Department</p>
-                                </div>
-                                <div class="col-sm-2 spacer"></div>
-                                <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
-                                    <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\ali.jpg" alt="Ali"> </div>
-                                    <h3>Ali Punjani</h3>
-                                    <p>IT Department</p>
-                                </div>
-                                <div class="spacerSmall col-xs-3"></div>
-                                <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
-                                    <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\I-bobbyheadshot.jpg" alt="Bobby"> </div>
-                                    <h3>Bobby Wong</h3>
-                                    <p>IT Department</p>
-                                </div>
+                <div class="row">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
+                                <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\I-ryanheadshot.jpg" alt="Ryan"> </div>
+                                <h3>Ryan Min</h3>
+                                <p>Co-Director of IT</p>
                             </div>
-                            <div class="row">
-                                <div class="col-lg-4 col col-sm-2"></div>
-                                <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
-                                    <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\h-carolynheadshot.jpg" alt="Carolyn"> </div>
-                                    <h3>Carolyn Brambilla</h3>
-                                    <p>HR Department</p>
-                                </div>
-                                <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
-                                    <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\rayah.jpg" alt="Rayah"> </div>
-                                    <h3>Rayah Ladak</h3>
-                                    <p>CSR Department</p>
-                                </div>
+                            <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
+                                <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\I-ericheadshot.jpg" alt="Eric"> </div>
+                                <h3>Eric Pang</h3>
+                                <p>Co-Director of IT</p>
                             </div>
-                            <div class="row">
-                                <div class="col-lg-2"></div>
-                                <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
-                                    <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\F-ericmuntherheadshot.jpg" alt="Erik"> </div>
-                                    <h3>Erik Munther</h3>
-                                    <p>Finance Department</p>
-                                </div>
-                                <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
-                                    <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\F-sebastianheadshot.jpg" alt="Sebastian"> </div>
-                                    <h3>Sebastian Weersink</h3>
-                                    <p>Finance Department</p>
-                                </div>
-                                <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
-                                    <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\f-shahanheadshot.jpg" alt="Shahan"> </div>
-                                    <h3>Shahan Mahmood</h3>
-                                    <p>Finance Department</p>
-                                </div>
-                                <div class="spacer col-sm-4"></div>
-                                <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
-                                    <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\f-simonheadshot.jpg" alt="Simon"> </div>
-                                    <h3>Simon Lin</h3>
-                                    <p>Finance Department</p>
-                                </div>
+                            <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
+                                <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\shaanheadshot.jpg" alt="Shaan"> </div>
+                                <h3>Shaan Hudani</h3>
+                                <p>Network Manager</p>
                             </div>
-                            <div class="row">
-                                <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
-                                    <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\adrianheadshot.jpg" alt="Adrian"> </div>
-                                    <h3>Adrian Popescu</h3>
-                                    <p>Marketing Department</p>
-                                </div>
-                                <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
-                                    <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\m-miaheadshot.jpg" alt="Mia"> </div>
-                                    <h3>Mia Yaguchi-Chow</h3>
-                                    <p>Marketing Department</p>
-                                </div>
-                                <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
-                                    <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\m-carelynnheadshot.jpg" alt="Carelynn"> </div>
-                                    <h3>Carelynn Tsai</h3>
-                                    <p>Marketing Department</p>
-                                </div>
-                                <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
-                                    <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\m-ericaheadshot.jpg" alt="Erica"> </div>
-                                    <h3>Erica Huang</h3>
-                                    <p>Marketing Department</p>
-                                </div>
-                                <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
-                                    <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\m-ermiaheadshot.jpg" alt="Ermia"> </div>
-                                    <h3>Ermia Jomlehdar</h3>
-                                    <p>Marketing Department</p>
-                                </div>
-                                <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
-                                    <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\m-sharonheadshot.jpg" alt="Sharon"> </div>
-                                    <h3>Sharon Zheng</h3>
-                                    <p>Marketing Department</p>
-                                </div>
+                            <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
+                                <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\ali.jpg" alt="Ali"> </div>
+                                <h3>Ali Punjani</h3>
+                                <p>Product Tester</p>
                             </div>
-                            <div class="row">
-                                <div class="col-lg-4 col-sm-2"></div>
-                                <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
-                                    <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\m-thomasheadshot.jpg" alt="Thomas"> </div>
-                                    <h3>Thomas Neals</h3>
-                                    <p>Marketing Department</p>
-                                </div>
-                                <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
-                                    <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\m-troyheadshot.jpg" alt="Troy"> </div>
-                                    <h3>Troy Chiu</h3>
-                                    <p>Marketing Department</p>
-                                </div>
+                            <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
+                                <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\I-bobbyheadshot.jpg" alt="Bobby"> </div>
+                                <h3>Bobby Wong</h3>
+                                <p>Video Production Manager</p>
                             </div>
-                            <div class="row">
-                                <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
-                                    <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\p-andyheadshot.jpg" alt="Andy"> </div>
-                                    <h3>Andy Zhao</h3>
-                                    <p>Production Department</p>
-                                </div>
-                                <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
-                                    <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\p-karanheadshot.jpg" alt="Karan"> </div>
-                                    <h3>Karan Tibriwal</h3>
-                                    <p>Production Department</p>
-                                </div>
-                                <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
-                                    <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\p-melodyheadshot.jpg" alt="Melody"> </div>
-                                    <h3>Melody Kuo</h3>
-                                    <p>Production Department</p>
-                                </div>
-                                <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
-                                    <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\p-samanthaheadshot.jpg" alt="Samantha"> </div>
-                                    <h3>Samantha Lam</h3>
-                                    <p>Production Department</p>
-                                </div>
-                                <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
-                                    <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\p-Nicholasheadshot.jpg" alt="Nicholas"> </div>
-                                    <h3>Nicholas Chi</h3>
-                                    <p>Production Department</p>
-                                </div>
-                                <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
-                                    <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\p-tanishaheadshot.jpg" alt="Tanisha"> </div>
-                                    <h3>Tanisha Haque</h3>
-                                    <p>Production Department</p>
-                                </div>
+                            <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
+                                <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\F-ericmuntherheadshot.jpg" alt="Erik"> </div>
+                                <h3>Erik Munther</h3>
+                                <p>Finance Department</p>
                             </div>
-                            <div class="row">
-                                <div class="col-lg-1"></div>
-                                <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
-                                    <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\s-donnaheadshot.jpg" alt="Donna"> </div>
-                                    <h3>Donna Xue</h3>
-                                    <p>Sales Department</p>
-                                </div>
-                                <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
-                                    <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\s-jonathanheadshot.jpg" alt="Jonathan"> </div>
-                                    <h3>Jonathan Arthur</h3>
-                                    <p>Sales Department</p>
-                                </div>
-                                <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
-                                    <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\s-sameerheadshot.jpg" alt="Sameer"> </div>
-                                    <h3>Sameer Jessa</h3>
-                                    <p>Sales Department</p>
-                                </div>
-                                <div class="spacer col-sm-2"></div>
-                                <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
-                                    <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\s-Sepherheadshot.jpg" alt="Sepher"> </div>
-                                    <h3>Sepehr Abdar</h3>
-                                    <p>Sales Department</p>
-                                </div>
-                                <div class="spacerSmall col-xs-3"></div>
-                                <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
-                                    <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\s-vedantheadshot.jpg" alt="Vedant"> </div>
-                                    <h3>Vedant Gupta</h3>
-                                    <p>Sales Department</p>
-                                </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
+                                <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\F-sebastianheadshot.jpg" alt="Sebastian"> </div>
+                                <h3>Sebastian Weersink</h3>
+                                <p>Finance Department</p>
                             </div>
+                            <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
+                                <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\f-shahanheadshot.jpg" alt="Shahan"> </div>
+                                <h3>Shahan Mahmood</h3>
+                                <p>Finance Department</p>
+                            </div>
+                            <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
+                                <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\f-simonheadshot.jpg" alt="Simon"> </div>
+                                <h3>Simon Lin</h3>
+                                <p>Finance Department</p>
+                            </div>
+                            <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
+                                <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\h-carolynheadshot.jpg" alt="Carolyn"> </div>
+                                <h3>Carolyn Brambilla</h3>
+                                <p>Co-Director of HR</p>
+                            </div>
+                            <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
+                                <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\rayah.jpg" alt="Rayah"> </div>
+                                <h3>Rayah Ladak</h3>
+                                <p>Director of CSR</p>
+                            </div>
+                            <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
+                                <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\m-troyheadshot.jpg" alt="Troy"> </div>
+                                <h3>Troy Chiu</h3>
+                                <p>Marketing Department</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-2"></div>
+
+
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
+                                <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\adrianheadshot.jpg" alt="Adrian"> </div>
+                                <h3>Adrian Popescu</h3>
+                                <p>Content Manager</p>
+                            </div>
+                            <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
+                                <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\m-miaheadshot.jpg" alt="Mia"> </div>
+                                <h3>Mia Yaguchi-Chow</h3>
+                                <p>Lead Graphic Designer</p>
+                            </div>
+                            <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
+                                <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\m-carelynnheadshot.jpg" alt="Carelynn"> </div>
+                                <h3>Carelynn Tsai</h3>
+                                <p>Community Manager</p>
+                            </div>
+                            <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
+                                <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\m-ericaheadshot.jpg" alt="Erica"> </div>
+                                <h3>Erica Huang</h3>
+                                <p>Head of Digital Marketing</p>
+                            </div>
+                            <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
+                                <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\m-ermiaheadshot.jpg" alt="Ermia"> </div>
+                                <h3>Ermia Jomlehdar</h3>
+                                <p>Photographer/Videographer</p>
+                            </div>
+                            <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
+                                <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\m-sharonheadshot.jpg" alt="Sharon"> </div>
+                                <h3>Sharon Zheng</h3>
+                                <p>Director of Sponsorship and Logistics</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
+                                <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\m-thomasheadshot.jpg" alt="Thomas"> </div>
+                                <h3>Thomas Neals</h3>
+                                <p>Marketing Department</p>
+                            </div>
+                            <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
+                                <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\p-andyheadshot.jpg" alt="Andy"> </div>
+                                <h3>Andy Zhao</h3>
+                                <p>Website Designer</p>
+                            </div>
+                            <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
+                                <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\p-karanheadshot.jpg" alt="Karan"> </div>
+                                <h3>Karan Tibriwal</h3>
+                                <p>Product Lead</p>
+                            </div>
+                            <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
+                                <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\p-melodyheadshot.jpg" alt="Melody"> </div>
+                                <h3>Melody Kuo</h3>
+                                <p>Researcher</p>
+                            </div>
+                            <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
+                                <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\p-tanishaheadshot.jpg" alt="Tanisha"> </div>
+                                <h3>Tanisha Haque</h3>
+                                <p>Director of Marketing</p>
+                            </div>
+                            <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
+                                <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\p-samanthaheadshot.jpg" alt="Samantha"> </div>
+                                <h3>Samantha Lam</h3>
+                                <p>Director of Production</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
+                                <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\s-donnaheadshot.jpg" alt="Donna"> </div>
+                                <h3>Donna Xue</h3>
+                                <p>Director of Sales</p>
+                            </div>
+                            <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
+                                <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\s-jonathanheadshot.jpg" alt="Jonathan"> </div>
+                                <h3>Jonathan Arthur</h3>
+                                <p>Sales Associate</p>
+                            </div>
+                            <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
+                                <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\s-sameerheadshot.jpg" alt="Sameer"> </div>
+                                <h3>Sameer Jessa</h3>
+                                <p>Sales Representative</p>
+                            </div>
+                            <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
+                                <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\s-Sepherheadshot.jpg" alt="Sepher"> </div>
+                                <h3>Sepehr Abdar</h3>
+                                <p>Sales Lead</p>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                          <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits" align="center">
+                              <div class="centerBlock"> <img class="img-responsive center-block img-circle gmPhoto" src="assets\images\about\members_resized\s-vedantheadshot.jpg" alt="Vedant"> </div>
+                              <h3>Vedant Gupta</h3>
+                              <p>Sales Associate</p>
+                          </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="panel-group col-lg-12">
-                <div class="panel panel-default">
-                    <div class="panel-heading"> <a data-toggle="collapse" href="#collapse3" style="text-decoration: none;"><h3 class="panel-title AdvisorsHeading">Advisors</h3></a> </div>
-                    <div id="collapse3" class="panel-collapse collapse in">
-                        <div class="panel-body">
-                            <div class="row">
-                                <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits">
-                                    <div class="centerBlock"> <img class="img-circle img-responsive center-block Adphoto" src="assets/images/about/advisors/Larry.jpg" alt="Larry"> </div>
-                                    <h3>Larry Chan</h3>
-                                    <p>Rosenzweig & Company</p>
-                                </div>
-                                <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits">
-                                    <div class="centerBlock"> <img class="img-circle img-responsive center-block Adphoto" src="assets/images/about/advisors/Dan.jpg" alt="Dan"> </div>
-                                    <h3>Dan Richmond</h3>
-                                    <p>RBC Dominion Securities</p>
-                                </div>
-                                <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits">
-                                    <div class="centerBlock"> <img class="img-circle img-responsive center-block Adphoto" src="assets/images/about/advisors/Mary.jpg" alt="Mary"> </div>
-                                    <h3>Mary Cao</h3>
-                                    <p>KBS+ Toronto</p>
-                                </div>
-                                <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits">
-                                    <div class="centerBlock"> <img class="img-circle img-responsive center-block Adphoto" src="assets/images/about/advisors/Aliya.jpg" alt="Aliya"> </div>
-                                    <h3>Aliya Ramji</h3>
-                                    <p>Figure 1</p>
-                                </div>
-                                <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits">
-                                    <div class="centerBlock"> <img class="img-circle img-responsive center-block Adphoto" src="assets/images/about/advisors/Candace.jpg" alt="Candace"> </div>
-                                    <h3>Candace Shea</h3>
-                                    <p>Labatt Breweries Canada</p>
-                                </div>
-                                <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits">
-                                    <div class="centerBlock"> <img class="img-circle img-responsive center-block Adphoto" src="assets/images/about/advisors/Farwa.jpg" alt="Farwa"> </div>
-                                    <h3>Farwa Kazmi</h3>
-                                    <p>Nudge Software</p>
-                                </div>
+                <div class="row">
+                    <h2 class="page-header text-center">The <c style="color:#34C15F">Advisory Board</c></h2>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits">
+                                <div class="centerBlock"> <img class="img-circle img-responsive center-block Adphoto" src="assets/images/about/advisors/Larry.jpg" alt="Larry"> </div>
+                                <h3>Larry Chan</h3>
+                                <p>Rosenzweig & Company</p>
                             </div>
-                            <div class="row">
-                                <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits">
-                                    <div class="centerBlock"> <img class="img-circle img-responsive center-block Adphoto" src="assets/images/about/advisors/Pemila.jpg" alt="Pemila"> </div>
-                                    <h3>Pemila Tam</h3>
-                                    <p>Deloitte</p>
-                                </div>
-                                <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits">
-                                    <div class="centerBlock"> <img class="img-circle img-responsive center-block Adphoto" src="assets/images/about/advisors/Jan.jpg" alt="Jan"> </div>
-                                    <h3>Jan Gemrich</h3>
-                                    <p>Google Toronto</p>
-                                </div>
-                                <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits">
-                                    <div class="centerBlock"> <img class="img-circle img-responsive center-block Adphoto" src="assets/images/about/advisors/Max.jpg" alt="Max"> </div>
-                                    <h3>Max Risen</h3>
-                                    <p>Saasli</p>
-                                </div>
-                                <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits">
-                                    <div class="centerBlock"> <img class="img-circle img-responsive center-block Adphoto" src="assets/images/about/advisors/Hussain.jpg" alt="Hussain"> </div>
-                                    <h3>Hussain Punjani</h3>
-                                    <p>2nd year University of Toronto</p>
-                                </div>
-                                <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits">
-                                    <div class="centerBlock"> <img class="img-circle img-responsive center-block Adphoto" src="assets/images/about/advisors/Vik.jpg" alt="Vik"> </div>
-                                    <h3>Vik Kandeth</h3>
-                                    <p>StackAdapt</p>
-                                </div>
-                                <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits">
-                                    <div class="centerBlock"> <img class="img-circle img-responsive center-block Adphoto" src="assets/images/about/advisors/Beula.jpg" alt="Beula"> </div>
-                                    <h3>Beula D’Souza</h3>
-                                    <p>Figure 1</p>
-                                </div>
+                            <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits">
+                                <div class="centerBlock"> <img class="img-circle img-responsive center-block Adphoto" src="assets/images/about/advisors/Dan.jpg" alt="Dan"> </div>
+                                <h3>Dan Richmond</h3>
+                                <p>RBC Dominion Securities</p>
                             </div>
-                            <div class="row">
-                                <div class="col-lg-2"></div>
-                                <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits">
-                                    <div class="centerBlock"> <img class="img-circle img-responsive center-block Adphoto" src="assets/images/about/advisors/Allie.jpg" alt="Allie"> </div>
-                                    <h3>Allie Sadowski</h3>
-                                    <p>Grad student - Seneca</p>
-                                </div>
-                                <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits">
-                                    <div class="centerBlock"> <img class="img-circle img-responsive center-block Adphoto" src="assets/images/about/advisors/Joshua.jpg" alt="Joshua"> </div>
-                                    <h3>Joshua Kuo</h3>
-                                    <p>Deloitte Digital</p>
-                                </div>
-                                <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits">
-                                    <div class="centerBlock"> <img class="img-circle img-responsive center-block Adphoto" src="assets/images/about/advisors/Ashley.jpg" alt="Ashley"> </div>
-                                    <h3>Ashley Teo</h3>
-                                    <p>Loyalty One</p>
-                                </div>
-                                <div class="spacer col-sm-4"></div>
-                                <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits">
-                                    <div class="centerBlock"> <img class="img-circle img-responsive center-block Adphoto" src="assets/images/about/advisors/Mia.jpg" alt="Mia"> </div>
-                                    <h3>Mia Cvetkovik</h3>
-                                    <p>University of Toronto</p>
-                                </div>
+                            <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits">
+                                <div class="centerBlock"> <img class="img-circle img-responsive center-block Adphoto" src="assets/images/about/advisors/Mary.jpg" alt="Mary"> </div>
+                                <h3>Mary Cao</h3>
+                                <p>KBS+ Toronto</p>
+                            </div>
+                            <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits">
+                                <div class="centerBlock"> <img class="img-circle img-responsive center-block Adphoto" src="assets/images/about/advisors/Aliya.jpg" alt="Aliya"> </div>
+                                <h3>Aliya Ramji</h3>
+                                <p>Figure 1</p>
+                            </div>
+                            <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits">
+                                <div class="centerBlock"> <img class="img-circle img-responsive center-block Adphoto" src="assets/images/about/advisors/Candace.jpg" alt="Candace"> </div>
+                                <h3>Candace Shea</h3>
+                                <p>Labatt Breweries Canada</p>
+                            </div>
+                            <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits">
+                                <div class="centerBlock"> <img class="img-circle img-responsive center-block Adphoto" src="assets/images/about/advisors/Farwa.jpg" alt="Farwa"> </div>
+                                <h3>Farwa Kazmi</h3>
+                                <p>Nudge Software</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits">
+                                <div class="centerBlock"> <img class="img-circle img-responsive center-block Adphoto" src="assets/images/about/advisors/Pemila.jpg" alt="Pemila"> </div>
+                                <h3>Pemila Tam</h3>
+                                <p>Deloitte</p>
+                            </div>
+                            <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits">
+                                <div class="centerBlock"> <img class="img-circle img-responsive center-block Adphoto" src="assets/images/about/advisors/Jan.jpg" alt="Jan"> </div>
+                                <h3>Jan Gemrich</h3>
+                                <p>Google Toronto</p>
+                            </div>
+                            <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits">
+                                <div class="centerBlock"> <img class="img-circle img-responsive center-block Adphoto" src="assets/images/about/advisors/Max.jpg" alt="Max"> </div>
+                                <h3>Max Risen</h3>
+                                <p>Saasli</p>
+                            </div>
+                            <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits">
+                                <div class="centerBlock"> <img class="img-circle img-responsive center-block Adphoto" src="assets/images/about/advisors/Hussain.jpg" alt="Hussain"> </div>
+                                <h3>Hussain Punjani</h3>
+                                <p>2nd year University of Toronto</p>
+                            </div>
+                            <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits">
+                                <div class="centerBlock"> <img class="img-circle img-responsive center-block Adphoto" src="assets/images/about/advisors/Vik.jpg" alt="Vik"> </div>
+                                <h3>Vik Kandeth</h3>
+                                <p>StackAdapt</p>
+                            </div>
+                            <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits">
+                                <div class="centerBlock"> <img class="img-circle img-responsive center-block Adphoto" src="assets/images/about/advisors/Beula.jpg" alt="Beula"> </div>
+                                <h3>Beula D’Souza</h3>
+                                <p>Figure 1</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-2"></div>
+                            <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits">
+                                <div class="centerBlock"> <img class="img-circle img-responsive center-block Adphoto" src="assets/images/about/advisors/Allie.jpg" alt="Allie"> </div>
+                                <h3>Allie Sadowski</h3>
+                                <p>Grad student - Seneca</p>
+                            </div>
+                            <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits">
+                                <div class="centerBlock"> <img class="img-circle img-responsive center-block Adphoto" src="assets/images/about/advisors/Joshua.jpg" alt="Joshua"> </div>
+                                <h3>Joshua Kuo</h3>
+                                <p>Deloitte Digital</p>
+                            </div>
+                            <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits">
+                                <div class="centerBlock"> <img class="img-circle img-responsive center-block Adphoto" src="assets/images/about/advisors/Ashley.jpg" alt="Ashley"> </div>
+                                <h3>Ashley Teo</h3>
+                                <p>Loyalty One</p>
+                            </div>
+                            <div class="spacer col-sm-4"></div>
+                            <div class="col-lg-2 col-sm-4 col-xs-6 text-center portraits">
+                                <div class="centerBlock"> <img class="img-circle img-responsive center-block Adphoto" src="assets/images/about/advisors/Mia.jpg" alt="Mia"> </div>
+                                <h3>Mia Cvetkovik</h3>
+                                <p>University of Toronto</p>
                             </div>
                         </div>
                     </div>
