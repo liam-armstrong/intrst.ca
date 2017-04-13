@@ -44,7 +44,7 @@ app.controller("compareController", ["$scope", "$window", function($scope, $wind
         { imgsrc: "assets/images/compare/NationalBank.png", name1: "Strategist®", name2: "Account", rate: 0.02,
             eTransfer: "$1.25 per", eTrans: "transaction", transRank: 4, nonBankFees: "$0.75 per", atmRank: 1,
             nonBankTrans: "transaction", prep: "Around", branches: 450,
-            link: "https://www.rbc.ca/en/personal/banking/saving-accounts/strategist-account.html"},
+            link: "https://www.nbc.ca/en/personal/banking/saving-accounts/strategist-account.html"},
         //PC Financial
         { imgsrc: "assets/images/compare/PCFinancial.png", name1: "Interest Plus™", name2: "Savings Account", rate: 0.85,
             eTransfer: "$1.50 per", eTrans: "transaction", transRank: 8, nonBankFees: "$1.50 per", atmRank: 6,

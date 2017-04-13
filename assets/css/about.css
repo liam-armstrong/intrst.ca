@@ -1,4 +1,4 @@
-*{
+* {
     font-family: 'Raleway', sans-serif;
 }
 
@@ -6,30 +6,47 @@ body {
     margin-top: 70px
 }
 
-.skyline{
-    width: 900px;
+.title {
+    height: 50vh;
+    padding-top: 19vh;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 4em;
+    color: white;
+}
+
+.title::after {
+    height: 60vh;
+    content: "";
+    background: url(/assets/images/about/banner.jpg) top center no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.teampic {
     margin-bottom: 30px;
 }
 
-.teampic{
-    margin-bottom: 30px;
-}
-
-.portraits{
+.portraits {
     margin-top: 10px;
     height: 20%;
     margin-bottom: 10px
 }
 
-.gm{
+.gm {
     width: 90%;
 }
 
-.AdvisorsHeading{
+.AdvisorsHeading {
     font-size: 1.6em;
     text-decoration: none;
     color: black;
 }
+
 
 /* Contact Buttton*/
 
@@ -39,7 +56,6 @@ a {
     -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
     -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
     transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-
 }
 
 a.button {
@@ -58,28 +74,35 @@ a.button:hover {
     color: rgba(255, 255, 255, 0.85);
     box-shadow: RGBA(52, 193, 95, 0.7) 0 0px 0px 40px inset;
 }
-@media screen and (min-width: 1200px){
+
+#Desc {
+    padding-top: 4vh;
+}
+
+#Descbutton{
+    margin-top: 3vh;
+}
+
+@media screen and (min-width: 1200px) {
     .spacer {
         display: none;
     }
 }
 
-@media screen and (min-width: 767px){
-    .spacerSmall{
+@media screen and (min-width: 767px) {
+    .spacerSmall {
         display: none;
     }
 }
 
-
-
-@media screen and (max-width: 399px){
-   .Adphoto{
-       height: 50vw;
-   } 
+@media screen and (max-width: 399px) {
+    .Adphoto {
+        height: 50vw;
+    }
 }
 
-@media screen and (min-width: 400px){
-    .Adphoto{
+@media screen and (min-width: 400px) {
+    .Adphoto {
         height: 170px;
     }
 }
