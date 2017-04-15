@@ -142,11 +142,22 @@ app.controller("compareController", ["$scope", "$window", function($scope, $wind
           link: "http://www.virginmobile.ca/en/plans/details.html?province=ON&geoResult=ON#!/postpaid/byop"}
   ];
 
+  $scope.sortTypeCar = "name";
+  $scope.sortReverseCar = false;
+  $scope.carInsurCompanies = [
+      { imgsrc: "assets/images/compare/belairdirect.png", name: "Belairdirect", compares: false, ownInsur: true, entries1: 13, freeQuotes: 1, link: "http://www.belairdirect.com/"},
+      { imgsrc: "assets/images/compare/brokerlink.jpg", name: "BrokerLink", compares: true, ownInsur: false, entries1: 34, freeQuotes: 3, link: "http://www.brokerlink.ca/"},
+      { imgsrc: "assets/images/compare/insurancehotline.png", name: "InsuranceHotline", compares: true, ownInsur: false, entries1: 31, freeQuotes: 5, link: "https://www.insurancehotline.com/"},
+      { imgsrc: "assets/images/compare/kanetix.jpg", name: "Kanetix", compares: true, ownInsur: false, entries1: 30, freeQuotes: 3, link: "https://www.kanetix.ca/?abvar=0"},
+      { imgsrc: "assets/images/compare/lowestrates.png", name: "Lowestrates", compares: true, ownInsur: false, entries1: 32, freeQuotes: 16, link: "http://www.lowestrates.ca/"},
+      { imgsrc: "assets/images/compare/sonnet.jpg", name: "Sonnet", compares: false, ownInsur: true, entries1: 18, freeQuotes: 3, link: "https://www.sonnet.ca/"}
+  ];
+
   $scope.foodCompanies = [
       { imgsrc: "assets/images/compare/ubereats.png", name: "UberEats", access: "Mobile App and Website", charge: "$5.00", drinks: "Bubble tea, Juice and smoothies", food: ["Asian", "Canadian", "Dessert", "Halal", "Pizza", "Sushi"], range: ["Toronto", "Mississauga", "Edmonton", "Ottawa"], link: "https://www.ubereats.com", },
       { imgsrc: "assets/images/compare/justeat.png", name: "JustEat", access: "Mobile App and Website", charge: "Typically $3.00",  drinks: "N/A", food: ["American", "Asian", "Canadian", "Chinese", "Indian", "Italian", "Mediterranean", "Pizza"], range: ["Most Major Cities in Canada"], link: "https://www.just-eat.ca", },
       { imgsrc: "assets/images/compare/foodora.jpg", name: "Foodora", access: "Mobile App and Website", charge: "$5.50 plus $2 per kilometer from pick-up point to destination",  drinks: "Bubble tea, Juices and Smoothies", food: ["American", "Bakery and Cafe", "Burger", "Canadian", "Chinese", "Healthy", "Indian", "Japanese", "Latin American", "Mediterranean", "Mexican", "Pizza",
-          "Seafood", "Spanish", "Sushi", "Vegetarian"], range: ["Dupont to Lake Ontario", "Keele to the DVP"], link: "https://www.foodora.ca/", },
+          "Seafood", "Spanish", "Sushi", "Vegetarian"], range: ["Dupont to Lake Ontario", "Keele to the DVP"], link: "https://www.foodora.ca/" },
       { imgsrc: "assets/images/compare/sohungry.png", name: "So Hungry", access: "Website Only", charge: "$0.00",  drinks: "N/A", food: ["Canadian", "Chinese", "Indian", "Japanese", "Thai", "Vietnamese"], range: ["Toronto"], link: "http://www.sohungry.com/order-food.html", },
       { imgsrc: "assets/images/compare/feastbank.png", name: "Feast Bank", access: "Mobile App and Website", charge: "N/A",  drinks: "N/A", food: ["New Menu Every Day"], range: ["Toronto"], link: "https://www.eatfeast.com/guiding-principles", },
       { imgsrc: "assets/images/compare/doordash.png", name: "Door Dash", access: "Mobile app and Website", charge: "Between $3.99 and $4.99",  drinks: "Smoothies", food: ["African",
