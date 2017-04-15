@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,10 +15,8 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/compare.css">
-
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Angular Framework -->
@@ -143,7 +142,7 @@ font-size: 4em;
 .title::after {
 height: 60vh;
 content: "";
-background: url(/assets/images/landing2.png) center center no-repeat;
+background: url(/assets/images/terminology/Product-Rankings-compressor.jpg) center center no-repeat;
 background-size: cover;
 opacity: 0.7;
 top: 0;
@@ -231,74 +230,73 @@ margin: 3vh 10vw;
                                 </div>
                             </div>
                         </form>
-                        <div class="scrollbar">
-                            <table class="table table-striped">
-                                <thead>
-                                    <tr>
-                                        <td>
-                                            <a href="" ng-click="sortTypeSaving = 'product'; sortReverseSaving = !sortReverseSaving">
-                                                PRODUCT </a>
-                                            <span ng-show="sortTypeSaving == 'product' && !sortReverseSaving" class="fa fa-caret-down"></span>
-                                            <span ng-show="sortTypeSaving == 'product' && sortReverseSaving" class="fa fa-caret-up"></span>
-                                        </td>
-                                        <td>
-                                            <a href="" ng-click="sortTypeSaving = 'rate'; sortReverseSaving = !sortReverseSaving">
-                                                INTEREST RATE </a>
-                                            <span ng-show="sortTypeSaving == 'rate' && !sortReverseSaving" class="fa fa-caret-down"></span>
-                                            <span ng-show="sortTypeSaving == 'rate' && sortReverseSaving" class="fa fa-caret-up"></span>
-                                        </td>
-                                        <td>
-                                            <a href="" ng-click="sortTypeSaving = 'transRank'; sortReverseSaving = !sortReverse">
-                                                INTERAC E-TRANSFERS</a>
-                                            <span ng-show="sortTypeSaving == 'transRank' && !sortReverseSaving" class="fa fa-caret-down"></span>
-                                            <span ng-show="sortTypeSaving == 'transRank' && sortReverseSaving" class="fa fa-caret-up"></span>
-                                        </td>
-                                        <td>
-                                            <a href="" ng-click="sortTypeSaving = 'atmRank'; sortReverseSaving = !sortReverseSaving">
-                                                ATM FEES </a>
-                                            <span ng-show="sortTypeSaving == 'atmRank' && !sortReverseSaving" class="fa fa-caret-down"></span>
-                                            <span ng-show="sortTypeSaving == 'atmRank' && sortReverseSaving" class="fa fa-caret-up"></span>
-                                            </td>
-                                        <td>
-                                            <a href="" ng-click="sortTypeSaving = 'rate'; sortReverseSaving = !sortReverseSaving">
-                                                RETURN ON ${{calcInput || 1000 | number:2}} </a>
-                                            <span ng-show="sortTypeSaving == 'rate' && !sortReverseSaving" class="fa fa-caret-down"></span>
-                                            <span ng-show="sortTypeSaving == 'rate' && sortReverseSaving" class="fa fa-caret-up"></span>
-                                        </td>
-                                        <td>
-                                            <a href="" ng-click="sortTypeSaving = 'branches'; sortReverseSaving = !sortReverseSaving">
-                                                BRANCHES </a>
-                                            <span ng-show="sortTypeSaving == 'branches' && !sortReverseSaving" class="fa fa-caret-down"></span>
-                                            <span ng-show="sortTypeSaving == 'branches' && sortReverseSaving" class="fa fa-caret-up"></span>
-                                        </td>
-                                        <td></td>
-                                    </tr>
-                                </thead>
 
-                                <tbody class="table-body">
-                                    <tr ng-repeat="bank in savingBanks | orderBy:sortTypeSaving:sortReverseSaving">
-                                        <td>
-                                            <a ng-href="{{bank.link}}" target="_blank"><img ng-src="{{bank.imgsrc}}" class="table-body-logo"></a>
-                                            <br>{{bank.name1}}
-                                            <br>{{bank.name2}}</td>
-                                        <td>{{bank.rate}}%</td>
-                                        <td>{{bank.eTransfer}}
-                                            <br> {{bank.eTrans}}</td>
-                                        <td>{{bank.nonBankFees}}
-                                            <br> {{bank.nonBankTrans}}</td>
-                                        <td>${{calcInput ? calcInput + calcInput * (bank.rate / 100) : 1000 + 1000 * (bank.rate / 100) | number:2}}</td>
-                                        <td>{{bank.prep}} {{bank.branches}}</td>
-                                        <td><a ng-href="{{bank.link}}" target="_blank" class="btn btn-info" role="button">GO</a></td>
-                                    </tr>
-                                    </tbody>
-                            </table>
-                        </div>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <td>
+                                        <a href="" ng-click="sortTypeSaving = 'product'; sortReverseSaving = !sortReverseSaving">
+                                            PRODUCT </a>
+                                        <span ng-show="sortTypeSaving == 'product' && !sortReverseSaving" class="fa fa-caret-down"></span>
+                                        <span ng-show="sortTypeSaving == 'product' && sortReverseSaving" class="fa fa-caret-up"></span>
+                                    </td>
+                                    <td>
+                                        <a href="" ng-click="sortTypeSaving = 'rate'; sortReverseSaving = !sortReverseSaving">
+                                            INTEREST RATE </a>
+                                        <span ng-show="sortTypeSaving == 'rate' && !sortReverseSaving" class="fa fa-caret-down"></span>
+                                        <span ng-show="sortTypeSaving == 'rate' && sortReverseSaving" class="fa fa-caret-up"></span>
+                                    </td>
+                                    <td>
+                                        <a href="" ng-click="sortTypeSaving = 'transRank'; sortReverseSaving = !sortReverse">
+                                            INTERAC E-TRANSFERS</a>
+                                        <span ng-show="sortTypeSaving == 'transRank' && !sortReverseSaving" class="fa fa-caret-down"></span>
+                                        <span ng-show="sortTypeSaving == 'transRank' && sortReverseSaving" class="fa fa-caret-up"></span>
+                                    </td>
+                                    <td>
+                                        <a href="" ng-click="sortTypeSaving = 'atmRank'; sortReverseSaving = !sortReverseSaving">
+                                            ATM FEES </a>
+                                        <span ng-show="sortTypeSaving == 'atmRank' && !sortReverseSaving" class="fa fa-caret-down"></span>
+                                        <span ng-show="sortTypeSaving == 'atmRank' && sortReverseSaving" class="fa fa-caret-up"></span>
+                                        </td>
+                                    <td>
+                                        <a href="" ng-click="sortTypeSaving = 'rate'; sortReverseSaving = !sortReverseSaving">
+                                            RETURN ON ${{calcInput || 1000 | number:2}} </a>
+                                        <span ng-show="sortTypeSaving == 'rate' && !sortReverseSaving" class="fa fa-caret-down"></span>
+                                        <span ng-show="sortTypeSaving == 'rate' && sortReverseSaving" class="fa fa-caret-up"></span>
+                                    </td>
+                                    <td>
+                                        <a href="" ng-click="sortTypeSaving = 'branches'; sortReverseSaving = !sortReverseSaving">
+                                            BRANCHES </a>
+                                        <span ng-show="sortTypeSaving == 'branches' && !sortReverseSaving" class="fa fa-caret-down"></span>
+                                        <span ng-show="sortTypeSaving == 'branches' && sortReverseSaving" class="fa fa-caret-up"></span>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                            </thead>
+
+                            <tbody class="table-body">
+                                <tr ng-repeat="bank in savingBanks | orderBy:sortTypeSaving:sortReverseSaving">
+                                    <td>
+                                        <a ng-href="{{bank.link}}" target="_blank"><img ng-src="{{bank.imgsrc}}" class="table-body-logo"></a>
+                                        <br>{{bank.name1}}
+                                        <br>{{bank.name2}}</td>
+                                    <td>{{bank.rate}}%</td>
+                                    <td>{{bank.eTransfer}}
+                                        <br> {{bank.eTrans}}</td>
+                                    <td>{{bank.nonBankFees}}
+                                        <br> {{bank.nonBankTrans}}</td>
+                                    <td>${{calcInput ? calcInput + calcInput * (bank.rate / 100) : 1000 + 1000 * (bank.rate / 100) | number:2}}</td>
+                                    <td>{{bank.prep}} {{bank.branches}}</td>
+                                    <td><a ng-href="{{bank.link}}" target="_blank" class="btn btn-info" role="button">GO</a></td>
+                                </tr>
+                                </tbody>
+                        </table>
                     </div>
                 </div>
 
                 <div class="cell">
                     <div class="cellChars" ng-show="currentActive=='cell'" ng-hide="!(currentActive=='cell')">
-                        <h4 style="margin:2%;">What do <span style="color: #34C15F">you</span> do with your <span style="color: #34C15F">money</span>?</h4>
+                        <h4 style="margin:2%;">What do <span style="color: #34C15F">you</span> do with your <span style="color: #34C15F">cell phone</span>?</h4>
                         <div class="greybox" style="background-color: #77c2b4; color: white;"  ng-click="currentActive='cellChart';sortTypeCell='data';sortReverseCell=true">
                             <div class="col-md-5 transbox">
                                 <h4>David the Data User</h4>
@@ -339,7 +337,7 @@ margin: 3vh 10vw;
                         </div>
                     </div>
                     <div class="cellChart table-responsive" ng-show="currentActive=='cellChart'" ng-hide="!(currentActive=='cellChart')">
-                        <table class="table table-striped scrollbar">
+                        <table class="table table-striped">
                             <thead>
                                 <tr>
                                     <td>
@@ -390,11 +388,13 @@ margin: 3vh 10vw;
                                     <td>${{company.price}} per
                                         <br> month</td>
                                     <td>
+                                      <div style="overflow:auto; max-height:250px;">
                                         <ul ng-repeat="bonus in company.bonuses">
                                           <li class="cell-list">
                                               {{bonus}}
                                           </li>
                                         </ul>
+                                      </div>
                                     </td>
                                     <td><a ng-href="{{company.link}}" target="_blank" class="btn btn-info" role="button">GO</a></td>
                                 </tr>
@@ -403,7 +403,7 @@ margin: 3vh 10vw;
                     </div>
 
                     <div class="ccardChars" ng-show="currentActive=='ccard'" ng-hide="!(currentActive=='ccard')">
-                        <h4>What do <span style="color: #34C15F">you</span> do with your <span style="color: #34C15F">money</span>?</h4>
+                        <h4 style="margin:2%;">What do <span style="color: #34C15F">you</span> do with your <span style="color: #34C15F">credit</span>?</h4>
                         <div class="greybox" ng-click="currentActive='ccardChart';sortTypeCcard='worthRank';sortReverseCcard=false" style="background-color: #6DBEB0; color: white;">
                             <div class="col-md-5 transbox">
                                 <h4>Callie the Collector</h4>
@@ -433,7 +433,7 @@ margin: 3vh 10vw;
                     </div>
 
                     <div class="ccardChart table-responsive" ng-show="currentActive=='ccardChart'" ng-hide="!(currentActive=='ccardChart')">
-                        <table class="table table-striped scrollbar">
+                        <table class="table table-striped">
                             <thead>
                                 <tr>
                                     <td>
@@ -488,7 +488,6 @@ margin: 3vh 10vw;
 
                         <h5>*ALL HAVE FRAUD PROTECTION + SOME BASIC INSURANCE (DEPENDING ON BANK) - all points based on monthly amount spent</h5>
                     </div>
-
                     <div class="carInsur" ng-show="currentActive=='carInsur'" ng-hide="!(currentActive=='carInsur')">
                       <table class="table table-striped">
                           <thead>
@@ -539,6 +538,7 @@ margin: 3vh 10vw;
                           </tbody>
                       </table>
                    </div>
+
 
 
                     <div class="foodChart table-responsive" ng-show="currentActive=='food'" ng-hide="!(currentActive=='food')">
