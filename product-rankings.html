@@ -14,7 +14,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/compare.css">
-    
+
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
@@ -174,7 +174,7 @@ margin: 3vh 10vw;
                     <li ng-class="{'active' : currentActive=='saving' || currentActive=='savingChart'}"><a href="#savings" ng-click="currentActive='saving';addHistory('saving','product-rankings.html#savings');">SAVINGS</a></li>
                     <li ng-class="{'active' : currentActive=='cell' || currentActive=='cellChart'}"><a href="#cellphones" ng-click="currentActive='cell';addHistory('cell','product-rankings.html#cellphones');">CELL PHONES</a></li>
                     <li ng-class="{'active' : currentActive=='ccard' || currentActive=='ccardChart'}"><a href="#credit-cards" ng-click="currentActive='ccard';addHistory('ccard','product-rankings.html#credit-cards');">CREDIT CARDS</a></li>
-                    <!--<li ng-class="{'active' : currentActive=='carInsur'}"><a href="#car-insurace" ng-click="currentActive='carInsur';addHistory('carInsur','product-rankings.html#car-insurance');">CAR INSURANCE</a></li>-->
+                    <li ng-class="{'active' : currentActive=='carInsur'}"><a href="#car-insurace" ng-click="currentActive='carInsur';addHistory('carInsur','product-rankings.html#car-insurance');">CAR INSURANCE</a></li>
                      <!-- <li ng-class="{'active' : currentActive=='food'}"><a href="#food-delivery" ng-click="currentActive='food';addHistory('food','evaluate.html#food-delivery');">FOOD DELIVERY</a></li>  -->
                     <!-- <li ng-class="{'active' : currentActive=='tv'}"><a href="#tv-networks" ng-click="currentActive='tv';addHistory('tv','evaluate.html#tv-networks');">TV NETWORKS</a></li> -->
                 </ul>
@@ -488,19 +488,57 @@ margin: 3vh 10vw;
 
                         <h5>*ALL HAVE FRAUD PROTECTION + SOME BASIC INSURANCE (DEPENDING ON BANK) - all points based on monthly amount spent</h5>
                     </div>
-                    <!--
+
                     <div class="carInsur" ng-show="currentActive=='carInsur'" ng-hide="!(currentActive=='carInsur')">
-                          <div class="typeform-widget" data-url="https://helium.typeform.com/to/Um65m5"></div>
-                          <script>
-                              (function(){
-                                  var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id="typef_orm",b="https://s3-eu-west-1.amazonaws.com/share.typeform.com/";
-                                  if(!gi.call(d,id)){
-                                      js=ce.call(d,"script");
-                                      js.id=id;js.src=b+"widget.js";
-                                      q=gt.call(d,"script")[0];
-                                      q.parentNode.insertBefore(js,q)}})()
-                          </script>
-                   </div>-->
+                      <table class="table table-striped">
+                          <thead>
+                              <tr>
+                                  <td>
+                                    <a href="" ng-click="sortTypeCar = 'name'; sortReverseCar = !sortReverseCar">
+                                        WEBSITE </a>
+                                    <span ng-show="sortTypeCar == 'name' && !sortReverseCar" class="fa fa-caret-down"></span>
+                                    <span ng-show="sortTypeCar == 'name' && sortReverseCar" class="fa fa-caret-up"></span>
+                                  </td>
+                                  <td>COMPARES DIFFERENT COMPANIES</td>
+                                  <td>
+                                      PROVIDES OWN INSURANCE
+                                  </td>
+                                  <td>
+                                      <a href="" ng-click="sortTypeCar = 'entries1'; sortReverseCar = !sortReverseCar">
+                                          NUMBER OF ENTRIES TO GET FIRST ESTIMATE </a>
+                                      <span ng-show="sortTypeCar == 'entries1' && !sortReverseCar" class="fa fa-caret-down"></span>
+                                      <span ng-show="sortTypeCar == 'entries1' && sortReverseCar" class="fa fa-caret-up"></span>
+                                  </td>
+                                  <td>
+                                      <a href="" ng-click="sortTypeCar = 'freeQuotes'; sortReverseCar = !sortReverseCar">
+                                          NUMBER OF FREE QUOTES AFTER QUIZ </a>
+                                      <span ng-show="sortTypeCar == 'freeQuotes' && !sortReverseCar" class="fa fa-caret-down"></span>
+                                      <span ng-show="sortTypeCar == 'freeQuotes' && sortReverseCar" class="fa fa-caret-up"></span>
+                                  </td>
+                              </tr>
+                          </thead>
+
+                          <tbody class="table-body">
+                              <tr ng-repeat="company in carInsurCompanies | orderBy:sortTypeCar:sortReverseCar">
+                                  <td><a ng-href="{{company.link}}" target="_blank"><img ng-src="{{company.imgsrc}}" class="table-body-logo cell-logo"></a>
+                                    <br>{{company.name}}
+                                  </td>
+                                  <td>
+                                      <i ng-class="{'fa fa-check' : {{company.compares}}}" aria-hidden='true'></i></span>
+
+                                  </td>
+                                  <td><i ng-class="{'fa fa-check' : {{company.ownInsur}}}" aria-hidden='true'></i></span></td>
+                                  <td>
+                                      {{company.entries1}}
+                                  </td>
+                                  <td>
+                                      {{company.freeQuotes}}
+                                  </td>
+                                  <td><a ng-href="{{company.link}}" target="_blank" class="btn btn-info" role="button">GO</a></td>
+                              </tr>
+                          </tbody>
+                      </table>
+                   </div>
 
 
                     <div class="foodChart table-responsive" ng-show="currentActive=='food'" ng-hide="!(currentActive=='food')">
