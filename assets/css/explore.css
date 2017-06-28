@@ -1,74 +1,89 @@
-h1, h2 {
-  font-family:"Source Sans Pro", sans-serif;
-  font-weight: 400;
-  margin-botom:5%;
-  text-align: center;
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    margin-botom: 5%;
+    text-align: center;
 }
+
 .video-container {
-	position:relative;
-	padding-bottom:56.25%;
-	padding-top:30px;
-	overflow:hidden;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    overflow: hidden;
 }
+
 iframe {
-  display:block;
-  margin: 0 auto;
-  margin-top:5%;
-  margin-bottom:5%;
-  overflow:hidden;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    overflow: hidden;
 }
 
 .tabcontent {
     -webkit-animation: fadeEffect 1s;
-    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+    animation: fadeEffect 1s;
+    /* Fading effect takes 1 second */
 }
 
 @-webkit-keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
+
 
 /* Style the tab */
+
 div.tab {
-  margin-bottom:3%;
-    display:inline-block;
+    margin-bottom: 3%;
+    display: inline-block;
     margin: 0 auto;
     text-align: center;
-    float:left;
-       width:100%;
-       overflow:hidden;
-       position:relative;
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
 }
-div.tab ul {
 
-  clear:left;
-   float:left;
-   list-style:none;
-   margin:0;
-   padding:0;
-   position:relative;
-   left:50%;
-   text-align:center;
+div.tab ul {
+    clear: left;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 50%;
+    text-align: center;
 }
 
 div.tab ul li {
-  display:block;
-  float:left;
-  list-style:none;
-  margin:0;
-  padding:0;
-  position:relative;
-  right:50%;
+    display: block;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    right: 50%;
 }
 
+
 /* Style the links inside the tab */
+
 div.tab a {
-    margin-bottom:3%;
+    margin-bottom: 3%;
     display: block;
     color: black;
     text-align: center;
@@ -76,76 +91,82 @@ div.tab a {
     text-decoration: none;
     transition: 0.3s;
     font-size: 17px;
-
 }
 
+
 /* Change background color of links on hover */
+
 div.tab a:hover {
     background-color: #ddd;
 }
 
+
 /* Create an active/current tablink class */
+
 div.tab a:focus, .active {
     background-color: #ccc;
 }
 
 .tablinks {
-  float:none;
-  text-align:center;
-  margin: 0 auto;
-
+    float: none;
+    text-align: center;
+    margin: 0 auto;
 }
 
 
 /* Style the tab content */
+
 .tabcontent {
     display: none;
     padding: 6px 12px;
-    margin-top:3%;
+    margin-top: 3%;
     border-top: none;
 }
 
-
-.divTable{
-	display: table;
-	width: 100%;
+.divTable {
+    display: table;
+    width: 100%;
 }
+
 .divTableRow {
-	display: table-row;
+    display: table-row;
 }
+
 .divTableHeading {
-	background-color: #EEE;
-	display: table-header-group;
+    background-color: #EEE;
+    display: table-header-group;
 }
+
 .divTableCell, .divTableHead {
-	border: 1px solid #999999;
-	display: table-cell;
-	padding: 3px 10px;
+    border: 1px solid #999999;
+    display: table-cell;
+    padding: 3px 10px;
 }
+
 .divTableHeading {
-	background-color: #EEE;
-	display: table-header-group;
-	font-weight: bold;
+    background-color: #EEE;
+    display: table-header-group;
+    font-weight: bold;
 }
+
 .divTableFoot {
-	background-color: #EEE;
-	display: table-footer-group;
-	font-weight: bold;
+    background-color: #EEE;
+    display: table-footer-group;
+    font-weight: bold;
 }
+
 .divTableBody {
-	display: table-row-group;
+    display: table-row-group;
 }
 
-.headshot, .bio    {
-
-  display: inline-block;
-      margin: 0 auto;
-
+.headshot, .bio {
+    display: inline-block;
+    margin: 0 auto;
 }
 
 #wrap {
     display: inline-block;
-  height:265px;
+    height: 265px;
 }
 
 a.button.center-block.text-center {
@@ -166,12 +187,81 @@ a.button.center-block.text-center:hover {
 }
 
 img.article-image {
-  width:80%;
-   display:block;
-   margin:auto;
+    width: 80%;
+    display: block;
+    margin: auto;
 }
-    @media screen and (max-width: 1080px) {
-img.article-image {
-  width:100%;
+
+@media screen and (max-width: 1080px) {
+    img.article-image {
+        width: 100%;
+    }
 }
+
+.blog_header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    background-size: cover;
+    min-height: 25%;
+    height: 400px;
+    padding: 50px 10px 50px 10px;
+}
+
+.blog_details {
+    color: #262626;
+}
+
+.tag {
+    color: white;
+    background: #00CD5D;
+    padding: 10px;
+    border-radius: 20px;
+    height: 40px;
+    display: flex;
+    width: 100px;
+    font-size: 11px;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.subheading {
+    color: #262626;
+    margin: 30px 0px 30px 0px;
+}
+
+span {
+    color: #525252;
+}
+
+.share-buttons {
+    padding: 10px;
+    display: flex;
+    margin: 20px 0 30px 0;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.share-buttons a {
+    padding: 0 20px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.share-buttons a:nth-child(2) {
+    border: 2px solid #A8A8A8;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.share-buttons a i {
+    font-size: 25px;
+    color: #A8A8A8;
 }
