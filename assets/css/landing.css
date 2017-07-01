@@ -1,108 +1,141 @@
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.hide-scroll {
     overflow: hidden;
-    background-color: white;
 }
 
-a,u {
-    text-decoration: none !important;
-    color: black;
-
+.viewport {
+    overflow: auto;
+    max-height: 100%;
+    margin-right: -100px;
+    padding-right: 100px;
 }
 
-.active {
-     color: #62B75F !important;
+body {
+    font-family: 'Lato', sans-serif;
 }
 
-.Nav:hover{
-    background-color: #d3d3d3;
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+   .compare {
+       margin-top: 2vh;
+       text-align: center;
+    }
+    .pillbtn{
+        margin-top: 1vh;
+    }
+    
 }
 
-li a {
-    display: block;
-    text-align: center;
-    padding: 14px 20px;
-    float:right;
-}
-li img {
-    float:left;
+.navbar-inverse .navbar-nav>li>a {
+    color: #d8d8d8;
 }
 
-.Jump {
-   position: relative;
-   width: 100vw;
-   height: auto;
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: #fff;
 }
 
-.Ocean{
-    max-width: 100vw;
-    max-height: auto;
-    position: center;
-}
-
-.to{
-    display: inline;
-    padding: 20px;
-}
-
-.con{
-    display: table;
-    margin: auto;
-    padding: 50px;
-}
-
-.featured{
-    background-color: #327B97;
-    max-height: fit-content;
-}
-
-.FeatTi{
-
-    color: white;
-    text-align: center;
-    padding-top: 25px;
-    padding-bottom: 20px;
-}
-
-h3{
-    font: Raleway;
-    font-size: 30px;
-}
-
-.links{
-    vertical-align: middle;
-}
-
-#MMText{
-    color: black;
-    padding-top: 100px;
-    padding-bottom: 20px;
-}
-
-.MMpictures{
-    position: center;
-    max-width: 25vw;
-    max-height: auto;
-}
-
-.want{
-    position: relative;
+.slideOverlay {
+    z-index: 10;
     width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-#img2{
-    position: center;
+.slideCopy {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.button{
-    display: block;
-    width: 200px;
-    height: 40px;
-    background: #62B75F;
-    padding: 10px;
+.slideOverlay h1 {
+    font-size: 4.5em;
+}
+
+.slideOverlay p {
+    font-size: 1.15em;
+}
+
+.navbar {
+    margin-top: 3vh;
+    background-color: transparent;
+    background: transparent;
+    border-color: transparent;
+    color: #fff;
+}
+
+.card {
+    padding: 3vw;
+}
+
+.card img {
+    padding-left: 0;
+    padding-right: 0;
+    -webkit-box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.75);
+}
+
+.cardText {
     text-align: center;
-    border-radius: 5px;
-    margin: auto;
+    font-size: 1.15em;
+    color: #fff;
+    padding: 1vw 3vw;
+    -webkit-box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.75);
+}
+
+.quote {
+    margin: 1.5vw 0vw;
+}
+
+.compare {
+    margin-bottom: 5vh;
+    padding: 2vw;
+    color: #fff;
+    font-size: 2em;
+    background-color: #53a5c6;
+    -webkit-box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.75);
+}
+
+.pillbtn {
+    padding: .7em;
+    font-size: 50%;
+    border-radius: 16px;
+    border: 1.25px solid #fff
+}
+
+.compare a {
+    color: #fff;
+}
+
+.pillbtn:hover {
+    cursor: pointer;
+}
+
+.articles {
+    margin-bottom: 30px;
+    -webkit-box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.75);
+}
+
+.articles img:hover {
+    cursor: pointer;
+}
+
+.newsletter {
+    background-color: #242626;
+    color: #fff;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+.newsletter h4 {
+    color: lightgray;
 }
