@@ -1,141 +1,144 @@
-.hide-scroll {
-    overflow: hidden;
-}
-
-.viewport {
-    overflow: auto;
-    max-height: 100%;
-    margin-right: -100px;
-    padding-right: 100px;
-}
-
-body {
-    font-family: 'Lato', sans-serif;
-}
-
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-   .compare {
-       margin-top: 2vh;
-       text-align: center;
-    }
-    .pillbtn{
-        margin-top: 1vh;
+    .hide-scroll {
+        overflow: hidden;
     }
     
-}
-
-.navbar-inverse .navbar-nav>li>a {
-    color: #d8d8d8;
-}
-
-.navbar-inverse .navbar-nav>li>a:hover {
-    color: #fff;
-}
-
-.slideOverlay {
-    z-index: 10;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.slideCopy {
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.slideOverlay h1 {
-    font-size: 4.5em;
-}
-
-.slideOverlay p {
-    font-size: 1.15em;
-}
-
-.navbar {
-    margin-top: 3vh;
-    background-color: transparent;
-    background: transparent;
-    border-color: transparent;
-    color: #fff;
-}
-
-.card {
-    padding: 3vw;
-}
-
-.card img {
-    padding-left: 0;
-    padding-right: 0;
-    -webkit-box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.75);
-}
-
-.cardText {
-    text-align: center;
-    font-size: 1.15em;
-    color: #fff;
-    padding: 1vw 3vw;
-    -webkit-box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.75);
-}
-
-.quote {
-    margin: 1.5vw 0vw;
-}
-
-.compare {
-    margin-bottom: 5vh;
-    padding: 2vw;
-    color: #fff;
-    font-size: 2em;
-    background-color: #53a5c6;
-    -webkit-box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.75);
-}
-
-.pillbtn {
-    padding: .7em;
-    font-size: 50%;
-    border-radius: 16px;
-    border: 1.25px solid #fff
-}
-
-.compare a {
-    color: #fff;
-}
-
-.pillbtn:hover {
-    cursor: pointer;
-}
-
-.articles {
-    margin-bottom: 30px;
-    -webkit-box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.75);
-}
-
-.articles img:hover {
-    cursor: pointer;
-}
-
-.newsletter {
-    background-color: #242626;
-    color: #fff;
-    padding-top: 3vh;
-    padding-bottom: 3vh;
-}
-
-.newsletter h4 {
-    color: lightgray;
-}
+    .viewport {
+        overflow: auto;
+        max-height: 100%;
+        margin-right: -100px;
+        padding-right: 100px;
+    }
+    
+    body {
+        font-family: 'Lato', sans-serif;
+    }
+    
+    @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        .compare {
+            margin-top: 2vh;
+            text-align: center;
+        }
+        .pillbtn {
+            margin-top: 1vh;
+        }
+        .formbox-button-863293 {
+            margin-top: 1.5vh;
+        }
+        
+    }
+    
+    .navbar-inverse .navbar-nav>li>a {
+        color: #d8d8d8;
+    }
+    
+    .navbar-inverse .navbar-nav>li>a:hover {
+        color: #fff;
+    }
+    
+    .slideOverlay {
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    .slideCopy {
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .slideOverlay h1 {
+        font-size: 4.5em;
+    }
+    
+    .slideOverlay p {
+        font-size: 1.15em;
+    }
+    
+    .navbar {
+        margin-top: 3vh;
+        background-color: transparent;
+        background: transparent;
+        border-color: transparent;
+        color: #fff;
+    }
+    
+    .card {
+        padding: 3vw;
+    }
+    
+    .card img {
+        padding-left: 0;
+        padding-right: 0;
+        -webkit-box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.75);
+    }
+    
+    .cardText {
+        text-align: center;
+        font-size: 1.15em;
+        color: #fff;
+        padding: 1vw 3vw;
+        -webkit-box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.75);
+    }
+    
+    .quote {
+        margin: 1.5vw 0vw;
+    }
+    
+    .compare {
+        margin-bottom: 5vh;
+        padding: 2vw;
+        color: #fff;
+        font-size: 2em;
+        background-color: #53a5c6;
+        -webkit-box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.75);
+    }
+    
+    .pillbtn {
+        padding: .7em;
+        font-size: 50%;
+        border-radius: 16px;
+        border: 1.25px solid #fff
+    }
+    
+    .compare a {
+        color: #fff;
+    }
+    
+    .pillbtn:hover {
+        cursor: pointer;
+    }
+    
+    .articles {
+        margin-bottom: 30px;
+        -webkit-box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.75);
+    }
+    
+    .articles img:hover {
+        cursor: pointer;
+    }
+    
+    .newsletter {
+        background-color: #242626;
+        color: #fff;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+    }
+    
+    .newsletter h4 {
+        color: lightgray;
+    }
