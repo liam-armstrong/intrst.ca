@@ -281,3 +281,9 @@ body {
     font-size: 25px;
     color: #A8A8A8;
 }
+.share-buttons a:hover, .share-buttons a:focus {
+    text-decoration: none;
+}
+.share-buttons a i:hover {
+    color: #00CD5D;
+}
