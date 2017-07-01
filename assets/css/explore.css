@@ -238,6 +238,22 @@ img.article-image {
 span {
     color: #525252;
 }
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+#share-buttons img {
+    max-width: 75px;
+    height: auto;
+    padding: 5px;
+    border: 0;
+    box-shadow: 0;
+    display: inline;
+}
+
+body {
+    margin-top: 70px;
+}
 
 .share-buttons {
     padding: 10px;
