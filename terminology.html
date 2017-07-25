@@ -52,8 +52,7 @@
             i[r] = i[r] || function () {
                 (i[r].q = i[r].q || []).push(arguments)
             }, i[r].l = 1 * new Date();
-            a = s.createElement(o)
-                , m = s.getElementsByTagName(o)[0];
+            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
             a.async = 1;
             a.src = g;
             m.parentNode.insertBefore(a, m)
@@ -114,16 +113,56 @@
         mixpanel.init("3d84308b1b5e3d3ddebafec49a770c6b");
     </script>
     <!-- end Mixpanel -->
+    <style>
+        @media screen and (max-width: 1080px) {
+            .title {
+                font-size: 7vh !important;
+            }
+        }
+    </style>
 </head>
 <div w3-include-html="header.html"></div>
 
 <body id="override">
     <a href=”#” class=”back-to-top”></a>
-    <div class="title center-block text-center">Terminology</div>
+    <div style="color:white;" class="title center-block text-center">TERMINOLOGY</div>
     <div class="container-fluid content">
-        <div class="row dir center-block text-center">
-            <p>A <a href="#B">B</a> <a href="#C">C</a> <a href="#D">D</a> E F <a href="#G">G</a> H <a href="#I">I</a> J K <a href="#L">L</a> <a href="#M">M</a> N O <a href="#P">P</a> Q R <a href="#S">S</a> <a href="#T">T</a> U V W X Y Z</p>
+        <div class="row dir center-block text-center" style="margin-top:2%">
+            <p><a href="#A">A</a> <a href="#B">B</a> <a href="#C">C</a> <a href="#D">D</a> <a href="#E">E</a> <a href="#F">F</a> <a href="#G">G</a> H <a href="#I">I</a> J K <a href="#L">L</a> <a href="#M">M</a> N O <a href="#P">P</a> Q <a href="#R">R</a> <a href="#S">S</a> <a href="#T">T</a> U V W X <a href="#Y">Y</a> Z</p>
         </div>
+        <!--Begin Letter -->
+        <div class="row letter" id="A">
+            <div class="col-lg-2">A</div>
+        </div>
+        <!--Begin 2 Def Row-->
+        <div class="row">
+            <div class="col-lg-6 def">
+                <div data-target="#acq" href="#javascript:void(0);" data-toggle="collapse"> <a data-target="#acq" href="#javascript:void(0);" data-toggle="collapse">Acquisition </a> </div>
+                <div id="acq" class="collapse"> A corporate action in which a company buys most, if not all, of the target company's ownership stakes in order to assume control of the target firm. Acquisitions are often made as part of a company's growth strategy whereby it is more beneficial to take over an existing firm's operations and niche compared to expanding on its own. Acquisitions are often paid in cash, the acquiring company's stock or a combination of both.</div>
+            </div>
+            <div class="col-lg-6 def">
+                <div data-target="#alt" href="#javascript:void(0);" data-toggle="collapse"> <a data-target="#alt" href="#javascript:void(0);" data-toggle="collapse">Alternative Investments</a> </div>
+                <div id="alt" class="collapse"> An investment that is not one of the three traditional asset types (stocks, bonds and cash). Most alternative investment assets are held by institutional investors or accredited, high-net- worth individuals because of their complex nature, limited regulations and relative lack of liquidity. Alternative investments include hedge funds, managed futures, real estate, commodities and derivatives contracts.</div>
+            </div>
+        </div>
+        <!--Begin 2 Def Row-->
+        <div class="row">
+            <div class="col-lg-6 def">
+                <div data-target="#amor" href="#javascript:void(0);" data-toggle="collapse"> <a data-target="#amor" href="#javascript:void(0);" data-toggle="collapse">Amortization </a> </div>
+                <div id="amor" class="collapse"> Paying off of debt in regular payments over a period of time.</div>
+            </div>
+            <div class="col-lg-6 def">
+                <div data-target="#asset" href="#javascript:void(0);" data-toggle="collapse"> <a data-target="#asset" href="#javascript:void(0);" data-toggle="collapse">Asset </a> </div>
+                <div id="asset" class="collapse"> An account registered at a bank that holds your money. Money can be deposited (put in) or withdrawn out (taken out) of a bank account. Interest is earned on money deposited into bank accounts. </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 def">
+                <div data-target="#afs" href="#javascript:void(0);" data-toggle="collapse"> <a data-target="#afs" href="#javascript:void(0);" data-toggle="collapse">Audited Financial Statements</a> </div>
+                <div id="afs" class="collapse"> Financial statements that have been audited by an independent certified public accountant. These include the financial statements and the accompanying auditor's report, which summarizes the "auditor's opinion". </div>
+            </div>
+        </div>
+        <!--End 2 Def Row -->
         <!--Begin Letter -->
         <div class="row letter" id="B">
             <div class="col-lg-2">B</div>
@@ -131,15 +170,25 @@
         <!--Begin 2 Def Row-->
         <div class="row">
             <div class="col-lg-6 def">
+                <div data-target="#bail" href="#javascript:void(0);" data-toggle="collapse"> <a data-target="#bail" href="#javascript:void(0);" data-toggle="collapse">Bailout</a> </div>
+                <div id="bail" class="collapse"> A situation in which a business, individual or government offers money to a failing business in order to prevent the consequences that arise from a business's downfall. Bailouts can take the form of loans, bonds, stocks or cash. They may or may not require reimbursement. </div>
+            </div>
+            <div class="col-lg-6 def">
                 <div data-target="#bankacc" href="#javascript:void(0);" data-toggle="collapse"> <a data-target="#bankacc" href="#javascript:void(0);" data-toggle="collapse">Bank Account</a> </div>
                 <div id="bankacc" class="collapse"> An account registered at a bank that holds your money. Money can be deposited (put in) or withdrawn out (taken out) of a bank account. Interest is earned on money deposited into bank accounts. </div>
             </div>
+        </div>
+        <!--End 2 Def Row -->
+        <div class="row">
             <div class="col-lg-6 def">
                 <div data-target="#bankruptcy" href="#javascript:void(0);" data-toggle="collapse"> <a data-target="#bankruptcy" href="#javascript:void(0);" data-toggle="collapse">Bankruptcy</a> </div>
                 <div id="bankruptcy" class="collapse"> When a company cannot fully pay out its debts with its current assets, it is considered to be bankrupt. If all of the assets cannot pay the full debt, then they go to paying as much of the debt that they can, leaving the company with no more assets left. </div>
             </div>
+            <div class="col-lg-6 def">
+                <div data-target="#bench" href="#javascript:void(0);" data-toggle="collapse"> <a data-target="#bench" href="#javascript:void(0);" data-toggle="collapse">Benchmark Interest Rate</a> </div>
+                <div id="bench" class="collapse"> Also called base interest rate, it is the minimum interest rate investors will demand for investing in a non-Treasury security. It is also tied to the yield to maturity offered on the comparable-maturity treasury security that was most recently issued (on-the- run). </div>
+            </div>
         </div>
-        <!--End 2 Def Row -->
         <div class="row">
             <div class="col-lg-6 def">
                 <div data-target="#bonds" href="#javascript:void(0);" data-toggle="collapse"> <a data-target="#bonds" href="#javascript:void(0);" data-toggle="collapse">Bonds</a> </div>
@@ -158,15 +207,47 @@
         <!--Begin 2 Def Row-->
         <div class="row">
             <div class="col-lg-6 def">
+                <div data-target="#capm" href="#javascript:void(0);" data-toggle="collapse"> <a data-target="#capm" href="#javascript:void(0);" data-toggle="collapse">Capital Markets</a> </div>
+                <div id="capm" class="collapse"> Capital markets are markets for buying and selling equity and debt instruments. Capital markets channel savings and investment between suppliers of capital such as retail investors and institutional investors, and users of capital like businesses, government and individuals. Capital markets are vital to the functioning of an economy, since capital is a critical component for generating economic output. Capital markets include primary markets, where new stock and bond issues are sold to investors, and secondary markets, which trade existing securities.</div>
+            </div>
+            <div class="col-lg-6 def">
+                <div data-target="#cap" href="#javascript:void(0);" data-toggle="collapse"> <a data-target="#cap" href="#javascript:void(0);" data-toggle="collapse">Capital Gain</a> </div>
+                <div id="cap" class="collapse"> When an investment’s selling price is more expensive than its purchase price.</div>
+            </div>
+        </div>
+        <!--End 2 Def Row -->
+        <!--Begin 2 Def Row-->
+        <div class="row">
+            <div class="col-lg-6 def">
+                <div data-target="#casflo" href="#javascript:void(0);" data-toggle="collapse"> <a data-target="#casflo" href="#javascript:void(0);" data-toggle="collapse">Cash Flow</a> </div>
+                <div id="casflo" class="collapse"> Calculated by subtracting cash payments from cash receipts over a period of time. It’s purpose is to determine a company’s or individual’s financial wealth.</div>
+            </div>
+            <div class="col-lg-6 def">
                 <div data-target="#cheq" href="#javascript:void(0);" data-toggle="collapse"> <a data-target="#cheq" href="#javascript:void(0);" data-toggle="collapse">Chequing Account</a> </div>
                 <div id="cheq" class="collapse"> A bank account that is intended for daily use. It is used when numerous transactions of money, in and out of the account, will be needed. However, it earns very little to no interest on the money stored in it. </div>
             </div>
+        </div>
+        <!--End 2 Def Row -->
+        <div class="row">
+            <div class="col-lg-6 def">
+                <div data-target="#coll" href="#javascript:void(0);" data-toggle="collapse"> <a data-target="#coll" href="#javascript:void(0);" data-toggle="collapse">Collateralized Debt Obligation</a> </div>
+                <div id="coll" class="collapse"> A structured financial product that pools together cash flow-generating assets and repackages this asset pool into discrete tranches that can be sold to investors. A collateralized debt obligation (CDO) is so-called because the pooled assets – such as mortgages, bonds and loans – are essentially debt obligations that serve as collateral for the CDO. The tranches in a CDO vary substantially in their risk profile. The senior tranches are relatively safer because they have first priority on the collateral in the event of default. As a result, the senior tranches of a CDO generally have a higher credit rating and offer lower coupon rates than the junior tranches, which offer higher coupon rates to compensate for their higher default risk. </div>
+            </div>
+            <div class="col-lg-6 def">
+                <div data-target="#comm" href="#javascript:void(0);" data-toggle="collapse"> <a data-target="#comm" href="#javascript:void(0);" data-toggle="collapse">Commodity</a> </div>
+                <div id="comm" class="collapse"> A basic good used in commerce that is interchangeable with other commodities of the same type. Commodities are most often used as inputs in the production of other goods or services. The quality of a given commodity may differ slightly, but it is essentially uniform across producers. When they are traded on an exchange, commodities must also meet specified minimum standards, also known as a basis grade. </div>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-lg-6 def">
                 <div data-target="#comp" href="#javascript:void(0);" data-toggle="collapse"> <a data-target="#comp" href="#javascript:void(0);" data-toggle="collapse">Compound Interest</a> </div>
                 <div id="comp" class="collapse"> Interest earned or charged on the interest that was previously accumulated. For example, if Joe earned $30 of interest in his bank account last year, the interest he earns this year on that $30 is called compound interest. </div>
             </div>
+            <div class="col-lg-6 def">
+                <div data-target="#cc" href="#javascript:void(0);" data-toggle="collapse"> <a data-target="#cc" href="#javascript:void(0);" data-toggle="collapse">Consumer Price Index</a> </div>
+                <div id="cc" class="collapse"> A measure that examines the weighted average of prices of a basket of consumer goods and services, such as transportation, food and medical care. The CPI is calculated by taking price changes for each item in the predetermined basket of goods and averaging them; the goods are weighted according to their importance. Changes in CPI are used to assess price changes associated with the cost of living. </div>
+            </div>
         </div>
-        <!--End 2 Def Row -->
         <div class="row">
             <div class="col-lg-6 def">
                 <div data-target="#cc" href="#javascript:void(0);" data-toggle="collapse"> <a data-target="#cc" href="#javascript:void(0);" data-toggle="collapse">Credit Card</a> </div>
@@ -178,6 +259,49 @@
             </div>
         </div>
         <!--End Letter -->
+        <!--Begin Letter -->
+        <div class="row letter" id="E">
+            <div class="col-lg-2">E</div>
+        </div>
+        <!--Begin 2 Def Row-->
+        <div class="row">
+            <div class="col-lg-6 def">
+                <div data-target="#emer" href="#javascript:void(0);" data-toggle="collapse"> <a data-target="#emer" href="#javascript:void(0);" data-toggle="collapse">Emerging Markets</a> </div>
+                <div id="emer" class="collapse"> A nation's economy that is progressing toward becoming advanced, as shown by some liquidity in local debt and equity markets and the existence of some form of market exchange and regulatory body.</div>
+            </div>
+            <div class="col-lg-6 def">
+                <div data-target="#equ" href="#javascript:void(0);" data-toggle="collapse"> <a data-target="#equ" href="#javascript:void(0);" data-toggle="collapse">Equity Market</a> </div>
+                <div id="equ" class="collapse"> The market in which shares are issued and traded, either through exchanges or over-the- counter markets. Also known as the stock market, it is one of the most vital areas of a market economy because it gives companies access to capital and investors a slice of ownership in a company with the potential to realize gains based on its future performance.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 def">
+                <div data-target="#exh" href="#javascript:void(0);" data-toggle="collapse"> <a data-target="#exh" href="#javascript:void(0);" data-toggle="collapse">Exchange Rate</a> </div>
+                <div id="exh" class="collapse"> The value of a currency in comparison to another.</div>
+            </div>
+        </div>
+        <!--End Letter -->
+        <!--Begin Letter -->
+        <div class="row letter" id="F">
+            <div class="col-lg-2">F</div>
+        </div>
+        <!--Begin 2 Def Row-->
+        <div class="row">
+            <div class="col-lg-6 def">
+                <div data-target="#frb" href="#javascript:void(0);" data-toggle="collapse"> <a data-target="#frb" href="#javascript:void(0);" data-toggle="collapse">Federal Reserve Bank</a> </div>
+                <div id="frb" class="collapse"> The central bank of the United States and the most powerful financial institution in the world. The Federal Reserve Bank was founded by the U.S. Congress in 1913 to provide the nation with a safe, flexible and stable monetary and financial system. It is based on a federal system that comprises a central governmental agency (the Board of Governors) in Washington, DC and 12 regional Federal Reserve Banks that are each responsible for a specific geographic area of the U.S. The Federal Reserve Bank is considered to be independent because its decisions do not have to be ratified by the President or any other government official. However, it is still subject to Congressional oversight and must work within the framework of the government’s economic and financial policy objectives. Often known simply as “the Fed&quot;.</div>
+            </div>
+            <div class="col-lg-6 def">
+                <div data-target="#fins" href="#javascript:void(0);" data-toggle="collapse"> <a data-target="#fins" href="#javascript:void(0);" data-toggle="collapse">Financial Statements</a> </div>
+                <div id="fins" class="collapse"> A set of reports prepared annually by an organization's management which present their financial position and results of operations at the end of their fiscal year.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 def">
+                <div data-target="#for" href="#javascript:void(0);" data-toggle="collapse"> <a data-target="#for" href="#javascript:void(0);" data-toggle="collapse">Forex</a> </div>
+                <div id="for" class="collapse"> The market in which currencies are traded. The forex market is the largest, most liquid market in the world with an average traded value that exceeds $1.9 trillion per day and includes all of the currencies in the world.</div>
+            </div>
+        </div>
         <!--Begin Letter -->
         <div class="row letter" id="D">
             <div class="col-lg-2">D</div>
@@ -202,6 +326,12 @@
             <div class="col-lg-6 def">
                 <div data-target="#dtc" href="#javascript:void(0);" data-toggle="collapse"> <a data-target="#dtc" href="#javascript:void(0);" data-toggle="collapse">Different Types of Credit</a> </div>
                 <div id="dtc" class="collapse"> Open ended loans have a fixed limit amount of money that can be borrowed at any given time. If the loaned money is paid off, it can be borrowed again. The most common example of this, is a line of credit. A closed end loan is a loan that cannot be borrowed from, more than once. The entire loan is taken out at the beginning and must be paid back by a predetermined date from the time of borrowing. Common closed end loans include student loans and mortgages. </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 def">
+                <div data-target="#div" href="#javascript:void(0);" data-toggle="collapse"> <a data-target="#div" href="#javascript:void(0);" data-toggle="collapse">Dividend</a> </div>
+                <div id="div" class="collapse"> A dividend is a distribution of a portion of a company&#39;s earnings, decided by the board of directors, to a class of its shareholders. Dividends can be issued as cash payments, as shares of stock, or other property. </div>
             </div>
         </div>
         <!--End Letter -->
@@ -236,6 +366,10 @@
         <!--End 2 Def Row -->
         <div class="row">
             <div class="col-lg-6 def">
+                <div data-target="#intrst" href="#javascript:void(0);" data-toggle="collapse"> <a data-target="#intrst" href="#javascript:void(0);" data-toggle="collapse">Interest</a> </div>
+                <div id="intrst" class="collapse"> The fee paid for using other people’s money. </div>
+            </div>
+            <div class="col-lg-6 def">
                 <div data-target="#intr" href="#javascript:void(0);" data-toggle="collapse"> <a data-target="#intr" href="#javascript:void(0);" data-toggle="collapse">Interest Rate</a> </div>
                 <div id="intr" class="collapse"> An agreement providing compensation against an unexpected event. The 4 main types comprise of life insurance, health insurance, auto insurance, and long term disability coverage. </div>
             </div>
@@ -248,15 +382,35 @@
         <!--Begin 2 Def Row-->
         <div class="row">
             <div class="col-lg-6 def">
+                <div data-target="#lia" href="#javascript:void(0);" data-toggle="collapse"> <a data-target="#lia" href="#javascript:void(0);" data-toggle="collapse">Liability</a> </div>
+                <div id="lia" class="collapse"> An obligation to repay debt.</div>
+            </div>
+            <div class="col-lg-6 def">
                 <div data-target="#loc" href="#javascript:void(0);" data-toggle="collapse"> <a data-target="#loc" href="#javascript:void(0);" data-toggle="collapse">Line of Credit</a> </div>
-                <div id="loc" class="collapse"> It allows the borrower to borrow money as they need it. Terms of payment vary, but any money borrowed must be paid back, with interest, eventually. The bank will decide the limit on the maximum amount that may be borrowed from a line of credit. </div>
+                <div id="loc" class="collapse"> It allows the borrower to borrow money as they need it. Terms of payment vary, but any money borrowed must be paid back, with interest, eventually. The bank will decide the limit on the maximum amount that may be borrowed from a line of credit.</div>
+            </div>
+        </div>
+        <!--End 2 Def Row -->
+        <div class="row">
+            <div class="col-lg-6 def">
+                <div data-target="#loc" href="#javascript:void(0);" data-toggle="collapse"> <a data-target="#loc" href="#javascript:void(0);" data-toggle="collapse">Liquidity</a> </div>
+                <div id="loc" class="collapse"> The conversion of an asset to cash quickly without sacrificing value or giving a discount on the price.</div>
             </div>
             <div class="col-lg-6 def">
                 <div data-target="#loan" href="#javascript:void(0);" data-toggle="collapse"> <a data-target="#loan" href="#javascript:void(0);" data-toggle="collapse">Loans</a> </div>
                 <div id="loan" class="collapse"> A loan is when any material, good, money, or land is exchanged to another party with a promise of future repayment. All loans are either secured or unsecured. Secured is when you put your personal property up as collateral, to gain the loan. If the loan is not paid back within the time period, then the property is taken. The interest rate is usually lower, as there is collateral. Unsecured loans do not have any form of backup, so the interest rate is determined by your income and credit history. </div>
             </div>
         </div>
-        <!--End 2 Def Row -->
+        <div class="row">
+            <div class="col-lg-6 def">
+                <div data-target="#lond" href="#javascript:void(0);" data-toggle="collapse"> <a data-target="#lond" href="#javascript:void(0);" data-toggle="collapse">London Stock Exchange</a> </div>
+                <div id="lond" class="collapse"> The primary stock exchange in the U.K. and the largest in Europe. Originated in 1773, the regional exchanges were merged in 1973 to form the Stock Exchange of Great Britain and Ireland, later renamed the London Stock Exchange (LSE). The Financial Times Stock Exchange (FTSE) 100 Share Index, or &quot;Footsie&quot;, is the dominant index, containing 100 of the top blue chips on the LSE. </div>
+            </div>
+            <div class="col-lg-6 def">
+                <div data-target="#lux" href="#javascript:void(0);" data-toggle="collapse"> <a data-target="#lux" href="#javascript:void(0);" data-toggle="collapse">Luxury Goods</a> </div>
+                <div id="lux" class="collapse"> An item that is not necessary for living, but is deemed as highly- desired within a culture or society. The ability to purchase or finance a luxury item is directly proportionate to ones&#39; income or assets. In other words, as people move into higher income brackets they are more able and more likely to purchase more expensive luxury goods. </div>
+            </div>
+        </div>
         <!--Begin Letter -->
         <div class="row letter" id="M">
             <div class="col-lg-2">M</div>
@@ -291,6 +445,31 @@
                 <div data-target="#pr" href="#javascript:void(0);" data-toggle="collapse"> <a data-target="#pr" href="#javascript:void(0);" data-toggle="collapse">Prime Rate</a> </div>
                 <div id="pr" class="collapse"> The interest rate that banks charge their most creditworthy customers. It has the lowest rate of interest a bank will offer, adding another incentive to maintain a favourable credit history. </div>
             </div>
+            <div class="col-lg-6 def">
+                <div data-target="#prin" href="#javascript:void(0);" data-toggle="collapse"> <a data-target="#prin" href="#javascript:void(0);" data-toggle="collapse">Principal</a> </div>
+                <div id="prin" class="collapse"> The original investment on which interest is generally paid. </div>
+            </div>
+        </div>
+        <!--Begin Letter -->
+        <div class="row letter" id="R">
+            <div class="col-lg-2">R</div>
+        </div>
+        <!--Begin 2 Def Row-->
+        <div class="row">
+            <div class="col-lg-6 def">
+                <div data-target="#ror" href="#javascript:void(0);" data-toggle="collapse"> <a data-target="#ror" href="#javascript:void(0);" data-toggle="collapse">Rate of Return</a> </div>
+                <div id="ror" class="collapse"> The gain or loss on an investment over a specified time period. This value is expressed as a percentage of the investment’s cost.</div>
+            </div>
+            <div class="col-lg-6 def">
+                <div data-target="#rec" href="#javascript:void(0);" data-toggle="collapse"> <a data-target="#rec" href="#javascript:void(0);" data-toggle="collapse">Recession</a> </div>
+                <div id="rec" class="collapse"> A decline in the GDP for two or more consecutive quarters. During a recession, the stock market usually drops, unemployment increases, and the housing market declines. </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 def">
+                <div data-target="#reg" href="#javascript:void(0);" data-toggle="collapse"> <a data-target="#reg" href="#javascript:void(0);" data-toggle="collapse">Regulation</a> </div>
+                <div id="reg" class="collapse"> A regulation set forth by the Federal Reserve. Regulation I stipulates that any bank that becomes a member of the Federal Reserve acquire a certain amount of stock in its Federal Reserve Bank. This regulation states the procedures for banks to purchase and redeem Federal Reserve Bank capital stock. The bank cannot use this stock as collateral.</div>
+            </div>
         </div>
         <!--Begin Letter -->
         <div class="row letter" id="S">
@@ -299,8 +478,28 @@
         <!--Begin 2 Def Row-->
         <div class="row">
             <div class="col-lg-6 def">
+                <div data-target="#snp" href="#javascript:void(0);" data-toggle="collapse"> <a data-target="#snp" href="#javascript:void(0);" data-toggle="collapse">S&amp;P 500</a> </div>
+                <div id="snp" class="collapse"> an index of 500 stocks chosen for market size, liquidity and industry grouping, among other factors. The S&amp;P 500 is designed to be a leading indicator of U.S. equities and is meant to reflect the risk/return characteristics of the large cap universe. </div>
+            </div>
+            <div class="col-lg-6 def">
                 <div data-target="#sa" href="#javascript:void(0);" data-toggle="collapse"> <a data-target="#sa" href="#javascript:void(0);" data-toggle="collapse">Savings Account</a> </div>
                 <div id="sa" class="collapse"> A bank account that is meant to store money that you are saving, whether it is for future expenses or emergency purposes. This stored money is not intended for day-to-day usage. A beneficial aspect of this account, is that it earns a decent interest rate on the money deposited. </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 def">
+                <div data-target="#sell" href="#javascript:void(0);" data-toggle="collapse"> <a data-target="#sell" href="#javascript:void(0);" data-toggle="collapse">Selloff</a> </div>
+                <div id="sell" class="collapse">The rapid selling of securities, such as stocks, bonds and commodities. The increase in supply leads to a decline in the value of the security </div>
+            </div>
+            <div class="col-lg-6 def">
+                <div data-target="#sha" href="#javascript:void(0);" data-toggle="collapse"> <a data-target="#sha" href="#javascript:void(0);" data-toggle="collapse">Share </a> </div>
+                <div id="sha" class="collapse"> One unit of ownership in a corporation, security, or limited partnership. </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 def">
+                <div data-target="#spo" href="#javascript:void(0);" data-toggle="collapse"> <a data-target="#spo" href="#javascript:void(0);" data-toggle="collapse">Spoofing</a> </div>
+                <div id="spo" class="collapse"> A type of scam where an intruder attempts to gain unauthorized access to a user&#39;s system or information by pretending to be the user. The main purpose is to trick the user into releasing sensitive information in order to gain access to one&#39;s bank account, computer system or to steal personal information, such as passwords. </div>
             </div>
             <div class="col-lg-6 def">
                 <div data-target="#st" href="#javascript:void(0);" data-toggle="collapse"> <a data-target="#st" href="#javascript:void(0);" data-toggle="collapse">Stock</a> </div>
@@ -318,6 +517,17 @@
             <div class="col-lg-6 def">
                 <div data-target="#tfsa" href="#javascript:void(0);" data-toggle="collapse"> <a data-target="#tfsa" href="#javascript:void(0);" data-toggle="collapse">TFSA (Tax Free Savings Account)</a> </div>
                 <div id="tfsa" class="collapse"> Income that is earned off of the money in a TFSA is not subject to income tax. A TFSA does not have to be a bank account with cash in it, and can comprise of a number of different investment vehicles. The government limits the amount that can be put into a TFSA, every year. </div>
+            </div>
+        </div>
+        <!--Begin Letter -->
+        <div class="row letter" id="Y">
+            <div class="col-lg-2">Y</div>
+        </div>
+        <!--Begin 2 Def Row-->
+        <div class="row">
+            <div class="col-lg-6 def">
+                <div data-target="#yie" href="#javascript:void(0);" data-toggle="collapse"> <a data-target="#yie" href="#javascript:void(0);" data-toggle="collapse">Yield</a> </div>
+                <div id="yie" class="collapse"> The annual rate of return for an investment expressed as a percentage. </div>
             </div>
         </div>
     </div>
